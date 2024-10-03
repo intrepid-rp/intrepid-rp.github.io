@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Intrepid Role Playing</title>
+</head>
+<body>
+<label id="version"></label>
+<script>
+    fetch('./assets/version.json')
+    .then((response) => response.json())
+    .then((json) => document.getElementById("version").innerHTML = json["version"]);
+  </script>
+</body>
+</html>
