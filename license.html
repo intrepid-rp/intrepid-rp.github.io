@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intrepid Role-Playing</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+</head>
+<body>
+
+<header>
+    <h1><a href="/">Intrepid Role-Playing</a></h1>
+</header>
+
+<!-- Hamburger button for smaller screens -->
+<button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+
+<!-- Navigation menu -->
+<nav id="menu">
+    <a href="/rules/characters/">Create a Character</a>
+    <a href="/rules">Playing the Game</a>
+    <a href="/lineages">Lineages</a>
+    <a href="/heritages">Heritages</a>
+    <a href="/backgrounds">Backgrounds</a>
+    <a href="/classes">Classes</a>
+    <a href="/talents">Talents</a>
+    <a href="/spells">Spells</a>
+    <a href="/items">Equipment</a>
+</nav>
+
+<!-- Main content -->
+<main>
+  <h2>License Information</h2>
+  <p><strong>ORC NOTICE:</strong> This product is licensed under the ORC License, located at the Library of Congress at TX 9-307-067, and available online at various locations including www.azoralaw.com/orclicense and others. All warranties are disclaimed as set forth therein.</p>
+  <strong>Attribution:</strong>
+  <ul>
+    <li>This work includes material taken from the Black Flag Roleplaying Reference Document v0.2, © Open Design LLC d/b/a Kobold Press.</li>
+    <li>This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of the Coast LLC and available at 
+      <a href="https://dnd.wizards.com/resources/systems-reference-document">https://dnd.wizards.com/resources/systems-reference-document</a>.
+      The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at 
+      <a href="https://creativecommons.org/licenses/by/4.0/legalcode">https://creativecommons.org/licenses/by/4.0/legalcode</a>.</li>
+    <li>If you use our Licensed Material in your own published works, please credit us as follows: Intrepid Adventurer's Guide by Benjamin Felt.</li>
+  </ul>
+  <p><strong>Reserved Material:</strong> Reserved Material elements in this product include all elements designated as Reserved Material under the ORC License.</p>
+  <p><strong>Expressly Designated Licensed Material:</strong> This product contains no Expressly Designated Licensed Material.</p>
+</main>
+
+<!-- Footer -->
+<footer>
+    <span>Version: <span id="version">Loading...</span> | 
+    <a href="/license.html">Published under the ORC license</a>
+</footer>
+
+<script>
+    // Function to toggle the visibility of the menu in mobile view
+    function toggleMenu() {
+      var menu = document.getElementById('menu');
+      if (menu.classList.contains('open')) {
+          menu.classList.remove('open');
+      } else {
+          menu.classList.add('open');
+      }
+    }
+
+    // Fetch the version number from the version.json file
+    fetch('./assets/versions.json')
+      .then(response => response.json())
+      .then(json => {
+        const firstVersion = json.versions[0]; // Get first item from versions array
+        document.getElementById("version").innerHTML = firstVersion.version;
+      })
+      .catch(error => {
+          console.error('Error fetching version:', error);
+          document.getElementById("version").innerHTML = "?.?.?";
+      });
+</script>
+
+</body>
+</html>

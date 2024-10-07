@@ -1,0 +1,12 @@
+{
+  "versions": [
+    {
+      "version": "1.24.10.Alexandra",
+      "changes": "<ul><li>Initial version of game rules, character creation information, and spells.</li></ul>"
+    },
+    {
+      "version": "1.24.10.Balasar",
+      "changes": "<ul><li>Added Subclasses.</li></ul>"
+    }
+  ]
+}

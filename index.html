@@ -1,14 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Intrepid Role Playing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intrepid Role-Playing</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="/assets/components.js" type="text/javascript" defer></script>
 </head>
 <body>
-<label id="version"></label>
+
+<!-- Header / Menu -->
+<header-component></header-component>
+
+<!-- Main content -->
+<main>
+    <h2>Intrepid Adventurer's Guide</h2>
+    <p>Prepare to embark on an enthralling expedition with the Intrepid Adventurer's Guide! This isn't just a reference manual—it's your indispensable companion as you traverse uncharted territories and face the challenges that await. Within these pages, you'll uncover the keys to crafting your own unique character and immerse yourself in epic quests using the Intrepid Role-Playing system. Get ready to unleash your imagination and dive headfirst into a world brimming with adventure and intrigue!</p>
+    <section>
+      <article>Create a Character</article>
+      <article>Playing the Game</article>
+      <article>Lineages</article>
+      <article>Heritages</article>
+      <article>Backgrounds</article>
+      <article>Classes</article>
+      <article>Talents</article>
+      <article>Spells</article>
+      <article>Equipment</article>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <span>Version: <span id="version">Loading...</span> | 
+    <a href="/license.html">Published under the ORC license</a>
+</footer>
+
 <script>
-    fetch('./assets/version.json')
-    .then((response) => response.json())
-    .then((json) => document.getElementById("version").innerHTML = json["version"]);
-  </script>
+    // Function to toggle the visibility of the menu in mobile view
+    function toggleMenu() {
+      var menu = document.getElementById('menu');
+      if (menu.classList.contains('open')) {
+        menu.classList.remove('open');
+      } else {
+        menu.classList.add('open');
+      }
+    }
+
+    // Fetch the version number from the version.json file
+    fetch('./assets/versions.json')
+      .then(response => response.json())
+      .then(json => {
+        const firstVersion = json.versions[0]; // Get first item from versions array
+        document.getElementById("version").innerHTML = firstVersion.version;
+      })
+      .catch(error => {
+        console.error('Error fetching version:', error);
+        document.getElementById("version").innerHTML = "?.?.?";
+      });
+</script>
+
 </body>
 </html>
