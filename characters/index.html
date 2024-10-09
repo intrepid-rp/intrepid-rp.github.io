@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intrepid Role-Playing</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="/assets/components.js" type="text/javascript" defer></script>
+</head>
+<body>
+
+<!-- Header / Menu -->
+<header-component></header-component>
+
+<!-- Main content -->
+<main>
+    <h2>Character Creation</h2>
+    <p></p>
+    
+    <h3>Step 1: Choose a Lineage</h3>
+    <p>Your character's lineage represents their inherited hereditary traits. For example, human, elf, and dwarf are common lineages in a fantasy setting.  A lineage includes the following aspects: Age, Size, Speed, and three physical traits.</p>
+    <p>Unless specifically noted in the lineage description, your character's base walking speed is 30 feet.</p>
+    <p><ul>You have a few options:
+      <li>Use an existing lineage from this guide. This is the quickest way to get started.</li>
+      <li>Create a mixed lineage by combining traits from more than one lineage. The resulting lineage must have only three traits. Remember to be fair and balanced-- your game master may not allow cherry-picking the strongest options.</li>
+      <li>Create your own lineage, compare it to existing lineages to ensure it's balanced, and see if your game master is happy with it.</li>
+    </ul></p>
+    
+    <h3>Step 2: Choose a Heritage</h3>
+    <p>Heritage represents your character's culture and community. Each heritage option includes specific abilities, proficiencies, and languages.</p>
+    <p><ul>You have a few options:
+      <li>Use an existing heritage from this guide. This is the quickest way to get started.</li>
+      <li>Create a mixed heritage by combining traits from more than one lineage. Remember to be fair and balanced. Your game master may not allow cherry-picking the strongest options.</li>
+      <li>Create your own heritage, compare it to existing heritages to ensure it's balanced, and see if your game master is happy with it.</li>
+    </ul></p>
+    
+    <h3>Step 3: Choose a Background</h3>
+    <p>Choose a background (or create your own) to represent your character's personal history.</p>
+    <p><ul>Each background includes:
+      <li>Two skill proficiencies</li>
+      <li>Two additional language or tool proficiencies</li>
+      <li>One talent</li>
+      <li>Equipment</li>
+    </ul></p>
+
+    <h3>Step 4: Choose a Class</h3>
+    <p>Your character's class determines type of role or job they fulfill as adventurers.</p>
+    <p><ul>Classes include the following elements:
+      <li>The size of your hit die</li>
+      <li>The number and type of spells you can cast (if applicable)</li>
+      <li>Skill proficiencies</li>
+      <li>Saving throw proficiencies</li>
+      <li>Starting equipment</li>
+      <li>Features and sub classes</li>
+    </ul></p>
+
+    <h3>Step 5: Determine Ability Modifiers</h3>
+    <p>Characters are defined by six abilities. Each ability is assigned a modifier that represents the character's mastery of that ability. Modifiers can increase as you level up to a maximum of 5.</p>
+    <p>These modifiers are referred to using their three-letter abbreviation throughout this guide.</p>
+    <table>
+      <tr><td>Strength (STR)</td><td>Fight, lift, smash, grapple, swim, climb.</td></tr>
+      <tr><td>Dexterity (DEX)</td><td>React quickly, aim, balance, dodge, sneak, hide.</td></tr>
+      <tr><td>Constitution (CON)</td><td>Endure injury, resist poison, hold breath, avoid exhaustion.</td></tr>
+      <tr><td>Intelligence (INT)</td><td>Recall information, examine clues, make deductions, understand how things work.</td></tr>
+      <tr><td>Wisdom (WIS)</td><td>Perceive your surroundings, read body language, control animals.</td></tr>
+      <tr><td>Charisma (CHA)</td><td>Interact socially, lie, deceive, entertain, persuade, intimidate.</td></tr>
+    </table>
+    
+    <div class="indent">
+      <p><h4>Method A: Standard Array</h4>
+        Use a standard array (-1, 0, 1, 2, 3, 3 ) and assign each modifier to whichever ability you want.
+      </p>
+      <p><h4>Method B: Standard Pool</h4>
+        <ul>Assign ability modifiers from a pool of 8 points:
+          <li>The sum of all modifiers must equal 8, and each modifier must be between -2 and 4.</li>
+          <li>For example: (1,1,1,1,2,2) and (-1,-1,0,2,4,4) are both valid.</li>
+        </ul>
+      </p>      
+      <p><h4>Method C: Rolling Dice (optional)</h4>
+        <ul>Optionally use this method if you enjoy rolling dice, don't mind the increased randomness, and your game master agrees:
+          <li>Roll two d4s and subtract 4 for each ability modifier. This will generate ability scores between -2 and 4.</li>
+          <li>Assign each modifier to whichever ability you want.</li>
+        </ul>
+      </p>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer>
+    <span>Version: <span id="version">Loading...</span> | 
+    <a href="/license.html">Published under the ORC license</a>
+</footer>
+
+<script>
+    // Function to toggle the visibility of the menu in mobile view
+    function toggleMenu() {
+      var menu = document.getElementById('menu');
+      if (menu.classList.contains('open')) {
+        menu.classList.remove('open');
+      } else {
+        menu.classList.add('open');
+      }
+    }
+
+    // Fetch the version number from the version.json file
+    fetch('/assets/versions.json')
+      .then(response => response.json())
+      .then(json => {
+        const firstVersion = json.versions[0]; // Get first item from versions array
+        document.getElementById("version").innerHTML = firstVersion.version;
+      })
+      .catch(error => {
+        console.error('Error fetching version:', error);
+        document.getElementById("version").innerHTML = "?.?.?";
+      });
+</script>
+
+</body>
+</html>

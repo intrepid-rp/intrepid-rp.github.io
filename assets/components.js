@@ -14,7 +14,7 @@ class Header extends HTMLElement {
 
       <!-- Navigation menu -->
       <nav id="menu">
-          <a href="/rules/characters/">Create a Character</a>
+          <a href="/characters">Character Creation</a>
           <a href="/rules">Playing the Game</a>
           <a href="/lineages">Lineages</a>
           <a href="/heritages">Heritages</a>
