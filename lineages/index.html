@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intrepid Role-Playing</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="/assets/components.js" type="text/javascript" defer></script>
+    <script>
+      function loadContent() {
+        const params = new URLSearchParams(window.location.search);
+        const lineage = params.get('lineage');
+
+        if (lineage) {
+          const fileName = `${lineage}.html`;
+
+          fetch(fileName)
+            .then(response => {
+              if (!response.ok) {
+                if (response.status === 404) {
+                  document.getElementById('nav-tiles').innerHTML = "Sorry, couldn't find that lineage.";
+                }
+                throw new Error('Network response was not ok');
+              }
+              return response.text();
+            })
+            .then(data => {
+              document.getElementById('nav-tiles').innerHTML = data;
+            })
+            .catch(error => {
+              console.error('Error loading content:', error);
+            });
+        }
+      }
+
+      window.onload = function () {
+        loadContent();
+      };
+    </script>
+</head>
+<body>
+
+<!-- Header / Menu-->
+<header-component></header-component>
+
+<!-- Main content -->
+<main>
+    <h2><a href="/lineages">Lineages</a></h2> 
+    <div id="nav-tiles">
+      <a href="/lineages/?lineage=beastkin" class="nav-tile"><h3>Beastkin</h3><img src="/assets/images/lineages/beastkin.jpg" /></a>
+      <a href="/lineages/?lineage=celestial" class="nav-tile"><h3>Celestial</h3><img src="/assets/images/lineages/celestial.jpg" /></a>
+      <a href="/lineages/?lineage=demon" class="nav-tile"><h3>Demon</h3><img src="/assets/images/lineages/demon.jpg" /></a>
+      <a href="/lineages/?lineage=dwarf" class="nav-tile"><h3>Dwarf</h3><img src="/assets/images/lineages/dwarf.jpg" /></a>
+      <a href="/lineages/?lineage=elf" class="nav-tile"><h3>Elf</h3><img src="/assets/images/lineages/elf.jpg" /></a>
+      <a href="/lineages/?lineage=gnome" class="nav-tile"><h3>Gnome</h3><img src="/assets/images/lineages/gnome.jpg" /></a>
+      <a href="/lineages/?lineage=goblin" class="nav-tile"><h3>Goblin</h3><img src="/assets/images/lineages/goblin.jpg" /></a>
+      <a href="/lineages/?lineage=halfling" class="nav-tile"><h3>Halfling</h3><img src="/assets/images/lineages/halfling.jpg" /></a>
+      <a href="/lineages/?lineage=jotunn" class="nav-tile"><h3>Jotunn</h3><img src="/assets/images/lineages/jotunn.jpg" /></a>
+      <a href="/lineages/?lineage=kitsune" class="nav-tile"><h3>Kitsune</h3><img src="/assets/images/lineages/kitsune.jpg" /></a>
+      <a href="/lineages/?lineage=kobold" class="nav-tile"><h3>Kobold</h3><img src="/assets/images/lineages/kobold.jpg" /></a>
+      <a href="/lineages/?lineage=machinari" class="nav-tile"><h3>Machinari</h3><img src="/assets/images/lineages/machinari.jpg" /></a>
+      <a href="/lineages/?lineage=ophidian" class="nav-tile"><h3>Ophidian</h3><img src="/assets/images/lineages/ophidian.jpg" /></a>
+      <a href="/lineages/?lineage=orc" class="nav-tile"><h3>Orc</h3><img src="/assets/images/lineages/orc.jpg" /></a>
+      <a href="/lineages/?lineage=tiefling" class="nav-tile"><h3>Tiefling</h3><img src="/assets/images/lineages/tiefling.jpg" /></a>
+      <a href="/lineages/?lineage=trollkin" class="nav-tile"><h3>Trollkin</h3><img src="/assets/images/lineages/trollkin.jpg" /></a>
+      <a href="/lineages/?lineage=undead" class="nav-tile"><h3>Undead</h3><img src="/assets/images/lineages/undead.jpg" /></a>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer>
+    Version: <span id="version">Loading...</span> | 
+    <a href="/license.html">Published under the ORC license</a>
+</footer>
+
+<script>
+  // Function to toggle the visibility of the menu in mobile view
+  function toggleMenu() {
+    var menu = document.getElementById('menu');
+    if (menu.classList.contains('open')) {
+      menu.classList.remove('open');
+    } else {
+      menu.classList.add('open');
+    }
+  }
+
+  // Fetch the version number from the version.json file
+  fetch('/assets/versions.json')
+    .then(response => response.json())
+    .then(json => {
+      const latestVersion = json.versions[0]; // Get first item from versions array
+      document.getElementById("version").innerHTML = latestVersion.version;
+    })
+    .catch(error => {
+      console.error('Error fetching version:', error);
+      document.getElementById("version").innerHTML = "?.?.?";
+    });
+</script>
+
+</body>
+</html>
