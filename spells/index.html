@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intrepid Role-Playing</title>
     <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
@@ -18,7 +19,40 @@
 
 <!-- Main content -->
 <main>
-    <h2>Spells</h2>
+    <h2>Spells <button type="button" class="collapsible active"><i class="fas fa-filter"></i></button></h2>
+    <div id="filters" class="content">
+      <div class="filter">
+        <h4>Source of Magic</h4>
+        <a href="/spells/?source=arcane">Arcane</a>&nbsp;|
+        <a href="/spells/?source=divine">Divine</a> |
+        <a href="/spells/?source=primordial">Primordial</a>&nbsp;|
+        <a href="/spells/?source=wyrd">Wyrd</a>
+      </div>
+      <div class="filter">
+        <h4>School of Magic</h4>
+        <a href="/spells/?school=abjuration">Abjuration</a>&nbsp;|
+        <a href="/spells/?school=conjuration">Conjuration</a>&nbsp;|
+        <a href="/spells/?school=divination">Divination</a>&nbsp;|
+        <a href="/spells/?school=enchantment">Enchantment</a>&nbsp;|
+        <a href="/spells/?school=evocation">Evocation</a>&nbsp;|
+        <a href="/spells/?school=illusion">Illusion</a>&nbsp;|
+        <a href="/spells/?school=necromancy">Necromancy</a>&nbsp;|
+        <a href="/spells/?school=transmutation">Transumation</a>
+      </div>
+      <div class="filter">
+        <h4>Spell Tier</h4>
+        <a href="/spells/?tier=cantrip">Cantrip</a>&nbsp;|
+        <a href="/spells/?tier=1st">1st</a>&nbsp;|
+        <a href="/spells/?tier=2nd">2nd</a>&nbsp;|
+        <a href="/spells/?tier=3rd">3rd</a>&nbsp;|
+        <a href="/spells/?tier=4th">4th</a>&nbsp;|
+        <a href="/spells/?tier=5th">5th</a>&nbsp;|
+        <a href="/spells/?tier=6th">6th</a>&nbsp;|
+        <a href="/spells/?tier=7th">7th</a>&nbsp;|
+        <a href="/spells/?tier=8th">8th</a>&nbsp;|
+        <a href="/spells/?tier=9th">9th</a>
+      </div>
+    </div>
     <div id="spells"></div>
 </main>
 
@@ -31,6 +65,25 @@
 <script src="spells.js"></script>
 
 <script>
+  //Toggle the filter visibility
+  document.querySelector(".collapsible").addEventListener("click", function() {
+    this.classList.toggle("active");
+    var filters = document.getElementById("filters");
+    if (filters.style.display === "flex" || filters.style.display === "") {
+      filters.style.display = "none";
+    } else {
+      filters.style.display = "flex";
+    }
+  });
+
+  //Hide the filters by default when you're showing one specific spell
+  window.onload = function() {
+    var queryString = window.location.search;
+    if (queryString.includes("id=")) {
+      document.getElementById("filters").style.display = "none";
+    }
+  };
+
   // Function to toggle the visibility of the menu in mobile view
   function toggleMenu() {
     var menu = document.getElementById('menu');

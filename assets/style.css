@@ -172,7 +172,7 @@ main {
 /* Footer styles */
 footer {
   background-color: var(--color-surface-a10);
-  color: white;
+  color: var(--color-primary-a60);
   font-size: .8rem;
   padding: 10px;
   text-align: center;
@@ -399,6 +399,29 @@ td{
   border-style: solid;
 }
 
+/* Filters */
+#filters
+{
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: var(--color-surface-a10);
+  vertical-align: top;
+  margin-top: 20px;
+  font-size: .8rem;
+}
+.filter{
+  padding: 15px;
+  margin-right: 15px;
+}
+@media (max-width: 768px) {
+  #filters {
+    font-size: .9rem;
+  }
+  .nav-tile{
+    width: 100%;
+  }
+}
+
 /* Spells */
 .spell{
   background-color: var(--color-surface-a20);
@@ -411,4 +434,24 @@ td{
 }
 .spell em{
   font-weight: 700;
+}
+
+/* Collapsible */
+button{
+  background-color: inherit;
+  color:inherit;
+  font-size: inherit;
+}
+.collapsible {
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.content {
+  padding: 0 10px;
+  display: flex;
+  overflow: hidden;
 }
