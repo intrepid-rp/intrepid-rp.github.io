@@ -29,11 +29,14 @@
               return response.text();
             })
             .then(data => {
-              document.getElementById('nav-tiles').innerHTML = data;
+              document.querySelector('main').innerHTML = data;
+              document.querySelector('main').style.display = "block";
             })
             .catch(error => {
               console.error('Error loading content:', error);
             });
+        } else {
+          document.querySelector('main').style.display = "block";
         }
       }
 
@@ -48,27 +51,27 @@
 <header-component></header-component>
 
 <!-- Main content -->
-<main>
-    <h2><a href="/lineages">Lineages</a></h2> 
-    <div id="nav-tiles">
-      <a href="/lineages/?lineage=beastkin" class="nav-tile"><h3>Beastkin</h3><img src="/assets/images/lineages/beastkin.jpg" /></a>
-      <a href="/lineages/?lineage=celestial" class="nav-tile"><h3>Celestial</h3><img src="/assets/images/lineages/celestial.jpg" /></a>
-      <a href="/lineages/?lineage=demon" class="nav-tile"><h3>Demon</h3><img src="/assets/images/lineages/demon.jpg" /></a>
-      <a href="/lineages/?lineage=dwarf" class="nav-tile"><h3>Dwarf</h3><img src="/assets/images/lineages/dwarf.jpg" /></a>
-      <a href="/lineages/?lineage=elf" class="nav-tile"><h3>Elf</h3><img src="/assets/images/lineages/elf.jpg" /></a>
-      <a href="/lineages/?lineage=gnome" class="nav-tile"><h3>Gnome</h3><img src="/assets/images/lineages/gnome.jpg" /></a>
-      <a href="/lineages/?lineage=goblin" class="nav-tile"><h3>Goblin</h3><img src="/assets/images/lineages/goblin.jpg" /></a>
-      <a href="/lineages/?lineage=halfling" class="nav-tile"><h3>Halfling</h3><img src="/assets/images/lineages/halfling.jpg" /></a>
-      <a href="/lineages/?lineage=jotunn" class="nav-tile"><h3>Jotunn</h3><img src="/assets/images/lineages/jotunn.jpg" /></a>
-      <a href="/lineages/?lineage=kitsune" class="nav-tile"><h3>Kitsune</h3><img src="/assets/images/lineages/kitsune.jpg" /></a>
-      <a href="/lineages/?lineage=kobold" class="nav-tile"><h3>Kobold</h3><img src="/assets/images/lineages/kobold.jpg" /></a>
-      <a href="/lineages/?lineage=machinari" class="nav-tile"><h3>Machinari</h3><img src="/assets/images/lineages/machinari.jpg" /></a>
-      <a href="/lineages/?lineage=ophidian" class="nav-tile"><h3>Ophidian</h3><img src="/assets/images/lineages/ophidian.jpg" /></a>
-      <a href="/lineages/?lineage=orc" class="nav-tile"><h3>Orc</h3><img src="/assets/images/lineages/orc.jpg" /></a>
-      <a href="/lineages/?lineage=tiefling" class="nav-tile"><h3>Tiefling</h3><img src="/assets/images/lineages/tiefling.jpg" /></a>
-      <a href="/lineages/?lineage=trollkin" class="nav-tile"><h3>Trollkin</h3><img src="/assets/images/lineages/trollkin.jpg" /></a>
-      <a href="/lineages/?lineage=undead" class="nav-tile"><h3>Undead</h3><img src="/assets/images/lineages/undead.jpg" /></a>
-    </div>
+<main style="display: none;">
+  <h2><a href="/lineages">Lineages</a></h2>
+  <div id="nav-tiles">
+    <a href="/lineages/?lineage=beastkin" class="nav-tile"><h3>Beastkin</h3><img src="/assets/images/lineages/beastkin.jpg" /></a>
+    <a href="/lineages/?lineage=celestial" class="nav-tile"><h3>Celestial</h3><img src="/assets/images/lineages/celestial.jpg" /></a>
+    <a href="/lineages/?lineage=demon" class="nav-tile"><h3>Demon</h3><img src="/assets/images/lineages/demon.jpg" /></a>
+    <a href="/lineages/?lineage=dwarf" class="nav-tile"><h3>Dwarf</h3><img src="/assets/images/lineages/dwarf.jpg" /></a>
+    <a href="/lineages/?lineage=elf" class="nav-tile"><h3>Elf</h3><img src="/assets/images/lineages/elf.jpg" /></a>
+    <a href="/lineages/?lineage=gnome" class="nav-tile"><h3>Gnome</h3><img src="/assets/images/lineages/gnome.jpg" /></a>
+    <a href="/lineages/?lineage=goblin" class="nav-tile"><h3>Goblin</h3><img src="/assets/images/lineages/goblin.jpg" /></a>
+    <a href="/lineages/?lineage=halfling" class="nav-tile"><h3>Halfling</h3><img src="/assets/images/lineages/halfling.jpg" /></a>
+    <a href="/lineages/?lineage=jotunn" class="nav-tile"><h3>Jotunn</h3><img src="/assets/images/lineages/jotunn.jpg" /></a>
+    <a href="/lineages/?lineage=kitsune" class="nav-tile"><h3>Kitsune</h3><img src="/assets/images/lineages/kitsune.jpg" /></a>
+    <a href="/lineages/?lineage=kobold" class="nav-tile"><h3>Kobold</h3><img src="/assets/images/lineages/kobold.jpg" /></a>
+    <a href="/lineages/?lineage=machinari" class="nav-tile"><h3>Machinari</h3><img src="/assets/images/lineages/machinari.jpg" /></a>
+    <a href="/lineages/?lineage=ophidian" class="nav-tile"><h3>Ophidian</h3><img src="/assets/images/lineages/ophidian.jpg" /></a>
+    <a href="/lineages/?lineage=orc" class="nav-tile"><h3>Orc</h3><img src="/assets/images/lineages/orc.jpg" /></a>
+    <a href="/lineages/?lineage=tiefling" class="nav-tile"><h3>Tiefling</h3><img src="/assets/images/lineages/tiefling.jpg" /></a>
+    <a href="/lineages/?lineage=trollkin" class="nav-tile"><h3>Trollkin</h3><img src="/assets/images/lineages/trollkin.jpg" /></a>
+    <a href="/lineages/?lineage=undead" class="nav-tile"><h3>Undead</h3><img src="/assets/images/lineages/undead.jpg" /></a>
+  </div>
 </main>
 
 <!-- Footer -->
