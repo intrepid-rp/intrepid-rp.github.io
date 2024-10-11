@@ -13,7 +13,7 @@
     <script>
       function loadContent() {
         const params = new URLSearchParams(window.location.search);
-        const lineage = params.get('id'); //Get the "id" query param. 
+        const lineage = params.get('id');//get the "id" query param.
 
         if (lineage) {
           const fileName = `${lineage}.html`;
@@ -22,7 +22,7 @@
             .then(response => {
               if (!response.ok) {
                 if (response.status === 404) {
-                  document.getElementById('nav-tiles').innerHTML = "Sorry, couldn't find that lineage.";
+                  document.getElementById('nav-tiles').innerHTML = "Sorry, couldn't find that heritage.";
                 }
                 throw new Error('Network response was not ok');
               }
@@ -52,25 +52,16 @@
 
 <!-- Main content -->
 <main style="display: none;">
-  <h2><a href="/lineages">Lineages</a></h2>
+  <h2><a href="/heritages">Heritages</a></h2>
   <div id="nav-tiles">
-    <a href="/lineages/?id=beastkin" class="nav-tile"><h3>Beastkin</h3><img src="/assets/images/lineages/beastkin.jpg" /></a>
-    <a href="/lineages/?id=celestial" class="nav-tile"><h3>Celestial</h3><img src="/assets/images/lineages/celestial.jpg" /></a>
-    <a href="/lineages/?id=demon" class="nav-tile"><h3>Demon</h3><img src="/assets/images/lineages/demon.jpg" /></a>
-    <a href="/lineages/?id=dwarf" class="nav-tile"><h3>Dwarf</h3><img src="/assets/images/lineages/dwarf.jpg" /></a>
-    <a href="/lineages/?id=elf" class="nav-tile"><h3>Elf</h3><img src="/assets/images/lineages/elf.jpg" /></a>
-    <a href="/lineages/?id=gnome" class="nav-tile"><h3>Gnome</h3><img src="/assets/images/lineages/gnome.jpg" /></a>
-    <a href="/lineages/?id=goblin" class="nav-tile"><h3>Goblin</h3><img src="/assets/images/lineages/goblin.jpg" /></a>
-    <a href="/lineages/?id=halfling" class="nav-tile"><h3>Halfling</h3><img src="/assets/images/lineages/halfling.jpg" /></a>
-    <a href="/lineages/?id=jotunn" class="nav-tile"><h3>Jotunn</h3><img src="/assets/images/lineages/jotunn.jpg" /></a>
-    <a href="/lineages/?id=kitsune" class="nav-tile"><h3>Kitsune</h3><img src="/assets/images/lineages/kitsune.jpg" /></a>
-    <a href="/lineages/?id=kobold" class="nav-tile"><h3>Kobold</h3><img src="/assets/images/lineages/kobold.jpg" /></a>
-    <a href="/lineages/?id=machinari" class="nav-tile"><h3>Machinari</h3><img src="/assets/images/lineages/machinari.jpg" /></a>
-    <a href="/lineages/?id=ophidian" class="nav-tile"><h3>Ophidian</h3><img src="/assets/images/lineages/ophidian.jpg" /></a>
-    <a href="/lineages/?id=orc" class="nav-tile"><h3>Orc</h3><img src="/assets/images/lineages/orc.jpg" /></a>
-    <a href="/lineages/?id=tiefling" class="nav-tile"><h3>Tiefling</h3><img src="/assets/images/lineages/tiefling.jpg" /></a>
-    <a href="/lineages/?id=trollkin" class="nav-tile"><h3>Trollkin</h3><img src="/assets/images/lineages/trollkin.jpg" /></a>
-    <a href="/lineages/?id=undead" class="nav-tile"><h3>Undead</h3><img src="/assets/images/lineages/undead.jpg" /></a>
+    <a href="/heritages/?id=cloud" class="nav-tile"><h3>Cloud</h3><img src="/assets/images/heritages/cloud.jpg" /></a>
+    <a href="/heritages/?id=cosmopolitan" class="nav-tile"><h3>Cosmopolitan</h3><img src="/assets/images/heritages/cosmopolitan.jpg" /></a>
+    <a href="/heritages/?id=fireforge" class="nav-tile"><h3>Fireforge</h3><img src="/assets/images/heritages/fireforge.jpg" /></a>
+    <a href="/heritages/?id=grove" class="nav-tile"><h3>Grove</h3><img src="/assets/images/heritages/grove.jpg" /></a>
+    <a href="/heritages/?id=nomadic" class="nav-tile"><h3>Nomadic</h3><img src="/assets/images/heritages/nomadic.jpg" /></a>
+    <a href="/heritages/?id=slayer" class="nav-tile"><h3>Slayer</h3><img src="/assets/images/heritages/slayer.jpg" /></a>
+    <a href="/heritages/?id=stone" class="nav-tile"><h3>Stone</h3><img src="/assets/images/heritages/stone.jpg" /></a>
+    <a href="/heritages/?id=wildlands" class="nav-tile"><h3>Wildlands</h3><img src="/assets/images/heritages/wildlands.jpg" /></a>
   </div>
 </main>
 
