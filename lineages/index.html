@@ -9,41 +9,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <script src="/assets/script.js" type="text/javascript"></script>
     <script src="/assets/components.js" type="text/javascript" defer></script>
-    <script>
-      function loadContent() {
-        const params = new URLSearchParams(window.location.search);
-        const lineage = params.get('id'); //Get the "id" query param. 
-
-        if (lineage) {
-          const fileName = `${lineage}.html`;
-
-          fetch(fileName)
-            .then(response => {
-              if (!response.ok) {
-                if (response.status === 404) {
-                  document.getElementById('nav-tiles').innerHTML = "Sorry, couldn't find that lineage.";
-                }
-                throw new Error('Network response was not ok');
-              }
-              return response.text();
-            })
-            .then(data => {
-              document.querySelector('main').innerHTML = data;
-              document.querySelector('main').style.display = "block";
-            })
-            .catch(error => {
-              console.error('Error loading content:', error);
-            });
-        } else {
-          document.querySelector('main').style.display = "block";
-        }
-      }
-
-      window.onload = function () {
-        loadContent();
-      };
-    </script>
 </head>
 <body>
 

@@ -457,14 +457,14 @@ button{
 }
 
 /* Lineages */
-.lineage img{
+.lineage img, .heritage img, .background img{
   float: left;
   width: 250px;
   margin-right: 30px;
   margin-bottom: 30px;
 }
 @media (max-width: 480px) {
-  .lineage img{
+  .lineage img, .heritage img, .background img{
     width:100%;
     margin-bottom: 15px;
   }
