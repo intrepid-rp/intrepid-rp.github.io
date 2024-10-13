@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intrepid Role-Playing</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="/assets/script.js" type="text/javascript"></script>
+    <script src="/assets/components.js" type="text/javascript" defer></script>
+</head>
+<body>
+
+<!-- Header / Menu-->
+<header-component></header-component>
+
+<!-- Main content -->
+<main style="display: none;">
+  <h2><a href="/classes">Character Classes</a></h2>
+  <div id="nav-tiles">
+    <a href="/classes/?id=arcanist" class="nav-tile"><h3>Arcanist</h3><img src="/assets/images/classes/arcanist.jpg" /></a>
+    <a href="/classes/?id=cleric" class="nav-tile"><h3>Cleric</h3><img src="/assets/images/classes/cleric.jpg" /></a>
+    <a href="/classes/?id=druid" class="nav-tile"><h3>Druid</h3><img src="/assets/images/classes/druid.jpg" /></a>
+    <a href="/classes/?id=fighter" class="nav-tile"><h3>Fighter</h3><img src="/assets/images/classes/fighter.jpg" /></a>
+    <a href="/classes/?id=monk" class="nav-tile"><h3>Monk</h3><img src="/assets/images/classes/monk.jpg" /></a>
+    <a href="/classes/?id=paladin" class="nav-tile"><h3>Paladin</h3><img src="/assets/images/classes/paladin.jpg" /></a>
+    <a href="/classes/?id=psion" class="nav-tile"><h3>Psion</h3><img src="/assets/images/classes/psion.jpg" /></a>
+    <a href="/classes/?id=ranger" class="nav-tile"><h3>Ranger</h3><img src="/assets/images/classes/ranger.jpg" /></a>
+    <a href="/classes/?id=rogue" class="nav-tile"><h3>Rogue</h3><img src="/assets/images/classes/rogue.jpg" /></a>
+    <a href="/classes/?id=sorcerer" class="nav-tile"><h3>Sorcerer</h3><img src="/assets/images/classes/sorcerer.jpg" /></a>
+    <a href="/classes/?id=witch" class="nav-tile"><h3>Witch</h3><img src="/assets/images/classes/witch.jpg" /></a>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer>
+    Version: <span id="version">Loading...</span> | 
+    <a href="/license.html">Published under the ORC license</a>
+</footer>
+
+<script>
+  // Function to toggle the visibility of the menu in mobile view
+  function toggleMenu() {
+    var menu = document.getElementById('menu');
+    if (menu.classList.contains('open')) {
+      menu.classList.remove('open');
+    } else {
+      menu.classList.add('open');
+    }
+  }
+
+  // Fetch the version number from the version.json file
+  fetch('/assets/versions.json')
+    .then(response => response.json())
+    .then(json => {
+      const latestVersion = json.versions[0]; // Get first item from versions array
+      document.getElementById("version").innerHTML = latestVersion.version;
+    })
+    .catch(error => {
+      console.error('Error fetching version:', error);
+      document.getElementById("version").innerHTML = "?.?.?";
+    });
+</script>
+
+</body>
+</html>
