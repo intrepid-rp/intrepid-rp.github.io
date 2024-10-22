@@ -419,6 +419,9 @@ td, th{
   padding: 15px;
   margin-right: 15px;
 }
+.filter h4 {
+  text-decoration: none;
+}
 @media (max-width: 768px) {
   #filters {
     font-size: .9rem;

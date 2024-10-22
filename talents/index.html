@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intrepid Role-Playing</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="/assets/components.js" type="text/javascript" defer></script>
+</head>
+<body>
+
+<!-- Header / Menu-->
+<header-component></header-component>
+
+<!-- Main content -->
+<main>
+  <div id="filters" class="content">
+    <div class="filter">
+      <a id="magical-talents" href="/talents/#magical-talents">Magical Talents</a>&nbsp;|
+      <a href="/talents/#martial-talents">Martial Talents</a>&nbsp;| 
+      <a href="/talents/#technical-talents">Technical Talents</a>
+    </div>
+  </div>
+  <p></p>
+  <h2>Magical Talents</h2>
+  <p></p>
+
+  <h3>Combat Casting</h3>
+  <em>Prerequisite: Ability to cast spells</em>
+  <p>Experience on the battlefield has given you superior focus to cast your spells. You gain the following benefits:</p>
+  <ul class="indent">
+    <li>You automatically succeed on CON saves to maintain your concentration on a spell if the DC is equal to or lower than a number equal to 8 + your PB (minimum DC 10).</li>
+    <li>When a hostile creature provokes an opportunity attack from you, you can use your reaction to cast a cantrip instead of making a melee attack.</li>
+    <li>You can use a shield or weapon you are holding as a spellcasting focus—as normal, you can use the same hand or hands holding this focus to perform somatic spell components.</li>
+  </ul>
+
+  <h3>Elemental Savant</h3>
+  <em>Prerequisite: Ability to Cast at Least One Damage-Dealing Spell</em>
+  <p>Choose one of the following elemental damage types: acid, cold, fire, lightning, or thunder. When you cast a spell that deals damage, you can convert the damage type of that spell to your chosen elemental damage type. You must decide to convert the damage type when you declare you are casting the spell.</p>
+  <p>Additionally, when you roll damage for a spell that naturally uses your chosen elemental damage type—not a spell you convert to your chosen type—you can reroll any damage dice results of 1. You must keep the new result.</p>
+  <p>You can select this talent multiple times, selecting a different damage type each time.</p>
+
+  <h3>Mental Fortitude</h3>
+  <p>Through rigorous mental exercise, you have fortified yourself against mind-altering effects. You gain the following benefits:</p>
+  <ul class="indent">
+    <li>Once per long rest when you fail an INT, WIS, or CHA save, you can choose to reroll the save and take the new result.</li>
+    <li>If an ongoing effect causes you to be charmed, frightened, or stunned due to failing a save, you can repeat the save at the end of each of your turns, ending the condition on a success—even if the effect would not typically allow you to do so.</li>
+  </ul>
+
+  <h3>Mental Prowess</h3>
+  <p>Your steadfast commitment to honing your mental capabilities has yielded results. Increase your CHA, INT, or WIS ability score by 1. You can't raise an ability score above 20 in this way.</p>
+  <p>You can select this talent multiple times.</p>
+
+  <h3>Ritualist</h3>
+  <em>Prerequisite: Ability to Cast Spells</em>
+  <p>Your study of magic has unlocked the mysteries of ritual spells. When you gain this talent, you also gain a ritual book, which contains the rituals you know. To cast a ritual spell, you must have your ritual book in hand.</p>
+  <p>Choose a category of magic: arcane or divine. You must choose your rituals from that category's ritual list. Regardless of which category you choose, you use your normal spellcasting ability for these spells.</p>
+  <p>When you gain your ritual book, add one ritual of each spell tier you have already unlocked via your spellcasting class. For example, a cleric who selects this talent at 4th level has spell slots for the 1st and 2nd tiers, so they would add one 1st-tier ritual and one 2nd-tier ritual to their book.</p>
+  <p>Each time you gain access to a new tier of spells by gaining a level in your spellcasting class, add one new ritual spell to your book. This new ritual must be from the same category of magic you originally chose, and it must be of a tier for which you have spell slots.</p>
+
+  <h3>School Specialization</h3>
+  <em>Prerequisite: Ability to Cast Spells</em>
+  <p>Choose one of the eight schools of magic: abjuration, conjuration, divination, enchantment, evocation, illusion, necromancy, or transmutation. You gain the following benefits:</p>
+  <ul class="indent">
+    <li>Whenever you cast a spell from your chosen school that requires you to make an attack roll, you add +1 to that roll.</li>
+    <li>Whenever you cast a spell from your chosen school that requires a target to make a save versus your spell save DC, the DC increases by 1.</li>
+    <li>If you use a spellbook to cast your spells, the gold and time you must spend copying a spell of that school into your spellbook is halved.</li>
+  </ul>
+  <p>You can select this talent multiple times, selecting a different school of magic each time.</p>
+
+  <hr id="martial-talents"/>
+
+  <h2>Martial Talents</h2>
+  <p></p>
+
+  <h3>Armored Combatant</h3>
+  <p>While you are wearing medium or heavy armor with which you are proficient, gain a +1 AC bonus. Furthermore, each instance of bludgeoning, piercing, and slashing damage you take is reduced by an amount equal to your PB.</p>
+
+  <h3>Artillerist</h3>
+  <em>Prerequisite: STR modifier of 2 or Higher</em>
+  <p>Extensive training has allowed you to master the use of complex ranged weapons. You gain the following benefits:</p>
+  <ul class="indent">
+    <li>You ignore the loading property of simple and martial weapons with which you are proficient.</li>
+    <li>You have advantage on attack rolls made with siege weapons or other Large sized or larger projectile‑launching objects you operate. Your GM has final say on whether or not an object falls into this category.</li>
+  </ul>
+
+  <h3>Combat Conditioning</h3>
+  <p>You have endured extensive training to withstand the rigors of combat, making you harder to cut down.</p>
+  <ul class="indent">
+    <li>Your hit point maximum increases by 2 for each level you had previous to gaining this talent (if applicable). Each time you gain a new level, your hit point maximum increases by 2 (including for the level that allowed you to take this talent, if applicable).</li>
+    <li>When you roll hit dice to recover hit points, you can ignore die rolls lower than your PB and instead treat those dice as if you rolled a number equal to your PB.</li>
+  </ul>
+
+  <h3>Hand to Hand</h3>
+  <p>You gain the following benefits:</p>
+  <ul class="indent">
+    <li>Your unarmed strikes deal bludgeoning damage equal to 1d4 + your STR—instead of the standard 1 + your STR.</li>
+    <li>You have advantage on ability checks made to initiate or escape a grapple.</li>
+  </ul>
+
+  <h3>Physical Fortitude</h3>
+  <p>You gain the following benefits:</p>
+  <ul class="indent">
+    <li>Once per long rest when you fail a STR or CON save you can reroll the save and take the new result.</li>
+    <li>If an ongoing effect causes you to be blinded, deafened, paralyzed, or poisoned due to failing a save, you can repeat the save at the end of each of your turns, ending the condition on a success—even if the effect would not typically allow you to do so.</li>
+  </ul>
+
+  <h3>Physical Prowess</h3>
+  <p>Increase your STR, DEX, or CON modifier score by 1. You can't raise an ability score above 5 in this way.</p>
+  <p>You can select this talent multiple times.</p>
+
+  <h3>Ranged Weapon Mastery</h3>
+  <p>You gain the following benefits:</p>
+  <ul class="indent">
+    <li>You don't have disadvantage on ranged weapon attack rolls made at long range.</li>
+    <li>You don't have disadvantage on ranged weapon attack rolls made while a hostile creature is within 5 feet of you.</li>
+    <li>Your ranged weapon attacks ignore half and three‑quarters cover.</li>
+  </ul>
+
+  <h3>Two Weapon Mastery</h3>
+  <p>You gain the following benefits:</p>
+  <ul class="indent">
+    <li>You have +1 to AC while wielding a different melee weapon in each hand.</li>
+    <li>You can use the bonus action attack granted by two weapon fighting even if the weapons you are wielding aren't light. Similarly, you are no longer restricted to the use of light weapons if you have the Quick Strike Martial Action.</li>
+    <li>You can now draw or stow two one-handed weapons in the same time it would normally take you to draw or stow a single weapon.</li>
+  </ul>
+  
+  <hr id="technical-talents"/>
+
+  <h2>Technical Talents</h2>
+  <p></p>
+
+  <h3>Aware</h3>
+  <p>You have exceptional situational awareness and gain the following benefits:</p>
+  <ul class="indent">
+    <li>When you roll for initiative, you can treat any d20 roll of 9 or lower as if you rolled a 10.</li>
+    <li>As long as you are conscious, you can't be affected by the surprised condition.</li>
+    <li>Hidden targets don't have advantage on attack rolls made against you.</li>
+  </ul>
+
+  <h3>Dungeoneer</h3>
+  <p>You've studied—or survived—your share of hazards and learned a thing or two about sniffing out secrets. You gain the following benefits:</p>
+  <ul class="indent">
+    <li>You have advantage on ability checks made to actively search for secret doors or traps.</li>
+    <li>Traveling at a fast pace doesn't impose the standard -5 penalty to your passive Perception score.</li>
+    <li>You have advantage on saves made to avoid or resist traps and hazards.</li>
+  </ul>
+
+  <h3>Field Medic</h3>
+  <p>You have studied first aid and can provide emergency medical assistance. You gain the following benefits:</p>
+  <ul class="indent">
+    <li>When you stabilize a dying creature using first aid, that creature regains 1 HP.</li>
+    <li>As an action, you can tend to the wounds of a creature you can see and touch. When you do, the creature recovers a number of hit points equal to twice their CON modifier. A creature healed in this way can't receive the benefits of this feature again until it completes a short or long rest.</li>
+  </ul>
+
+  <h3>Polyglot</h3>
+  <p>You have studied language extensively, allowing you to communicate in multiple languages and puzzle out critical information from languages you don't know. You gain the following benefits:</p>
+  <ul class="indent">
+    <li>Learn three languages of your choice.</li>
+    <li>When you converse with a creature in a language that you both know (other than Common) you gain advantage on a single CHA ability check made to influence or interact with that creature. Once you use this feature, you can't do so again until you complete a long rest.</li>
+    <li>When you make an ability check related to understanding the meaning of a verbal or written language you don't know, you can add your PB to the roll. If you have proficiency in a relevant skill or tool, double your PB for the roll.</li>
+  </ul>
+
+  <h3>Trade Skills</h3>
+  <p>You have honed the skills to perform a particular job or profession. Decide what that profession is and gain the following benefits:</p>
+  <ul class="indent">
+    <li>Gain proficiency with one skill related to your profession, plus one tool or vehicle. Alternatively, choose two different tools or types of vehicle.</li>
+    <li>When you make an ability check where the use of a tool and the use of a skill would both apply to the check, and you are proficient with both the tool and the skill, you can make the check with advantage. For example, a character proficient in the Nature skill and proficient with an herbalism kit would have advantage on an ability check made to identify a plant.</li>
+  </ul>
+  <p>You can select this talent multiple times, but you must choose a different profession each time.</p>
+
+  <h3>Touch of Luck</h3>
+  <p>Fortune's favor always makes its way back to you. You gain the following benefits:</p>
+  <ul class="indent">
+    <li>When you would gain 1 Luck point as a result of failing an attack roll or save, you instead gain 2 Luck points.</li>
+    <li>When you take a long rest, your luck points reset to 1 instead of 0.</li>
+  </ul>
+
+  <h3>Well-Rounded</h3>
+  <p>You are an individual of many interests, and chasing your latest fascination has yielded results. Increase any ability score of your choice by 1. You can't raise an ability modifier above 5 in this way.</p>
+  <p>You can select this talent multiple times, but you must choose a different ability each time.</p>
+  
+</main>
+
+<!-- Footer -->
+<footer>
+    Version: <span id="version">Loading...</span> | 
+    <a href="/license.html">Published under the ORC license</a>
+</footer>
+
+<script>
+  // Function to toggle the visibility of the menu in mobile view
+  function toggleMenu() {
+    var menu = document.getElementById('menu');
+    if (menu.classList.contains('open')) {
+      menu.classList.remove('open');
+    } else {
+      menu.classList.add('open');
+    }
+  }
+
+  // Fetch the version number from the version.json file
+  fetch('/assets/versions.json')
+    .then(response => response.json())
+    .then(json => {
+      const latestVersion = json.versions[0]; // Get first item from versions array
+      document.getElementById("version").innerHTML = latestVersion.version;
+    })
+    .catch(error => {
+      console.error('Error fetching version:', error);
+      document.getElementById("version").innerHTML = "?.?.?";
+    });
+</script>
+
+</body>
+</html>
