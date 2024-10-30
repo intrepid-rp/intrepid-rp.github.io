@@ -22,7 +22,7 @@ class Header extends HTMLElement {
           <a href="/classes">Classes</a>
           <a href="/talents">Talents</a>
           <a href="/spells">Spells</a>
-          <a href="/items">Equipment</a>
+          <a href="/equipment">Equipment</a>
       </nav>
     `;
   }

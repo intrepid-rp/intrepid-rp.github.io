@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intrepid Role-Playing</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="/assets/components.js" type="text/javascript" defer></script>
+</head>
+<body>
+  
+<!-- Header / Menu -->
+<header-component></header-component>
+
+<!-- Main content -->
+<main>
+  <div id="filters" class="content">
+    <div class="filter">
+      <a id="currency" href="/equipment/#currency">Currency</a>&nbsp;|
+      <a href="/equipment/#armor">Armor</a>&nbsp;| 
+      <a href="/equipment/#weapons">Weapons</a>&nbsp;|
+      <a href="/equipment/#gear">Adventuring&nbsp;Gear</a>&nbsp;|
+      <a href="/equipment/#tools">Tools</a>&nbsp;|
+      <a href="/equipment/#mounts">Mounts</a>&nbsp;|
+      <a href="/equipment/#services">Services</a>&nbsp;|
+      <a href="/equipment/#vehicles">Vehicles</a>
+    </div>
+  </div>
+  <p></p>
+  
+  <h2>Currency</h2>
+  <p>An average coin weighs less than half an ounce. A pouch of 50 coins weighs 1 pound.</p>
+  <h5>Currency Conversion</h5>
+  <table>
+    <thead><tr><th>Coin</th><th>CP</th><th>SP</th><th>GP</th><th>PP</th></tr></thead>
+    <tbody>
+      <tr><td>Copper (cp)</td><td>1</td><td>1/10</td><td>1/100</td><td>1/1000</td></tr>
+      <tr><td>Silver (sp)</td><td>10</td><td>1</td><td>1/10</td><td>1/100</td></tr>
+      <tr><td>Gold (gp)</td><td>100</td><td>10</td><td>1</td><td>1/10</td></tr>
+      <tr><td>Platinum (pp)</td><td>1,000</td><td>100</td><td>10</td><td>1</td></tr>
+    </tbody>
+  </table>
+
+  <hr id="armor"/>
+
+  <h2>Armor</h2><br/>
+
+  <h3>Calculating Armor Class</h3>
+  <p>Wearing armor increases your armor class (AC), which in turn increases your chance of avoiding enemy attacks. An enemy's attack roll total must meet or beat your AC to deal damage. So, the higher your AC, the greater your chance of avoiding damage!</p>
+  <p>A typical PC who isn't wearing armor has an AC of 10 + their DEX modifier.</p>
+  <p>When you wear armor, use the AC equation listed with the type of armor you are wearing instead of the typical 10 + DEX modifier equation. See the Armor table for an armor type's AC equation as well as specific bonuses or limitations it imposes when calculating AC.</p>
+  
+  <h3>Armor Types & Proficiencies</h3>
+  <p>Armor types are categorized into three weights: light, medium, or heavy. You need proficiency in a weight of armor to use it well. For instance, a character with proficiency in light armor can wear any type of armor listed as light armor without penalty.</p>
+  <p>Your character can wear any kind of armor, regardless of proficiency. However, if you don't have proficiency, you have disadvantage on all STR and DEX ability checks made while wearing it. You also can't cast spells while wearing armor you aren't proficient with.</p>
+
+  <h4>Light Armor</h4>
+  <p>Light armor provides minimal protection while still allowing its wearer to move with relative ease.</p>
+  <ul class="indent">
+    <li><strong>Padded</strong>. This full-body outfit consists of quilted layers of cloth and batting.</li>
+    <li><strong>Leather</strong>. The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.</li>
+    <li><strong>Studded Leather</strong>. Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.</li>
+    <li><strong>Brigandine</strong>. This knee-length coat is made of heavy cloth or canvas lined with small metal plates.</li>
+  </ul>
+  
+  <h4>Medium Armor</h4>
+  <p>Medium armor provides more protection than light armor, but it uses bulkier materials that interfere with range of motion.</p>
+  <ul class="indent">
+    <li><strong>Hide</strong>. This full-body suit of armor consists of thick furs and pelts.</li>
+    <li><strong>Chain Shirt</strong>. A chain shirt is made of interlocking metal rings that are worn between layers of clothing or leather. This armor protects the wearer's upper body and the outer layers muffle the sound of the rings rubbing against one another.</li>
+    <li><strong>Scale Mail</strong>. This armor consists of a coat and leggings (and perhaps a separate skirt) of leather covered with overlapping pieces of metal, much like the scales of a fish.</li>
+    <li><strong>Breastplate</strong>. This armor consists of a fitted metal chest lined with supple leather. This armor leaves limbs unprotected but provides good protection for vital organs and allows for easier movement than most medium armor.</li>
+    <li><strong>Half Plate</strong>. Half plate consists of shaped metal plates that cover most of the wearer's body. It doesn't include leg protection beyond greaves attached with leather straps.</li>
+  </ul>
+
+  <h4>Heavy Armor</h4>
+  <p>Heavy armor provides the most protection of any armor type, but wearing it demands great physical prowess.</p>
+  <ul class="indent">
+    <li><strong>Ring Mail</strong>. This leather armor has heavy rings sewn into it. The rings help reinforce the armor against attacks.</li>
+    <li><strong>Chain Mail</strong>. This is a head-to-toe suit of armor made of interlocking metal rings. Chain mail includes a layer of quilted fabric worn underneath the mail to prevent chafing and to cushion the impact of blows.</li>
+    <li><strong>Splint</strong>. This armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints.</li>
+    <li><strong>Plate</strong>. Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body.</li>
+  </ul>
+
+  <h4>Shields</h4>
+  <p>A shield is handheld armor that is wielded instead of worn. This means their AC bonus can be lost if the shield is destroyed or becomes disarmed. Wielding a shield requires the use of one hand, which means a PC can't use two-handed weapons while holding a shield. You can only benefit from one shield AC bonus at a time, even if you wield multiple shields.</p>
+  <ul class="indent">
+    <li><strong>Shield</strong>. This broad piece of wood and metal is held by a handle attached to one side.</li>
+  </ul>
+  
+  <h3>Getting Into and Out of Armor</h3>
+  <p>The time it takes to don (put on) or doff (take off) armor depends on the armor's weight.</p>
+  <ul class="indent">
+    <li><strong>Don</strong>. This is the time it takes to put on armor. You benefit from the armor's AC only if you take the full time to don the suit of armor.</li>
+    <li><strong> Doff</strong>. This is the time it takes to remove armor. If you have help, halve this time, except for shields, which take 1 action regardless of help.</li>
+  </ul>
+  <h4>Donning and Doffing Armor</h4>
+  <table>
+    <thead><tr><th>Category</th><th>Don</th><th>Doff</th></tr></thead>
+    <tbody>
+      <tr><td>Light Armor</td><td>1 minute</td><td>1 minute</td></tr>
+      <tr><td>Medium Armor</td><td>5 minutes</td><td>1 minute</td></tr>
+      <tr><td>Heavy Armor</td><td>10 minute</td><td>5 minutes</td></tr>
+      <tr><td>Shield</td><td>1 bonus action</td><td>1 bonus action</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Armor Properties</h3>
+  <p>Many sets of armor have properties that affect their use, as shown in the Properties column of the Armor table.</p>
+  <ul class="indent">
+    <li><strong>Cumbersome</strong>. This armor is heavy and difficult to move in unless you have the required STR score. If your STR score doesn't equal or exceed the STR score listed in parentheses, your movement speed is reduced by 10 feet while you wear the armor, even if you're proficient with it.</li>
+    <li><strong>Noisy</strong>. This armor imposes disadvantage on any ability checks made to avoid notice, like sneaking, hiding, or otherwise attempting to move silently.</li>
+  </ul>
+  
+  <table>
+    <thead><tr><th>Armor</th><th>Cost</th><th>Armor Class (AC)</th><th>Weight</th><th>Properties</th></tr></thead>
+    <tbody>
+      <tr><th colspan="5">Light Armor</th></tr>
+      <tr><td>Padded</td><td>5 gp</td><td>11 + DEX modifier</td><td>8 lb.</td><td>-</td></tr>
+      <tr><td>Leather</td><td>10 gp</td><td>11 + DEX modifier</td><td>10 lb.</td><td>-</td></tr>
+      <tr><td>Studded Leather</td><td>45 gp</td><td>12 + DEX modifier</td><td>13 lb.</td><td>-</td></tr>
+      <tr><td>Brigandine</td><td>50 gp</td><td>13 + DEX modifier</td><td>25 lb.</td><td>Noisy</td></tr>
+      <tr><th colspan="5">Medium Armor</th></tr>
+      <tr><td>Hide</td><td>10 gp</td><td>12 + DEX modifier (max 2)</td><td>12 lb.</td><td>-</td></tr>
+      <tr><td>Chain Shirt</td><td>50 gp</td><td>13 + DEX modifier (max 2)</td><td>20 lb.</td><td>-</td></tr>
+      <tr><td>Scale Mail</td><td>50 gp</td><td>14 + DEX modifier (max 2)</td><td>45 lb.</td><td>Noisy</td></tr>
+      <tr><td>Breastplate</td><td>400 gp</td><td>14 + DEX modifier (max 2)</td><td>20 lb.</td><td>-</td></tr>
+      <tr><td>Half Plate</td><td>750 gp</td><td>15 + DEX modifier (max 2)</td><td>40 lb.</td><td>Noisy</td></tr>
+      <tr><th colspan="5">Heavy Armor</th></tr>
+      <tr><td>Ring Mail</td><td>30 gp</td><td>15</td><td>40 lb.</td><td>Noisy</td></tr>
+      <tr><td>Chain Mail</td><td>75 gp</td><td>16</td><td>55 lb.</td><td>Cumbersome (STR 13), Noisy</td></tr>
+      <tr><td>Splint</td><td>200 gp</td><td>17</td><td>60 lb.</td><td>Cumbersome (STR 15), Noisy</td></tr>
+      <tr><td>Plate</td><td>1,500 gp</td><td>18</td><td>65 lb.</td><td>Cumbersome (STR 16), Noisy</td></tr>
+      <tr><th colspan="5">Shield</th></tr>
+      <tr><td>Shield</td><td>10 gp</td><td>+2</td><td>6 lb.</td><td>-</td></tr>
+    </tbody>
+  </table>
+
+  <hr id="weapons"/>
+
+  <h2>Weapons</h2><br/>
+
+  <h3>Weapon Types & Proficiencies</h3>
+  <p>Any character can wield any weapon, but only a character with proficiency can add their PB to attack rolls with those weapons.</p>
+  <h4>Melee Weapons</h4>
+  <p>Melee weapons are used to attack nearby targets within reach. Unless the weapon has the Reach property, melee weapons have a reach of 5 feet.</p>
+  <h4>Ranged Weapons</h4>
+  <p>Ranged weapons are used to attack targets at a distance.</p>
+  <h4>Simple Weapons</h4>
+  <p>Simple weapons require little experience to use effectively.</p>
+  <h4>Martial Weapons</h4>
+  <p>Martial weapons, including swords, axes, and polearms, require training to use effectively.</p>
+
+  <h3>Improvised Weapons</h3>
+  <p>When in doubt about how much damage an object should deal, find a weapon on the Weapons table most like the object and use its damage die. For example, a table leg is a lot like a club. At the GM's discretion, a character proficient with a weapon can use a similar object as if it were that weapon and add their PB as normal.</p>
+  <p>If a character uses a ranged weapon to make a melee attack or throws a melee weapon that doesn't have the Thrown property, those are improvised weapons, and typically deal 1d4 damage of an appropriate damage type.</p>
+  <p>An improvised thrown weapon typically has range of 20 feet and a long range of 60 feet.</p>
+  
+  <h3>Weapon Options</h3>
+  <p>This section offers options for using weapons in ways other than dealing damage. The Weapon Option column on the Weapons table shows which weapons can be used to perform which weapon options. A character can use a weapon option only if the character is wielding and is proficient with an appropriate weapon.</p>
+  <p class="indent"><em>Weapon Option Saves</em>. If an option requires a creature to make an ability check or save, the DC equals 8 + the attacker's PB + the attacker's STR or DEX modifier (attacker's choice).</p>
+  <p>Unless specified otherwise, a weapon attack used to perform a weapon option has only the option's listed effect and doesn't deal normal weapon damage. Weapon options can be used only when a wielder takes the Attack action on their turn, unless a feature like the fighter's Martial Action allows a weapon option attack to be performed as a bonus action. Characters with the Multiattack feature can perform a weapon option in place of one of the attacks granted by Multiattack.</p>
+  <p>At the GM's discretion, some weapon options might not work against certain creatures. For example, the trip weapon option might not work against a creature without discernable legs, such as an ooze, or that is anchored or attached to the ground in some way, such as a tree with animated limbs.</p>
+  <h4>Bash</h4>
+  <p>Make an attack roll with this weapon. On a hit, the target has disadvantage on its next attack roll.</p>
+  <h4>Disarm</h4>
+  <p>Make an attack roll with this weapon. On a hit, the target must succeed on a STR or DEX save (target's choice) or drop a weapon, shield, or object it is wielding. The dropped item lands in an unoccupied space within 5 feet of the target. If no unoccupied space is within range, the item lands at the target's feet.</p>
+  <h4>Hamstring</h4>
+  <p>Make an attack roll with this weapon. On a hit, the target's base movement speed is reduced by 10 feet for 1 minute. A creature's speed can't be reduced by more than 10 feet with this weapon option. A creature within 5 feet of the target can take an action to tend the wound with a successful WIS (Medicine) check (against your weapon option DC), ending the effect on the target. The effect also ends if the target receives any magical healing.</p>
+  <h4>Pinning Shot</h4>
+  <p>Make an attack roll with this weapon against a Large or smaller creature. On a hit, the target must succeed on a STR or DEX save (target's choice) or its speed becomes 0 feet until the end of its next turn. A creature, including the target, can use its action to attempt to free the target with a STR (Athletics) check or a DEX (Acrobatics) check (the creature's choice) versus the attacker's weapon option DC. On a success, the target is freed and can move as normal. A target must make only one check to free itself, using the highest DC of characters performing this weapon option, regardless of the number of arrows or bolts holding it in place.</p>
+  <h4>Pull</h4>
+  <p>Make an attack roll with this weapon against a Large or smaller creature. On a hit, the target is pulled up to 5 feet closer to you. If this movement would pull a creature into damaging terrain, such as lava or a pit, it can make a STR or DEX (target's choice) save to avoid the pull on a success.</p>
+  <h4>Ricochet Shot</h4>
+  <p>Make an attack roll with this weapon against a target you can see that has half or three-quarters cover. Your chosen target must be within 10 feet of another object or structure that isn't the same item providing it with cover. When you do so, you can treat the target's AC as if it wasn't behind cover. If the attack is successful, the target takes damage from the attack as it would with a standard weapon attack. This weapon option expends the same ammunition as a normal attack with this weapon.</p>
+  <h4>Trip</h4>
+  <p>Make an attack roll with this weapon against a Large or smaller creature. On a hit, the target must succeed on a STR or DEX save (target's choice) or fall prone. If the target is mounted, it has advantage on the save.</p>
+
+  <h3>Weapon Properties</h3>
+  <p>Many weapons have special properties that affect their use, as shown in the Properties column of the Weapons table.</p>
+  <h4>Ammunition</h4>
+  <p>You can use a weapon that has the Ammunition property to make a ranged attack only if you have ammunition to fire from it. Each time you attack with the weapon, you expend one piece of ammunition.</p>
+  <p>You need a free hand to load a one-handed weapon, and drawing the ammunition from a quiver, case, or other container is part of the attack. At the end of an encounter, you can recover half your expended ammunition by taking 1 minute to search the battlefield.</p>
+  <p>If you use a weapon with the Ammunition property to make a melee attack, treat it as an improvised weapon. A sling must be loaded to deal damage when used as an improvised weapon.</p>
+  <h4>Finesse</h4>
+  <p>When making an attack with a Finesse weapon, use your choice of your STR or DEX modifier for the attack and damage rolls. You must use the same modifier for both rolls.</p>
+  <h4>Heavy</h4>
+  <p>Small creatures have disadvantage on attack rolls with Heavy weapons. Tiny creatures can't wield Heavy weapons.</p>
+  <h4>Light</h4>
+  <p>A Light weapon is needed for use with two-weapon fighting.</p>
+  <h4>Loading</h4>
+  <p>Because of the time required to load this weapon, you can fire only one piece of ammunition from it when you use an action, bonus action, or reaction to fire it, regardless of the number of attacks you can normally make.</p>
+  <h4>Range</h4>
+  <p>A weapon that can be used to make a ranged attack has a range in parentheses after the Ammunition or Thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second indicates the weapon's long range. When attacking a target beyond normal range and up to its long range, you have disadvantage on the attack roll. You can't attack a target beyond the weapon's long range.</p>
+  <h4>Reach</h4>
+  <p>This weapon adds 5 feet to your reach when you make melee attacks with it, as well as when determining your reach for opportunity attacks with it.</p>
+  <h4>Special (Lance)</h4>
+  <p>You have disadvantage when you use a lance to attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren't mounted.</p>
+  <h4>Thrown</h4>
+  <p>You can throw a weapon with the Thrown property to make a ranged attack. If the weapon can also be a melee weapon, use the same ability modifier for that attack roll and damage roll that you would use for a melee attack with the weapon. For example, if you throw a handaxe or javelin, use your STR modifier, but if you throw a dagger, you can use either your STR or DEX modifier, since the dagger has the Finesse property.</p>
+  <h4>Two-Handed</h4>
+  <p>This weapon requires you to use two hands when you attack with it.</p>
+  <h4>Versatile</h4>
+  <p>This weapon can be used with one or two hands. These weapons have two damage values listed. The higher damage value is used when you use two hands to make a melee weapon attack.</p>
+
+  <table>
+    <thead><tr><th>Weapon</th><th>Cost</th><th>Damage</th><th>Weight</th><th>Weapon Option</th><th>Properties</th></tr></thead>
+    <tbody>
+      <tr><th colspan="6">Simple Melee Weapons</th></tr>
+      <tr><td>Club</td><td>1 sp</td><td>1d4 bludgeoning</td><td>2 lb.</td><td>Bash</td><td>Light</td></tr>
+      <tr><td>Dagger</td><td>2 gp</td><td>1d4 piercing</td><td>1 lb.</td><td>Pinning Shot</td><td>Finesse, Light, Thrown (range 20/60 ft.)</td></tr>
+      <tr><td>Greatclub</td><td>2 sp</td><td>1d8 bludgeoning</td><td>10 lb.</td><td>Bash</td><td>Two-handed</td></tr>
+      <tr><td>Handaxe</td><td>5 gp</td><td>1d6 slashing</td><td>2 lb.</td><td>Hamstring</td><td>Light, Thrown (range 20/60 ft.)</td></tr>
+      <tr><td>Javelin</td><td>5 sp</td><td>1d6 piercing</td><td>2 lb.</td><td>Pinning Shot</td><td>Thrown (range 30/120 ft.)</td></tr>
+      <tr><td>Light hammer</td><td>2 sp</td><td>1d4 bludgeoning</td><td>2 lb.</td><td>Bash</td><td>Light, Thrown (range 20/60 ft.)</td></tr>
+      <tr><td>Mace</td><td>5 gp</td><td>1d6 bludgeoning</td><td>4 lb.</td><td>Bash</td><td>-</td></tr>
+      <tr><td>Quarterstaff</td><td>2 sp</td><td>1d6/1d8 bludgeoning</td><td>4 lb.</td><td>Bash</td><td>Versatile</td></tr>
+      <tr><td>Sickle</td><td>1 gp</td><td>1d4 slashing</td><td>2 lb.</td><td>Hamstring</td><td>Light</td></tr>
+      <tr><td>Spear</td><td>1 gp</td><td>1d6/1d8 piercing</td><td>3 lb.</td><td>Pull, Trip</td><td>Thrown (range 20/60 ft.), Versatile</td></tr>
+
+      <tr><th colspan="6">Simple Ranged Weapons</th></tr>
+      <tr><td>Crossbow, light</td><td>25 gp</td><td>1d8 piercing</td><td>5 lb.</td><td>-</td><td>Ammunition (range 80/320 ft.), Loading, Two-handed</td></tr>
+      <tr><td>Dart</td><td>5 cp</td><td>1d4 piercing</td><td>1/4 lb.</td><td>-</td><td>Finesse, Thrown (range 20/60 ft.)</td></tr>
+      <tr><td>Shortbow</td><td>25 gp</td><td>1d6 piercing</td><td>2 lb.</td><td>-</td><td>Ammunition (range 80/320 ft.), Two-handed</td></tr>
+      <tr><td>Sling</td><td>1 sp</td><td>1d4 bludgeoning</td><td>-</td><td>Ricochet Shot</td><td>Ammunition (range 30/120 ft.)</td></tr>
+
+      <tr><th colspan="6">Martial Melee Weapons</th></tr>
+      <tr><td>Battleaxe</td><td>10 gp</td><td>1d8/1d10 slashing</td><td>4 lb.</td><td>Disarm, Hamstring</td><td>Versatile</td></tr>
+      <tr><td>Flail</td><td>10 gp</td><td>1d8 bludgeoning</td><td>2 lb.</td><td>Bash, Disarm</td><td>-</td></tr>
+      <tr><td>Glaive</td><td>20 gp</td><td>1d10 slashing</td><td>6 lb.</td><td>Trip</td><td>Heavy, Reach, Two-handed</td></tr>
+      <tr><td>Greataxe</td><td>30 gp</td><td>1d12 slashing</td><td>7 lb.</td><td>Disarm, Hamstring</td><td>Heavy, Two-handed</td></tr>
+      <tr><td>Greatsword</td><td>50 gp</td><td>2d6 slashing</td><td>6 lb.</td><td>Disarm, Hamstring</td><td>Heavy, Two-handed</td></tr>
+      <tr><td>Halberd</td><td>20 gp</td><td>1d10 slashing</td><td>6 lb.</td><td>Trip</td><td>Heavy, Reach, Two-handed</td></tr>
+      <tr><td>Lance</td><td>10 gp</td><td>1d12 piercing</td><td>6 lb.</td><td>-</td><td>Reach, Special</td></tr>
+      <tr><td>Longsword</td><td>15 gp</td><td>1d8/1d10 slashing</td><td>3 lb.</td><td>Disarm, Hamstring</td><td>Versatile</td></tr>
+      <tr><td>Maul</td><td>10 gp</td><td>2d6 bludgeoning</td><td>10 lb.</td><td>Bash, Disarm</td><td>Heavy, Two-handed</td></tr>
+      <tr><td>Morningstar</td><td>15 gp</td><td>1d8 piercing</td><td>4 lb.</td><td>Disarm</td><td>-</td></tr>
+      <tr><td>Pike</td><td>5 gp</td><td>1d10 piercing</td><td>18 lb.</td><td>Trip</td><td>Heavy, Reach, Two-handed</td></tr>
+      <tr><td>Rapier</td><td>25 gp</td><td>1d8 piercing</td><td>2 lb.</td><td>Disarm</td><td>Finesse</td></tr>
+      <tr><td>Scimitar</td><td>25 gp</td><td>1d6 slashing</td><td>3 lb.</td><td>Hamstring</td><td>Finesse, Light</td></tr>
+      <tr><td>Scythe</td><td>20 gp</td><td>2d4 slashing</td><td>4 lb.</td><td>Pull, Trip</td><td>Reach, Two-handed</td></tr>
+      <tr><td>Shortsword</td><td>10 gp</td><td>1d6 piercing</td><td>2 lb.</td><td>Disarm</td><td>Finesse, Light</td></tr>
+      <tr><td>Trident</td><td>5 gp</td><td>1d6/1d8 piercing</td><td>4 lb.</td><td>Disarm</td><td>Thrown (range 20/60 ft.), Versatile</td></tr>
+      <tr><td>War pick</td><td>5 gp</td><td>1d8 piercing</td><td>2 lb.</td><td>Disarm</td><td>-</td></tr>
+      <tr><td>Warhammer</td><td>15 gp</td><td>1d8/1d10 bludgeoning</td><td>2 lb.</td><td>Bash, Disarm</td><td>Versatile</td></tr>
+      <tr><td>Whip</td><td>2 gp</td><td>1d4 slashing</td><td>3 lb.</td><td>Pull, Trip</td><td>Finesse, Reach</td></tr>
+
+
+      <tr><th colspan="6">Martial Ranged Weapons</th></tr>
+      <tr><td>Blowgun</td><td>10 gp</td><td>1 piercing</td><td>1 lb.</td><td>-</td><td>Ammunition (range 25/100 ft.), Loading</td></tr>
+      <tr><td>Crossbow, hand</td><td>75 gp</td><td>1d6 piercing</td><td>3 lb.</td><td>Pinning Shot</td><td>Ammunition (range 30/120 ft.), Light, Loading</td></tr>
+      <tr><td>Crossbow, heavy</td><td>50 gp</td><td>1d10 piercing</td><td>18 lb.</td><td>Pinning Shot</td><td>Ammunition (range 100/400 ft.), Heavy, Loading, Two-handed</td></tr>
+      <tr><td>Longbow</td><td>50 gp</td><td>1d8 piercing</td><td>2 lb.</td><td>Pinning Shot</td><td>Ammunition (range 150/600 ft.), Heavy, Two-handed</td></tr>
+
+    </tbody>
+  </table>
+
+  <hr id="gear"/>
+
+  <h2>Adventuring Gear</h2>
+  <h4>Acid</h4><p>As an action, you can splash the contents of this vial onto a creature within 5 feet of you or throw the vial up to 20 feet, shattering it on impact. In either case, make a ranged attack against a creature or object, treating the acid as an improvised weapon. On a hit, the target takes 2d6 acid damage.</p>
+  <h4>Alchemist's Fire</h4>
+  <p>This sticky, adhesive fluid ignites when exposed to air. As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged attack against a creature or object, treating the alchemist's fire as an improvised weapon. On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 DEX (Sleight of Hand) check to extinguish the flames.</p>
+  <h4>Antitoxin</h4>
+  <p>A creature that drinks this vial of liquid gains advantage on saves against poison for 1 hour. It confers no benefit to Undead or Constructs.</p>
+  <h4>Arcane Focus</h4>
+  <p>This item can be used as a spellcasting focus to channel Arcane spells. Examples include an orb, a crystal, a rod, a specially made staff, or a wooden wand.</p>
+  <h4>Ball Bearings</h4>
+  <p>As an action, you can spill these tiny metal balls from their pouch to cover a level, square area, 10 feet on a side. A creature moving in this area must succeed on a DC 10 DEX save or fall prone. A creature moving in the area at half speed doesn't need to make the save.</p>
+  <h4>Block and Tackle</h4>
+  <p>This is a set of pulleys with a cable threaded through them and a hook to attach to items. A block and tackle allows you to hoist up to four times the weight you can normally lift.</p>
+  <h4>Book</h4>
+  <p>A book might contain poetry, historical accounts, information pertaining to a field of lore, diagrams, notes on contraptions, or just about anything that can be represented using text or pictures. A spellbook is a separate item described later in this section.</p>
+  <h4>Caltrops</h4>
+  <p>As an action, you can spread a bag of caltrops to cover a 5-foot-square area. A Large or smaller creature that enters the area must succeed on a DC 15 DEX save or stop moving this turn and take 1 piercing damage. Taking this damage reduces the creature's walking speed by 10 feet until the creature regains at least 1 hit point. A creature moving through the area at half speed doesn't need to make the save.</p>
+  <h4>Candle</h4>
+  <p>For 1 hour, a candle sheds bright light in a 5-foot radius and dim light for an additional 5 feet.</p>
+  <h4>Case, Map or Scroll</h4>
+  <p>This cylindrical leather case can hold up to ten rolled-up sheets of paper.</p>
+  <h4>Chain</h4>
+  <p>A chain is an object that has AC 20 and 10 HP. It can be broken as an action with a successful DC 20 STR (Athletics) check.</p>
+  <h4>Climber's Kit</h4>
+  <p>A climber's kit includes special pitons, boot tips, gloves, and a harness. You can use the climber's kit as an action to anchor yourself to a solid surface within 5 feet of you (this surface can't be part of a creature); when you do, you can't fall more than 25 feet from your anchor point, and you can't climb more than 25 feet away from that point without undoing the anchor.</p>
+  <h4>Component Pouch</h4>
+  <p>A component pouch is a small, watertight leather belt pouch that has compartments to hold all the material components and other special items you need to cast your spells, except for those material components that have a listed gp cost (as indicated in a spell's description).</p>
+  <h4>Crowbar</h4>
+  <p>Using a crowbar grants advantage to STR checks where the crowbar's leverage can be applied.</p>
+  <h4>Fishing Tackle</h4>
+  <p>This kit includes a wooden rod, silken line, corkwood bobbers, iron hooks, lead sinkers, velvet lures, and netting.</p>
+  <h4>Healer's Kit</h4>
+  <p>This kit is a leather pouch containing bandages, salves, and splints. The kit has 10 uses. As an action, you can expend one use of the kit to stabilize a creature that has 0 HP without needing to make a WIS (Medicine) check.</p>
+  <h4>Holy Symbol</h4>
+  <p>This item can be used as a spellcasting focus to channel Divine spells. Examples include an amulet depicting a deity's symbol, that same symbol engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic.</p>
+  <h4>Holy Water</h4>
+  <p>As an action, you can splash the contents of this flask onto a creature within 5 feet of you or throw the flask up to 20 feet, shattering it on impact. In either case, make a ranged attack against a target creature, treating the holy water as an improvised weapon. If the target is a Fiend or Undead, it takes 2d6 radiant damage-otherwise, the water has no effect.</p>
+  <p>A creature that can cast at least one 1st-circle Divine spell can create holy water by performing a special ritual. The ritual takes 1 hour to perform, uses 25 gp worth of powdered silver, and requires the caster to expend a 1st-circle spell slot.</p>
+  <h4>Hunting Trap, Basic</h4>
+  <p>As an action, you can set a trap in an unoccupied space within 5 feet of you. When set, this trap forms a saw-toothed steel ring that snaps shut when a creature steps on a pressure plate in the center. A Large or smaller creature that enters the trap's space must succeed on a DC 13 DEX save or take 1d4 piercing damage and become grappled until freed. A creature can use its action to make a DC 13 STR (Athletics) check, freeing itself or another creature within its reach on a success. Each failed check deals 1 piercing damage to the trapped creature.</p>
+  <h4>Lamp</h4>
+  <p>While lit, a lamp casts bright light in a 15-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil.</p>
+  <h4>Lantern, Bullseye</h4>
+  <p>While lit, a bullseye lantern casts bright light in a 60-foot cone and dim light for an additional 60 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil.</p>
+  <h4>Lantern, Hooded</h4>
+  <p>While lit, a hooded lantern casts bright light in a 30-foot radius and dim light for an additional 30 feet. Once lit, it burns for 6 hours on a flask (1 pint) of oil. As an action, you can lower the hood, reducing the light to dim light in a 5-foot radius.</p>
+  <h4>Lock</h4>
+  <p>A key is provided with the lock. Without the key, a creature proficient with thieves' tools can pick this lock with a successful DC 15 DEX (Thieves' Tools) check. Your GM can decide that better locks are available for higher prices.</p>
+  
+  <h4>Magnifying Glass</h4>
+  <p>This lens allows a closer look at small items. It is also useful as a substitute for flint and steel when starting fires. Lighting a fire with a magnifying glass requires sunlight to focus, tinder to light, and about 5 minutes for the fire to ignite. A magnifying glass grants advantage on any ability check made to appraise or inspect an item that is small or highly detailed.</p>
+  <h4>Manacles</h4>
+  <p>These metal restraints can bind a Small or Medium creature. To escape the manacles, a creature must use their action to make a successful DC 20 DEX (Sleight of Hand) check or break them with a successful DC 20 STR (Athletics) check. Each set of manacles comes with one key. Without the key, a creature proficient with thieves' tools can pick the manacles' lock with a successful DC 15 DEX (Thieves' Tools) check. Manacles are an object that has AC 19 and 15 HP.</p>
+  <h4>Mess Kit</h4>
+  <p>This tin box contains a cup and simple cutlery. The box clamps together; one side can be used as a cooking pan and the other as a plate or shallow bowl.</p>
+  <h4>Net</h4>
+  <p>As an action, you can throw a net at a Large or smaller creature within 15 feet of you. The net has no effect on creatures that are formless or incorporeal (like ghosts). Make a ranged attack against the creature, treating the net as an improvised weapon. On a hit, the target is restrained until it is freed. A creature can use its action to make a DC 10 STR (Athletics) check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net.</p>
+  <h4>Oil</h4>
+  <p>Oil usually comes in a clay flask that holds 1 pint. As an action, you can splash oil onto a creature within 5 feet of you or throw the flask up to 20 feet, shattering on impact. Make a ranged attack against a target creature or object, treating the oil as an improvised weapon. On a hit, the target is covered in oil. If the target takes any fire damage before the oil dries (after 1 minute), the target takes an additional 5 fire damage from the burning oil. You can also pour a flask of oil on the ground to cover a 5-foot-square area, provided that the surface is level. If lit, the oil burns for 2 rounds and deals 5 fire damage to any creature that enters the area or ends its turn in the area. A creature can take this damage only once per turn.</p>
+  <h4>Poison, Basic (Injury)</h4>
+  <p>You can use the poison in this vial to coat one weapon or up to three pieces of ammunition that deal piercing or slashing damage. Applying the poison takes an action. A creature hit by the poisoned weapon or ammunition must succeed on a DC 10 CON save or take 1d4 poison damage (in addition to the weapon's normal damage). Once applied, the poison retains potency for 1 minute before drying.</p>
+  <h4>Poison, Essence of Ether (Inhaled)</h4>
+  <p>A creature subjected to this poison must succeed on a DC 15 CON save or be poisoned for 8 hours. The poisoned creature is unconscious. The unconscious effect ends if the creature takes damage or if another creature takes an action to shake it awake.</p>
+  <h4>Poison, Last Gasp (Contact)</h4>
+  <p>A creature subjected to this poison must succeed on a DC 13 CON save or be poisoned for 1 minute. The poisoned creature is paralyzed. The creature can repeat the save at the end of each of its turns, ending both effects on a success.</p>
+  <h4>Poison, Midnight Tears (Ingested)</h4>
+  <p>A creature who ingests this poison suffers no effect until the stroke of midnight. If the poison has not been neutralized before then, the creature must succeed on a DC 17 CON save, taking 31 (9d6) poison damage on a failure or half as much damage on a success.</p>
+  <h4>Potion of Healing</h4>
+  <p>A character who drinks the magical red fluid in this vial regains 2d4 + 2 hit points. Drinking or administering a potion takes an action. For more information about this item, see potion of healing in the Magic Item Descriptions.</p>
+  <h4>Pouch</h4>
+  <p>A cloth or leather pouch can hold up to 20 sling bullets or 50 blowgun needles, among other things. A compartmentalized pouch for holding spell components is called a component pouch (described earlier in this section).</p>
+  <h4>Primordial Focus</h4>
+  <p>This item can be used as a spellcasting focus to channel Primordial spells. Examples include a totem made from natural materials like feather or bone, a wooden staff carved from a living tree, or a yew wand.</p>
+  <h4>Quiver</h4>
+  <p>A quiver can hold up to 20 arrows or 20 crossbow bolts.</p>
+  <h4>Ram, Portable</h4>
+  <p>You can use a portable ram to break down doors. You have advantage on relevant STR (Athletic) checks made to do so.</p>
+  <h4>Rations</h4>
+  <p>Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts. One unit of rations is enough to feed one Medium or smaller creature for one day.</p>
+  <h4>Rope</h4>
+  <p>Rope is an object with AC 11 and 2 HP. It can be burst with a DC 17 STR (Athletics) check.</p>
+  <h4>Scale, Merchant's</h4>
+  <p>A scale includes a small balance, pans, and a suitable assortment of weights up to 2 lb. With it, you can measure the exact weight of suitably sized objects, such as raw precious metals or trade goods, to help determine their worth.</p>
+  <h4>Spellbook</h4>
+  <p>A spellbook is a leather‑bound tome with 100 blank pages suitable for recording spells.</p>
+  <h4>Spyglass</h4>
+  <p>Objects viewed through a spyglass are magnified to twice their size. A spyglass grants advantage on any ability check made to view or inspect items that are far away.</p>
+  <h4>Tent</h4>
+  <p>A simple, portable canvas shelter that sleeps two Medium or smaller creatures.</p>
+  <h4>Tinderbox</h4>
+  <p>This small container holds flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a torch-or anything else with abundant, exposed fuel-takes an action. Lighting any other fire takes 1 minute.</p>
+  <h4>Torch</h4>
+  <p>A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage.</p>
+  <h4>Wyrd Focus</h4>
+  <p>This item can be used as a spellcasting focus to channel Wyrd spells. Examples include an amulet carved from bone, a charm bag filled with rare herbs and crystals, or a wand made of starmetal.</p>
+
+  <h3>Adventuring Gear</h3>
+  <table>
+    <thead><tr><th>Gear</th><th>Cost</th><th>Weight</th></tr></thead>
+    <tbody>
+      <tr><td>Abacus</td><td>2 gp</td><td>2 lb.</td></tr>
+      <tr><td colspan="3">Alchemical Concoctions</td></tr>
+      <tr><td class="indent">Acid (vial)</td><td>25 gp</td><td>1 lb.</td></tr>
+      <tr><td class="indent">Alchemist's fire (flask)</td><td>50 gp</td><td>1 lb.</td></tr>
+      <tr><td class="indent">Oil (flask)</td><td>1 sp</td><td>1 lb.</td></tr>
+      <tr><td colspan="3">Ammunition</td></tr>
+      <tr><td class="indent">Arrows (20)</td><td>1 gp</td><td>1 lb.</td></tr>
+      <tr><td class="indent">Blowgun needles (50)</td><td>1 gp</td><td>1 lb.</td></tr>
+      <tr><td class="indent">Crossbow bolts (20)</td><td>1 gp</td><td>1 1/2 lb.</td></tr>
+      <tr><td class="indent">Sling bullets (20)</td><td>4 cp</td><td>1 1/2 lb.</td></tr>
+      <tr><td>Ball bearings (bag of 1,000)</td><td>1 gp</td><td>2 lb.</td></tr>
+      <tr><td>Bedroll</td><td>1 gp</td><td>7 lb.</td></tr>
+      <tr><td>Bell</td><td>1 gp</td><td>-</td></tr>
+      <tr><td>Blanket</td><td>5 sp</td><td>3 lb.</td></tr>
+      <tr><td>Block and tackle</td><td>1 gp</td><td>5 lb.</td></tr>
+      <tr><td>Book</td><td>25 gp</td><td>5 lb.</td></tr>
+      <tr><td>Caltrops (bag of 20)</td><td>1 gp</td><td>2 lb.</td></tr>
+      <tr><td>Candle</td><td>1 cp</td><td>-</td></tr>
+      <tr><td>Case, map or scroll</td><td>1 gp</td><td>1 lb.</td></tr>
+      <tr><td>Chain (10 feet)</td><td>5 gp</td><td>10 lb.</td></tr>
+      <tr><td>Chalk (1 piece)</td><td>1 cp</td><td>-</td></tr>
+      <tr><td>Climber's kit</td><td>25 gp</td><td>12 lb.</td></tr>
+      <tr><td>Clothes, common</td><td>5 sp</td><td>3 lb.</td></tr>
+      <tr><td>Clothes, costume</td><td>5 gp</td><td>4 lb.</td></tr>
+      <tr><td>Clothes, fine</td><td>15 gp</td><td>6 lb.</td></tr>
+      <tr><td>Component pouch</td><td>25 gp</td><td>2 lb.</td></tr>
+      <tr><td colspan="3">Containers</td></tr>
+      <tr><td class="indent">Backpack</td><td>2 gp</td><td>5 lb.</td></tr>
+      <tr><td class="indent">Barrel</td><td>2 gp</td><td>70 lb.</td></tr>
+      <tr><td class="indent">Basket</td><td>4 sp</td><td>2 lb.</td></tr>
+      <tr><td class="indent">Bottle, glass</td><td>2 gp</td><td>2 lb.</td></tr>
+      <tr><td class="indent">Chest</td><td>5 gp</td><td>25 lb.</td></tr>
+      <tr><td class="indent">Flask or tankard</td><td>2 cp</td><td>1 lb.</td></tr>
+      <tr><td class="indent">Jug or pitcher</td><td>2 cp</td><td>4 lb.</td></tr>
+      <tr><td class="indent">Pot, cooking</td><td>2 gp</td><td>10 lb.</td></tr>
+      <tr><td class="indent">Pouch</td><td>5 sp</td><td>1 lb.</td></tr>
+      <tr><td class="indent">Sack</td><td>1 cp</td><td>1/2 lb.</td></tr>
+      <tr><td class="indent">Vial</td><td>1 gp</td><td>-</td></tr>
+      <tr><td class="indent">Waterskin</td><td>2 sp</td><td>5 lb. (full)</td></tr>
+      <tr><td>Crowbar</td><td>2 gp</td><td>5 lb.</td></tr>
+      <tr><td>Fishing tackle</td><td>1 gp</td><td>4 lb.</td></tr>
+      <tr><td>Hammer</td><td>1 gp</td><td>3 lb.</td></tr>
+      <tr><td>Healer's kit</td><td>5 gp</td><td>3 lb.</td></tr>
+      <tr><td colspan="3">Herbal Concoctions</td></tr>
+      <tr><td class="indent">Antitoxin (vial)</td><td>50 gp</td><td>-</td></tr>
+      <tr><td class="indent">Perfume (vial)</td><td>5 gp</td><td>-</td></tr>
+      <tr><td class="indent">Poison, basic (vial)</td><td>5 gp</td><td>-</td></tr>
+      <tr><td class="indent">Poison, essence of ether (vial)</td><td>300 gp</td><td>-</td></tr>
+      <tr><td class="indent">Poison, last gasp (vial)</td><td>200 gp</td><td>-</td></tr>
+      <tr><td class="indent">Poison, midnight tears (vial)</td><td>1,500 gp</td><td>-</td></tr>
+      <tr><td>Holy water (flask)</td><td>25 gp</td><td>1 lb.</td></tr>
+      <tr><td>Hourglass</td><td>25 gp</td><td>1 lb.</td></tr>
+      <tr><td>Hunting trap, basic</td><td>5 gp</td><td>25 lb.</td></tr>
+      <tr><td>Ink (1-ounce bottle)</td><td>10 gp</td><td>-</td></tr>
+      <tr><td>Ink pen</td><td>2 cp</td><td>-</td></tr>
+      <tr><td>Ladder (10-foot)</td><td>1 sp</td><td>25 lb.</td></tr>
+      <tr><td>Lamp</td><td>5 sp</td><td>1 lb.</td></tr>
+      <tr><td>Lantern, bullseye</td><td>10 gp</td><td>2 lb.</td></tr>
+      <tr><td>Lantern, hooded</td><td>5 gp</td><td>2 lb.</td></tr>
+      <tr><td>Lock</td><td>10 gp</td><td>1 lb.</td></tr>
+      <tr><td>Magnifying glass</td><td>100 gp</td><td>-</td></tr>
+      <tr><td>Manacles</td><td>2 gp</td><td>6 lb.</td></tr>
+      <tr><td>Mess kit</td><td>2 sp</td><td>1 lb.</td></tr>
+      <tr><td>Mirror, compact</td><td>5 gp</td><td>1/2 lb.</td></tr>
+      <tr><td>Net</td><td>1 gp</td><td>3 lb.</td></tr>
+      <tr><td>Paper (one sheet)</td><td>2 sp</td><td>-</td></tr>
+      <tr><td>Pick, miner's</td><td>2 gp</td><td>10 lb.</td></tr>
+      <tr><td>Piton</td><td>5 cp</td><td>1/4 lb.</td></tr>
+      <tr><td>Pole (10-foot)</td><td>5 cp</td><td>7 lb.</td></tr>
+      <tr><td>Potion of healing</td><td>50 gp</td><td>1/2 lb.</td></tr>
+      <tr><td>Quiver</td><td>1 gp</td><td>1 lb.</td></tr>
+      <tr><td>Ram, portable</td><td>4 gp</td><td>35 lb.</td></tr>
+      <tr><td>Rations (1 day)</td><td>5 sp</td><td>2 lb.</td></tr>
+      <tr><td>Rope (50 feet)</td><td>1 gp</td><td>10 lb.</td></tr>
+      <tr><td>Sealing wax</td><td>5 sp</td><td>-</td></tr>
+      <tr><td>Scale, merchant's</td><td>5 gp</td><td>3 lb.</td></tr>
+      <tr><td>Shovel</td><td>2 gp</td><td>5 lb.</td></tr>
+      <tr><td>Signal whistle</td><td>5 cp</td><td>-</td></tr>
+      <tr><td>Signet ring</td><td>5 gp</td><td>-</td></tr>
+      <tr><td>Soap</td><td>2 cp</td><td>-</td></tr>
+      <tr><td>Spellbook</td><td>50 gp</td><td>3 lb.</td></tr>
+      <tr><td colspan="3">Spellcasting Foci</td></tr>
+      <tr><td class="indent">Arcane focus</td><td>5 gp</td><td>2 lb.</td></tr>
+      <tr><td class="indent">Holy symbol</td><td>5 gp</td><td>2 lb.</td></tr>
+      <tr><td class="indent">Primordial focus</td><td>5 gp</td><td>2 lb.</td></tr>
+      <tr><td class="indent">Wyrd focus</td><td>5 gp</td><td>2 lb.</td></tr>
+      <tr><td>Spikes, iron (10)</td><td>1 gp</td><td>5 lb.</td></tr>
+      <tr><td>Spyglass</td><td>1,000 gp</td><td>1 lb.</td></tr>
+      <tr><td>Tent, two-person</td><td>2 gp</td><td>20 lb.</td></tr>
+      <tr><td>Tinderbox</td><td>5 sp</td><td>1 lb.</td></tr>
+      <tr><td>Torch</td><td>1 cp</td><td>1 lb.</td></tr>
+      <tr><td>Whetstone</td><td>1 cp</td><td>1 lb.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Container Capacity</h3>
+  <table>
+    <thead><tr><th>Container</th><th>Volume Capacity</th><th>Weight Capacity</th></tr></thead>
+    <tbody>
+      <tr><td>Backpack</td><td>1 cubic foot</td><td>30 lb.</td></tr>
+      <tr><td>Barrel</td><td>4 cubic feet or 40 gallons</td><td>300 lb.</td></tr>
+      <tr><td>Basket</td><td>2 cubic feet</td><td>40 lb.</td></tr>
+      <tr><td>Bottle, flask, or tankard</td><td>1 pint</td><td>1 lb.</td></tr>
+      <tr><td>Chest</td><td>12 cubic feet</td><td>300 lb.</td></tr>
+      <tr><td>Jug, pitcher, or pot</td><td>1 gallon</td><td>8 lb.</td></tr>
+      <tr><td>Pouch</td><td>1/5 cubic foot</td><td>6 lb.</td></tr>
+      <tr><td>Sack</td><td>1 cubic foot</td><td>30 lb.</td></tr>
+      <tr><td>Vial</td><td>4 oz</td><td>1/4 lb.</td></tr>
+      <tr><td>Waterskin</td><td>4 pints</td><td>4 lb.</td></tr>
+    </tbody>
+  </table>
+
+  <hr id="tools"/>
+
+  <h2>Tools</h2>
+  <p>Sometimes a tool is a single item, like a musical instrument. Other times a tool encompasses a kit or set of supplies containing multiple items. When using a tool, you must have all of its component items to make ability checks with it.</p>
+  <p>Just like skills, you don't need to be proficient in a tool to use it, but proficiency with a tool allows you to add your PB to ability checks you make using that tool.</p>
+  <p>Also, like skills, tools aren't tied to specific ability scores. The ability score assigned to each ability check using a tool depends on what you are trying to accomplish. For example, when using construction tools, the GM might ask you to make a STR (Construction Tools) check to hammer nails into a hard surface, but ask for a DEX (Construction Tools) check to use the same tools to carve a wooden sculpture.</p>
+
+  <h4>Alchemist Tools</h4>
+  <p>Alchemist tools are used to perform a variety of tasks such as identifying potions or foreign substances, mixing reagents together to cause alchemical reactions, and crafting alchemical substances.
+  <div class="indent">
+    <p><strong>Associated Abilities</strong>: DEX, INT.</p>
+    <p><strong>Components</strong>. This tool kit includes an array of mixing and storage vessels, an alembic still, a metal frame for holding a mixing vessel above a flame, a mortar and pestle, and a variety of common alchemical reagents.</p>
+    <p><strong>Craft Items</strong>. Alchemist tools can be used to make items like those listed in the Alchemical Concoctions section of the Adventuring Gear table, with the crafting downtime activity.</p>
+  </div>
+  
+  <h4>Artist Tools</h4>
+  <p>Artist tools are used to create illustrated art objects and ornamental documents, pen illuminated texts, and skillfully paint objects.</p>
+  <div class="indent">
+    <p><strong>Associated Abilities</strong>: DEX, CHA.</p>
+    <p><strong>Components</strong>. This tool kit includes brushes, spades, stirrers, inks, paints, a square and triangle, a canvas stretcher and an easel, and rolls of vellum, parchment, and canvas.</p>
+    <p><strong>Craft Items</strong>. Artist tools can be used to make art objects with the crafting downtime activity.</p>
+  </div>
+    
+  <h4>Charlatan Tools</h4>
+  <p>Charlatan tools are used to craft disguises and forge documents.</p>
+  <div class="indent">
+    <p><strong>Associated Abilities</strong>: DEX, CHA.</p>
+    <p><strong>Components</strong>. This tool kit includes hair dyes, small props, cosmetics, a few choice articles of clothing, a selection of wax seals, gold and silver leaf, inks, a variety of parchments, and sculpting tools to fashion melted wax into seals or prosthetics.</p>
+    <p><strong>Create Disguise</strong>. Over the course of an hour (which can be done as part of a rest) you can create a disguise to make yourself or someone else-including any clothing or equipment-look like a different creature. A disguise can make a creature seem slightly taller, shorter, fatter, or thinner, but can't conceal true size or basic arrangement of limbs. It takes 1 minute to don such a disguise once created. A set of charlatan tools only has enough materials to create one disguise at a time, but you can disassemble a disguise to create a new disguise as part of the time spent making a disguise. A creature can use its action to inspect a disguised appearance, and must succeed on an INT (Investigation) contest versus your DEX (Charlatan Tools) to discern a disguise.</p>
+    <p><strong>Forge Documents</strong>. Over the course of one hour (which can be done as part of a rest) you can create a simple false document of 5 pages or less-like a personal letter, a party invitation, or a sales permit. With the GM's permission you can create longer or more complicated documents over the course of several hours or days. A creature can use its action to inspect a forged document, and must succeed on an INT (Investigation) contest versus your DEX (Charlatan Tools) check to discern a forgery.</p>
+  </div>
+
+  <h4>Clothier Tools</h4>
+  <p>Clothier tools are used to sew, make, or tailor fabric objects such as clothing or shoes.</p>
+  <div class="indent">
+    <p><strong>Associated Abilities</strong>: DEX, CHA.</p>
+    <p><strong>Components</strong>. This tool kit includes pins and needles, specially sharpened shears, a small hammer and shoehorn, a variety of dyed threads on spools, and thicker waxed threads and yarns.</p>
+    <p><strong>Craft Items</strong>. Clothier tools can be used to make items with the crafting downtime activity.</p>
+  </div>
+
+  <h4>Construction Tools</h4>
+  <p>Construction tools are used to build and repair items primarily made of wood or stone.</p>
+  <div class="indent">
+    <p><strong>Associated Abilities</strong>: STR, DEX.</p>
+    <p><strong>Components</strong>. This tool kit includes hammers and a mallet, a variety of fasteners, a square and triangle, chisels, a saw, brushes, and spades.</p>
+    <p><strong>Fortify</strong>. You can spend 1 minute fortifying a chest, door, window, or other sealable object or structure. When you do so, the object's AC increases by an amount equal to your PB or creatures have disadvantage on STR (Athletics) checks made to penetrate the fortification (the GM decides which is more relevant). An item doesn't receive additional benefits from multiple attempts to fortify it.</p>
+    <p><strong>Build Cover</strong>. You can spend 1 hour (which can be done as part of a long rest) erecting a 5-foot by 5-foot wall panel in an unoccupied space, provided you have the raw materials to do so. The panel provides three-quarters cover for one Medium or smaller creature, and it can't be moved. A panel of cover created with this feature is an object with an AC equal to 10 + your PB and 15 HP if made of wood or 25 HP if made of stone. It is immune to psychic and poison damage.</p>
+    <p><strong>Craft Items</strong>. Construction tools can be used to make items with the crafting downtime activity.</p>
+  </div>
+
+  <h4>Gaming Set</h4>
+  <p>Gaming sets are used to gamble, entertain, or engage in fortune-telling. There are three types: cards, dice, and board games. When you have proficiency in a gaming set, choose one type for your proficiency, not all gaming sets. You must have multiple proficiencies to have proficiency with more than one type of gaming set.</p>
+  <div class="indent">
+    <p><strong>Associated Abilities</strong>: DEX, CHA.</p>
+    <p><strong>Components</strong>. A gaming set is typically a full set of cards, a full set of dice with a dice cup, or a collection of special pieces used to play a particular game. If you are unsure what to choose, consult your GM about games and game sets played in the world of your game.</p>
+  </div>
+
+  <h4>Herbalist Tools</h4>
+  <p>Herbalist tools are used to store and brew plants and other organic materials into potions, antidotes, and poisons.</p>
+  <div class="indent">
+    <p><strong>Associated Abilities</strong>: INT, WIS.</p>
+    <p><strong>Components</strong>. This tool kit includes glass vials, a mortar and pestle, pouches for ingredient storage, clippers, a pair of leather gloves, and a small pot for brewing.</p>
+    <p><strong>Craft Items</strong>. Herbalist tools can be used to make items like those listed in the Herbal Concoctions section of the Adventuring Gear table, with the crafting downtime activity.</p>
+  </div>
+
+  <h4>Musical Instrument</h4>
+  <p>Musical instruments come in many shapes and sizes with varying regional and cultural popularity. When you have proficiency in a musical instrument, choose one type: strings, brass, woodwinds, percussion, or keyboard instruments. You must have multiple proficiencies to have proficiency with more than one type of instrument.</p>
+  <div class="indent">
+    <p><strong>Associated Abilities</strong>: DEX, CHA.</p>
+    <p><strong>Components</strong>. A musical instrument typically includes an instrument, a protective case, and any small pieces necessary for play, such as picks or reeds.</p>
+  </div>
+
+  <h4>Navigator Tools</h4>
+  <p>Navigator tools are used to read and draw maps, find your path or prevent you from becoming lost, and determine likely locations on a map for secret doors or hidden features.</p>
+  <div class="indent">
+    <p><strong>Associated Abilities</strong>: INT, WIS.</p>
+    <p><strong>Components</strong>. This tool kit includes quills, ink, and parchment along with two compasses, calipers, and a ruler as well as a sextant or telescope.</p>
+    <p><strong>Draw Map</strong>. Navigator tools can be used to create accurate maps while traveling, which grant advantage on checks made to prevent becoming lost.</p>
+  </div>
+
+  <h4>Provisioner Tools</h4>
+  <p>Provisioner tools are used to prepare meals, make rations, and craft beverages.</p>
+  <div class="indent">
+    <p><strong>Associated Abilities</strong>: CON, WIS.</p>
+    <p><strong>Components</strong>. This tool kit includes a large jug, several jars, a siphon with several feet of tubing, a rolled set of knives for chopping, sawing, paring, and deboning, a metal soup pot and a large skillet, a small bundle of spoons, spatulas, ladles, and whisks, several mixing bowls, a cutting board, and quantities of hops, dried herbs, and powdered spices.</p>
+    <p><strong>Craft Items</strong>. Provisioner tools can be used to make items with the crafting downtime activity.</p>
+  </div>
+
+  <h4>Smithing Tools</h4>
+  <p>Smithing tools are used to build and repair items primarily made of metal. The use of smithing tools typically requires a dedicated forge, furnace, or some other source of intense heat. A campfire is only suitable for the smallest tasks like spot repairs.</p>
+  <div class="indent">
+    <p><strong>Associated Abilities</strong>: DEX, CON.</p>
+    <p><strong>Components</strong>. This tool kit includes a small anvil, tongs, hammers, heat-resistant hide or cloth towels, calipers, and billows.</p>
+    <p><strong>Craft Items</strong>. Smithing tools can be used to make items with the crafting downtime activity.</p>
+  </div>
+
+  <h4>Trapper Tools</h4>
+  <p>Trapper tools are used to set hunting traps, harvest hides or fur, and craft or repair leather goods like armor, pouches, or sturdy garments.</p>
+  <div class="indent">
+    <p><strong>Associated Abilities</strong>: DEX, WIS.</p>
+    <p><strong>Components</strong>. This tool kit includes a knife, a small shovel, a wooden mallet, a small bundle of edgers, hole punchers, and sturdy needles, thread, leather scraps, a 30-ft. length of strong cord, a quantity of salt, and tanning oil.</p>
+    <p><strong>Craft Items</strong>. Trapper tools can be used to make items with the crafting downtime activity.</p>
+  </div>
+
+  <h4>Thieves' Tools</h4>
+  <p>Thieves' tools are used to pick locks, disable traps, and sabotage unattended items like saddles and doffed armor.</p>
+  <div class="indent">
+    <p><strong>Associated Abilities</strong>: DEX, INT.</p>
+    <p><strong>Components</strong>. This kit includes a roll of lockpicks and probes, a small, telescoping mirror on a pole, several triangular files, a long set of scissors, and a pair of pliers.</p>
+    <p><strong>Disarm Traps</strong>. Thieves' tools can be used to disarm traps.</p>
+    <p><strong>Pick Locks</strong>. Thieves' tools can be used to pick locks. If no DC to pick a lock is provided, a standard nonmagical lock can be opened with a DC of 15.</p>
+  </div>
+
+  <h4>Tinker Tools</h4>
+  <p>Tinker tools are used to construct mechanical or clockwork devices, repair damaged devices, or determine how to use unfamiliar mechanical or clockwork systems.</p>
+  <div class="indent">
+    <p><strong>Associated Abilities</strong>: DEX, INT.</p>
+    <p><strong>Components</strong>. This tool kit includes an array of hand tools, an array of files, pliers, tweezers, etching styluses, threads, needles, cloth and leather scraps, glue, loose cogs and pins, and a few sheets of thinly hammered metal.</p>
+    <p><strong>Craft Items</strong>. Tinker tools can be used to make items with the crafting downtime activity.</p>
+  </div>
+
+  <table>
+    <thead><tr><th>Tool</th><th>Cost</th><th>Weight</th></tr></thead>
+    <tbody>
+      <tr><td>Alchemist tools</td><td>50 gp</td><td>8 lb.</td></tr>
+      <tr><td>Artist tools</td><td>10 gp</td><td>5 lb.</td></tr>
+      <tr><td>Charlatan tools</td><td>25 gp</td><td>3 lb.</td></tr>
+      <tr><td>Clothier tools</td><td>10 gp</td><td>10 lb.</td></tr>
+      <tr><td>Construction tools</td><td>10 gp</td><td>8 lb.</td></tr>
+      <tr><td colspan="3">Gaming Set</td></tr>
+      <tr><td class="indent">Card set</td><td>5 sp</td><td>-</td></tr>
+      <tr><td class="indent">Dice set</td><td>1 sp</td><td>-</td></tr>
+      <tr><td>Smithing tools</td><td>20 gp</td><td>8 lb.</td></tr>
+      <tr><td>Herbalist tools</td><td>5 gp</td><td>3 lb.</td></tr>
+      <tr><td colspan="3">Musical Instruments</td></tr>
+      <tr><td class="indent">Bagpipes</td><td>30 gp</td><td>6 lb.</td></tr>
+      <tr><td class="indent">Drum</td><td>6 gp</td><td>3 lb.</td></tr>
+      <tr><td class="indent">Flute</td><td>2 gp</td><td>1 lb.</td></tr>
+      <tr><td class="indent">Lute</td><td>35 gp</td><td>2 lb.</td></tr>
+      <tr><td class="indent">Lyre</td><td>30 gp</td><td>2 lb.</td></tr>
+      <tr><td class="indent">Horn</td><td>3 gp</td><td>2 lb.</td></tr>
+      <tr><td>Navigator tools</td><td>25 gp</td><td>2 lb.</td></tr>
+      <tr><td>Provisioner tools</td><td>20 gp</td><td>9 lb.</td></tr>
+      <tr><td>Trapper tools</td><td>5 gp</td><td>5 lb.</td></tr>
+      <tr><td>Thieves' tools</td><td>25 gp</td><td>1 lb.</td></tr>
+      <tr><td>Tinker tools</td><td>50 gp</td><td>10 lb.</td></tr>
+    </tbody>
+  </table>
+
+  <hr id="mounts"/>
+
+  <h2>Mounts</h2><br/>
+  <table>
+    <thead><tr><th>Mount</th><th>Cost</th><th>Speed per Round</th><th>Carrying Capacity</th></tr></thead>
+    <tbody>
+      <tr><td>Donkey or mule</td><td>8 gp</td><td>40 ft.</td><td>420 lb.</td></tr>
+      <tr><td>Horse, draft</td><td>50 gp</td><td>40 ft.</td><td>540 lb.</td></tr>
+      <tr><td>Horse, riding</td><td>75 gp</td><td>60 ft.</td><td>480 lb.</td></tr>
+      <tr><td>Horse, war</td><td>400 gp</td><td>60 ft.</td><td>540 lb.</td></tr>
+      <tr><td>Mastiff</td><td>25 gp</td><td>40 ft.</td><td>195 lb.</td></tr>
+      <tr><td>Pony</td><td>30 gp</td><td>40 ft.</td><td>225 lb.</td></tr>      
+    </tbody>
+  </table>
+
+  <h3>Mount Gear & Expenses</h3>
+  <p><strong>Barding.</strong> Barding is armor designed to protect a mount’s head, neck, chest, and body. Any type of armor shown on the Armor table can be purchased as barding. The cost of barding is four times the equivalent armor made for Humanoids and weighs twice as much.</p>
+  <p><strong>Drawn Objects.</strong> A mount pulling a drawn object like a carriage, cart, chariot, sled, or wagon can move weight up to five times its base carrying capacity, including the weight of the drawn object. If multiple animals pull the same object, they can add their carrying capacity together.</p>
+  <p><strong>Saddle.</strong> A saddle braces the rider, helping you keep your seat in battle. It gives you advantage on any ability check or save you make to remain mounted. At the GM’s discretion, a saddle crafted for an unusually sized or shaped mount might double or triple the cost.</p>
+
+  <table>
+    <thead><tr><th>Item</th><th>Cost</th><th>Weight</th></tr></thead>
+    <tbody>
+      <tr><td>Barding</td><td>x4 (base armor cost)</td><td>x2 (base armor weight)</td></tr>
+      <tr><td colspan="3">Drawn Objects</td></tr>
+      <tr><td class="indent">Carriage</td><td>100 gp</td><td>600 lb.</td></tr>
+      <tr><td class="indent">Cart</td><td>15 gp</td><td>200 lb.</td></tr>
+      <tr><td class="indent">Chariot</td><td>250 gp</td><td>100 lb.</td></tr>
+      <tr><td class="indent">Sled</td><td>20 gp</td><td>300 lb.</td></tr>
+      <tr><td class="indent">Wagon</td><td>35 gp</td><td>400 lb.</td></tr>
+      <tr><td>Feed (per day)</td><td>5 cp</td><td>10 lb.</td></tr>
+      <tr><td>Saddle</td><td>10 gp</td><td>25 lb.</td></tr>
+      <tr><td>Stabling (per day)</td><td>5 sp</td><td>—</td></tr>
+    </tbody>
+  </table>
+
+  <hr id="services"/>
+
+  <h2>Services</h2><br/>
+  <p><strong>Skilled Hirelings.</strong> Skilled hirelings come with a proficiency (armor, weapon, tool, vehicle, or skill). A mercenary, artisan, or scribe would be skilled. The pay shown is a minimum; true experts might require double or even triple pay.</p>
+  <p><strong>Untrained Hirelings.</strong> Untrained hirelings are hired for physical work that doesn’t require specialized study. Examples include laborers, porters, or waiters.</p>
+
+  <h3>Common Services</h3>
+  <table>
+    <thead><tr><th>Item</th><th>Cost</th></tr></thead>
+    <tbody>
+      <tr><td>Coach cab (between towns)</td><td>3 cp per mile</td></tr>
+      <tr><td>Coach cab (within a city)</td><td>1 cp</td></tr>
+      <tr><td>Hireling (skilled)</td><td>2 gp per day</td></tr>
+      <tr><td>Hireling (untrained)</td><td>2 sp per day</td></tr>
+      <tr><td>Messenger</td><td>2 cp per mile</td></tr>
+      <tr><td>Road or gate toll</td><td>1 cp</td></tr>
+      <tr><td>Ship’s passage</td><td>1 sp per mile</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Spellcasting Services</h3>
+  <p>This table provides a rough pricing guide for spellcasting services, but the GM has final say on pricing and availability.</p>
+
+  <table>
+    <thead><tr><th>Spell Tier</th><th>Cost</th></tr></thead>
+    <tbody>
+      <tr><td>Cantrip</td><td>10 gp + material components cost</td></tr>
+      <tr><td>1st</td><td>50 gp + material components cost</td></tr>
+      <tr><td>2nd</td><td>100 gp + material components cost</td></tr>
+      <tr><td>3rd</td><td>200 gp + material components cost</td></tr>
+      <tr><td>4th</td><td>350 gp + material components cost</td></tr>
+      <tr><td>5th</td><td>650 gp + material components cost</td></tr>
+      <tr><td>6th</td><td>1,500 gp + material components cost</td></tr>
+      <tr><td>7th</td><td>Priceless</td></tr>
+      <tr><td>8th</td><td>Priceless</td></tr>
+      <tr><td>9th</td><td>Priceless</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Food, Drink, and Lodging</h3>
+  <p>Prices on this table are for individual food items and a single night’s lodging.</p>
+
+  <table>
+    <thead><tr><th>Item</th><th>Cost</th></tr></thead>
+    <tbody>
+      <tr><td>Ale, pitcher</td><td>2 sp</td></tr>
+      <tr><td>Ale, mug</td><td>4 cp</td></tr>
+      <tr><td>Inn stay, typical room</td><td>5 sp</td></tr>
+      <tr><td>Inn stay, luxury room</td><td>2 gp</td></tr>
+      <tr><td>Meal, common</td><td>3 sp</td></tr>
+      <tr><td>Meal, feast</td><td>8 sp</td></tr>
+      <tr><td>Wine, common (pitcher)</td><td>2 sp</td></tr>
+      <tr><td>Wine, fine (bottle)</td><td>10 gp</td></tr>
+    </tbody>
+  </table>
+
+  <hr id="vehicles"/>
+
+  <h2>Vehicles</h2><br/>
+  <p><strong>Vehicle Proficiency</strong>. Vehicle proficiency works just like tool proficiency. When you have proficiency in a vehicle, choose one type: land or water. You must have multiple proficiencies to have proficiency with more than one type of vehicle.</p>
+  <p>Vehicle proficiency allows you to add your PB to any check you make to control all vehicles of that type in difficult circumstances. You can also repair damaged vehicles of that type.</p>
+
+  <h3>Elements of a Vehicle</h3>
+  <p>Each vehicle has the following characteristics.</p>
+
+  <h4>Size</h4>
+  <p>Every vehicle has a listed size just like creatures do.</p>
+
+  <h4>Type</h4>
+  <p>A vehicle is made to traverse a particular terrain. This is represented by a vehicle’s type, which can include one or more of the following options.</p>
+  <p><strong>Land.</strong> A land vehicle can travel on solid surfaces and across physical terrain. Such vehicles include war wagons and sand skimmers. If a land vehicle can traverse horizontal and upside-down surfaces, it has a climbing speed. If it can travel underground, it has a burrowing speed.</p>
+  <p><strong>Water.</strong> A water vehicle can travel on or below water or other liquid surfaces. These include ships and submersibles. If a water vehicle can travel while submerged, it has a swimming speed.</p>
+
+  <h4>Armor Class & Damage Threshold</h4>
+  <p>Each vehicle has an armor class (AC) which determines how difficult it is to hit. In addition, vehicles have a damage threshold which represents the damage amount that must be met before the vehicle loses hit points. If the vehicle is hit by a single instance of damage that fails to meet its damage threshold, it instead takes no damage. A vehicle’s damage threshold appears in parentheses next to the vehicle’s AC.</p>
+
+  <h4>Hit Points</h4>
+  <p>This works like creature hit points, though a vehicle is destroyed when it drops to 0 HP. A vehicle reduced to 0 HP is beyond repair (see Vehicle Repairs in this section).</p>
+
+  <h4>Speed</h4>
+  <p>A vehicle’s movement is measured in feet and miles per hour. The speed in feet is for use in combat or any encounter that requires initiative. The miles per hour and per day measurements are used when traveling long distances (see Travel Pace).</p>
+
+  <h4>Vulnerabilities, Resistances, and Immunities</h4>
+  <p>Like creatures, vehicles can be vulnerable, resistant, and immune to certain damage types or conditions. Like most items, vehicles are immune to poison and psychic damage, and the following conditions: blinded, charmed, deafened, exhaustion, frightened, incapacitated, paralyzed, petrified, poisoned, prone, stunned, and unconscious. Instead of writing all those immunities out in each stat block, a vehicle that fits this standard has Vehicle Resilience in the Immune line of its stat block.</p>
+
+  <h4>Initiative</h4>
+  <p>Each vehicle has a set count for when it acts in initiative and loses ties with non-vehicles. In case of ties between vehicles, the GM determines their initiative order. For more on initiative rules, see the Initiative section.</p>
+
+  <h4>Crew</h4>
+  <p>A vehicle needs a crew to operate. It can’t move or take actions on its turn unless it has the number of required crew members. A crew member doesn’t roll their own initiative in combat since their actions and movement are fully dedicated to operating the vehicle.</p>
+  <p>A crew member must be capable of performing their tasks. A Beast, for example, is unlikely to have the skills necessary to operate a vehicle with complex mechanical controls. While there are no specifically designated roles for each vehicle or vessel, the GM has final say on whether a creature qualifies as a crew member.</p>
+
+  <h4>Passengers</h4>
+  <p>Some vehicles can carry passengers in addition to crew. This section assumes the passengers are Small or Medium creatures.</p>
+
+  <h4>Cargo Capacity</h4>
+  <p>Cargo capacity refers to the carrying capacity of nonessential goods and materials. This capacity is measured in pounds or tons; however, a GM can rule that the nature of a vehicle prevents it from carrying certain kinds of cargo.</p>
+
+  <h4>Actions</h4>
+  <p>On each of its turns, a vehicle with the required number of crew members can move up to its speed and use one action—just like a PC or monster.</p>
+
+  <h3>Vehicle Movement</h3>
+  <p>While in initiative, at the start of a vehicle’s turn, crew members can pick the direction they want the vehicle to go. Due to size and bulk, most vehicles can only use their movement to travel in a single direction during their turn.</p>
+  <p>A vehicle with a full crew can move up to its speed on its turn. A vehicle with fewer than half its crew members can only move up to half its speed on its turn. A vehicle with no crew members has a speed of 0 feet.</p>
+  <p>Some vehicles have the Maneuverable trait which allows them to turn and travel in different directions on the same turn. If a vehicle has the Maneuverable trait, it is noted in parentheses after its speed.</p>
+  <p>Outside of initiative, crew members can change a vehicle’s direction as they wish.</p>
+
+  <h3>Vehicle Repairs</h3>
+  <p>When a vehicle is damaged, a creature with proficiency in that type of vehicle and the appropriate tools and materials can attempt to repair the vehicle in one of two ways: a patch job or replacing parts. Unless specified otherwise, a creature can’t conduct repairs on a vehicle while it is moving or in use.</p>
+
+  <h4>Patch Job</h4>
+  <p>If the vehicle is damaged but has at least half its hit points (rounded down), a creature can spend 1 hour patching the damage. At the end of the hour, the vehicle regains a number of temporary hit points equal to its AC (up to the vehicle’s hit point maximum). These temporary hit points last until depleted. A vehicle can only gain temporary hit points in this way once per day.</p>
+
+  <h4>Replace Parts</h4>
+  <p>If a vehicle has taken damage and has fewer than half its hit points (rounded down), a creature can spend 1 hour or more and the necessary gp worth of spare parts to repair the damage. At the end of each hour, the vehicle regains hit points equal to its AC (up to the vehicle’s hit point maximum). One hour of repairs requires spare parts worth a gp amount equal to 10 percent of the vehicle’s base cost, as shown on the Vehicle Base Cost table.</p>
+
+  <h3>Vehicle Descriptions</h3>
+
+  <table>
+    <thead><tr><th>Vehicle</th><th>Cost</th><th>Speed (per hour)</th></tr></thead>
+    <tbody>
+      <tr><td>Galley</td><td>30,000 gp</td><td>4 mph</td></tr>
+      <tr><td>Keelboat</td><td>3,000 gp</td><td>3 mph</td></tr>
+      <tr><td>Keelboat (unarmed)</td><td>2,500 gp</td><td>3 mph</td></tr>
+      <tr><td>Rowboat</td><td>50 gp</td><td>3 mph</td></tr>
+    </tbody>
+  </table>
+
+  <h4>Galley</h4>
+  <p>Galleys are massive vessels ideal for transporting cargo and used by merchants to carry trade goods. These weighty vessels are equipped with sails, but frequently rely on dozens of crew members rowing below decks for propulsion. Since galleys carry stores of cargo, they’re almost always equipped with weaponry and defended by squadrons of hired swords.</p>
+  <div class="statblock">
+    <div class="heading">
+      <span class="name">Galley</span>
+    </div>
+    <ul class="properties">
+      <li><em>Gargantuan Water Vehicle (130 ft. by 20 ft.)</em></li>
+      <li><h5>Armor Class</h5> 15 (damage threshold 20)</li>
+      <li><h5>Hit Points</h5> 500</li>
+      <li><h5>Speed</h5> 35 ft., 4 mph (96 miles per day)</li>
+      <li><h5>Immune</h5> Vehicle Resilience</li>
+      <li><h5>Initiative</h5> 4</li>
+      <li><h5>Crew</h5> 80</li>
+      <li><h5>Passengers</h5> 40</li>
+      <li><h5>Cargo Capacity</h5> 150 tons</li>
+    </ul>
+    <table>
+      <thead><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr></thead>
+      <tbody><tr><td>+7</td><td>-3</td><td>+5</td><td>-</td><td>-</td><td>-</td></tr></tbody>
+    </table>
+    <div class="details">
+      <p><strong>Sails</strong>. While in initiative, the galley’s speed is reduced to 15 ft when sailing against the wind. While sailing with the wind, its speed becomes 50 ft.</p>
+      <h4>Actions</h4>
+      <p>On its turn, the galley can take two actions, choosing from the options below (it can take the same action multiple times). It can take only one action if it has fewer than 40 crew. It can’t move or take actions if it has fewer than 3 crew.</p>
+      <p><strong>Fire Ballista</strong>. Ranged Weapon Attack: +7 hit, range 120/480 ft., one target. Hit: 23 (3d10 + 7) piercing damage.</p>
+      <p><strong>Fire Mangonels</strong>. Ranged Weapon Attack: +7 hit, range 200/800 ft. (can’t hit targets within 60 feet), one target. Hit: 34 (5d10 + 7) bludgeoning damage.</p>
+      <p><strong>Row</strong>. The galley takes the Dash action.</p>
+    </div>
+  </div>
+
+  <h4>Keelboat</h4>
+  <p>Keelboats are small sailing vessels that operate with minimal crew. Keelboats are good for day trips or transporting small amounts of cargo or passengers. The keelboat stat block included here is outfitted with a ballista, but less expensive keelboats without weaponry are commonly available for purchase.</p>
+  <div class="statblock">
+    <div class="heading">
+      <span class="name">Keelboat</span>
+    </div>
+    <ul class="properties">
+      <li><em>Gargantuan Water Vehicle (60 ft. by 20 ft.)</em></li>
+      <li><h5>Armor Class</h5> 15 (damage threshold 10)</li>
+      <li><h5>Hit Points</h5> 100</li>
+      <li><h5>Speed</h5> 25 ft., 3 mph (72 miles per day)</li>
+      <li><h5>Immune</h5> Vehicle Resilience</li>
+      <li><h5>Initiative</h5> 7</li>
+      <li><h5>Crew</h5> 3</li>
+      <li><h5>Passengers</h5> 4</li>
+      <li><h5>Cargo Capacity</h5> 1000 lbs.</li>
+    </ul>
+    <table>
+      <thead><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr></thead>
+      <tbody><tr><td>+3</td><td>-2</td><td>+1</td><td>-</td><td>-</td><td>-</td></tr></tbody>
+    </table>
+    <div class="details">
+      <p><strong>Sails</strong>. While in initiative, the keelboat’s speed is reduced to 15 ft when sailing against the wind. While sailing with the wind, its speed becomes 50 ft.</p>
+      <h4>Actions</h4>
+      <p>On its turn, the keelboat can take one action, choosing from the options below. It can’t take any actions if it has fewer than 2 crew.</p>
+      <p><strong>Fire Ballista</strong>. Ranged Weapon Attack: +6 hit, range 120/480 ft., one target. Hit: 21 (3d10 + 6) piercing damage.</p>
+      <p><strong>Row</strong>. The galley takes the Dash action.</p>
+    </div>
+  </div>
+
+  <h4>Rowboat</h4>
+  <p>Rowboats are powered by rowing and current. They can’t be rowed against any significant current, but they can be pulled upstream by draft animals on the shore. A rowboat weighs 100 pounds for portage purposes.</p>
+  <div class="statblock">
+    <div class="heading">
+      <span class="name">Rowboat</span>
+    </div>
+    <ul class="properties">
+      <li><em>Large Water Vehicle (10 ft. by 5 ft.)</em></li>
+      <li><h5>Armor Class</h5> 11 (damage threshold 0)</li>
+      <li><h5>Hit Points</h5> 50</li>
+      <li><h5>Speed</h5> 15 ft. (maneuverable), 3 mph (72 miles per day)</li>
+      <li><h5>Immune</h5> Vehicle Resilience</li>
+      <li><h5>Initiative</h5> 8</li>
+      <li><h5>Crew</h5> 2</li>
+      <li><h5>Passengers</h5> 2</li>
+      <li><h5>Cargo Capacity</h5> 500 lbs.</li>
+    </ul>
+    <table>
+      <thead><tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr></thead>
+      <tbody><tr><td>+0</td><td>-1</td><td>+0</td><td>-</td><td>-</td><td>-</td></tr></tbody>
+    </table>
+    <div class="details">
+      <p><strong>Lightweight</strong>. If the rowboat is going downstream, add the speed of the current (typically 3 miles per hour) to its speed. The rowboat’s speed is 0 ft. while traveling against any significant current.</p>
+      <p><strong>Maneuverable</strong>. The rowboat can move up to its speed and make one 90-degree turn.</p>
+      <h4>Actions</h4>
+      <p>On its turn, the keelboat can take one action, choosing from the options below. It can’t take any actions if it has fewer than 2 crew.</p>
+      <p><strong>Row Hard</strong>. The rowboat takes the Dash action.</p>
+    </div>
+  </div>
+
+</main>
+
+<!-- Footer -->
+<footer>
+    Version: <span id="version">Loading...</span> | 
+    <a href="/license.html">Published under the ORC license</a>
+</footer>
+
+<script>
+    // Function to toggle the visibility of the menu in mobile view
+    function toggleMenu() {
+      var menu = document.getElementById('menu');
+      if (menu.classList.contains('open')) {
+        menu.classList.remove('open');
+      } else {
+        menu.classList.add('open');
+      }
+    }
+
+    // Fetch the version number from the version.json file
+    fetch('/assets/versions.json')
+      .then(response => response.json())
+      .then(json => {
+        const firstVersion = json.versions[0]; // Get first item from versions array
+        document.getElementById("version").innerHTML = firstVersion.version;
+      })
+      .catch(error => {
+        console.error('Error fetching version:', error);
+        document.getElementById("version").innerHTML = "?.?.?";
+      });
+</script>
+
+</body>
+</html>

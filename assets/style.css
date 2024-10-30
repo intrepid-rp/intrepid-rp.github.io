@@ -80,11 +80,13 @@ table {
 header {
   background-color: var(--color-surface-a10);
   padding: 10px;
-  text-align: center;
   position: fixed;
   top: 0; 
   width: 100%;
   z-index: 1000;
+}
+header h1{
+  text-align: center;
 }
 
 /* Left-side vertical menu for larger screens */
@@ -97,15 +99,14 @@ nav {
   left: 0;
   overflow-y: auto;
   display: block;
-  padding-top: 50px; /* Offset for the fixed header */
-}
+  padding-top: 50px; /* Offset for the fixed header and footer */
 
+}
 nav a {
   display: block;
-  padding: 15px;
+  padding: 12px;
   text-decoration: none;
 }
-
 nav a:hover {
   background-color: var(--color-surface-a20);
 }
@@ -127,19 +128,21 @@ main {
   font-weight: 400;
   padding: 5px;
   border: none;
-  width: 110px;
   text-align: left;
   position: fixed;
   top: 0px;
   z-index: 1000;
 }
-
 .menu-btn:focus {
   outline: none;
 }
 
 /* Mobile view */
 @media (max-width: 768px) {
+  header h1{
+    text-align: left;
+    margin-left:80px;
+  }
   nav {
       width: 100%;
       height: auto;
@@ -254,11 +257,7 @@ em, i {
 }
 
 p {
-  margin: 0 0 1.5rem 0;
-}
-
-p.major {
-  font-size: 1.25rem;
+  margin: 0 0 1rem 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -393,17 +392,24 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 
 /* Tables */
 tr{
-  background-color: var(--color-surface-a20);
+  background-color: var(--color-surface-a30);
 }
 tbody tr:nth-child(odd) {
-  background-color:var(--color-surface-a30);
+  background-color:var(--color-surface-a40);
+}
+th{
+  background-color: var(--color-surface-a20);
 }
 td, th{
   padding: 3px 8px 3px 8px;
-  border-color: var(--color-surface-a40);
+  border-color: var(--color-surface-a50);
   border-width: 1px;
   border-style: solid;
 }
+tbody tr td.indent{
+  padding-left: 20px;
+}
+
 
 /* Filters */
 #filters
@@ -465,7 +471,7 @@ button{
   overflow: hidden;
 }
 
-/* Lineages, Heritages, Backgrounds */
+/* Lineages, Heritages, Backgrounds, Classes */
 .lineage img, .heritage img, .background img, .class img{
   float: left;
   width: 250px;
@@ -510,4 +516,80 @@ h4 .lvl
     margin-bottom: 30px;
     font-size: .9rem;
   }
+}
+
+/* My Stat Block */
+.statblock{
+  background: var(--color-surface-a0);
+  border-top: 5px solid var(--color-surface-a20);
+  border-bottom: 5px solid var(--color-surface-a20);
+  box-shadow: 0 0 1em var(--color-surface-a10);
+  padding: 20px;
+  min-width: 380px;
+  max-width: 760px;
+  margin-bottom: 1rem;
+}
+.statblock .heading{
+  overflow: hidden;
+  color: var(--color-primary-a10);
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-surface-a20);
+  margin-bottom: 10px;
+}
+.statblock .heading .name{
+  float:left;
+}
+.statblock .heading .challenge{
+  float:right;
+}
+.statblock table{
+  width: 100%;
+  text-align: center;
+  background: none;
+  border-top: 1px solid var(--color-surface-a20);
+  border-bottom: 1px solid var(--color-surface-a20);
+}
+.statblock table tr{
+  background: none;
+}
+.statblock table td, .statblock table th{
+  border: 0;
+  background: none;
+}
+.statblock .properties{
+  list-style-type: none;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+.statblock h5{
+  display: inline-block;
+}
+.statblock .details
+{
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+}
+.statblock .details .first{
+  margin-top: 0;
+}
+@media (max-width: 768px) {
+  .statblock{
+    grid-template-columns: 1fr;
+  }
+  .statblock .properties{
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+  }
+  .statblock .details
+{
+  -webkit-column-count: 1;
+     -moz-column-count: 1;
+          column-count: 1;
+}
 }
