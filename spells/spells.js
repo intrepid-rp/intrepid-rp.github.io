@@ -27,8 +27,14 @@ document.addEventListener("DOMContentLoaded", function () {
           // Convert query to lowercase for case-insensitive searching
           const lowerQueryValue = queryValue.toLowerCase();
 
-          // Filter spells where the query key's value contains the query string (substring match)
+          // Filter spells based on the query
+        if (queryKey === 'id') {
+          // Exact match for 'id' field
+          spellsToDisplay = spells.filter(spell => spell[queryKey] && spell[queryKey].toLowerCase() === lowerQueryValue);
+        } else {
+          // Substring match for other fields
           spellsToDisplay = spells.filter(spell => spell[queryKey] && spell[queryKey].toLowerCase().includes(lowerQueryValue));
+        }
       } else {
           // No query, display all spells
           spellsToDisplay = spells;

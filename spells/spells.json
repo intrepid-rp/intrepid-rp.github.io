@@ -1343,6 +1343,18 @@
       "description": "<p>You bring forth a continuous blast of wind that blows back nigh everything in your path. A line of strong wind 60 feet long and 10 feet wide blasts from you in a direction you choose for the spell's duration. Each creature that starts its turn in the line must succeed on a STR save or be pushed 15 feet away from you in a direction following the line. Any creature in the line must spend 2 feet of movement for every 1 foot it moves when moving closer to you.</p><p>The gust disperses gas or vapor, and extinguishes candles, torches, and similar unprotected flames in the area. It causes protected flames, such as those of lanterns, to dance wildly and has a 50 percent chance to extinguish them.</p><p>As a bonus action on each of your turns before the spell ends, you can change the direction in which the line blasts from you.</p>"
     },
     {
+      "id": "hallucination",
+      "name": "Hallucination",
+      "tier": "2nd",
+      "source": "Arcane and Wyrd",
+      "school": "Illusion",
+      "castingTime": "1 action",
+      "range": "60 feet (10 ft cube)",
+      "components": "V, S",
+      "duration": "Concentration, up to 1 minute",
+      "description": "<p>You create a vivid hallucination in the mind of a target you can see, or whose mind you can sense. The target must make an INT saving throw. On a failed save, you create a phenomenon perceivable only to the target. The effect must fit within a ten-foot cube and can include sound, temperature, and other stimuli. It has no effect on undead or constructs.</p><p>While affected, the target treats the hallucination as real, rationalizing any illogical outcomes. It can deal 1d6 psychic damage each round if it appears as a creature or hazard capable of dealing damage. The target perceives the damage as appropriate to the illusion: taking fire damage from lava, for example.</p><p>The target can use its action to make an Investigation check against your spell save DC. On a success, the target realizes the hallucination is false, ending the spell.</p>"
+    },    
+    {
       "id": "harm",
       "name": "Harm",
       "tier": "6th",
