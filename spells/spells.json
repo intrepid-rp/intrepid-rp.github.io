@@ -777,7 +777,7 @@
       "components": "V, S",
       "duration": "Concentration, up to 10 minutes",
       "description": "<p>You enter the dreams of a creature known to you on the same plane of existence. The spell fails if the target is not asleep or meditating.</p><p>You are an imperceptible observer and you can attempt to change the dream’s tone, make an object appear, or influence a creature’s actions. The target must make a WIS save. On a failure, your influence succeeds. On a success, the target awakens.</p><p>While the spell lasts, your body is in repose, blind and deaf to your surroundings but aware of any damage.</p>"
-    }
+    },
     {
       "id": "druidcraft",
       "name": "Druidcraft",
