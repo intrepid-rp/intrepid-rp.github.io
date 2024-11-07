@@ -755,6 +755,30 @@
       "description": "<p>Choose a Medium or smaller creature that you can see within range. This spell has no effect on creatures immune to the charmed condition. The target must succeed on a WIS save or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the save.</p><p>While the creature is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as “attack that creature,” “run over there,” or “fetch that object.” If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.</p><p>You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose and doesn't do anything that you don't allow it to do.</p><p>During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well.</p><p>Each time the target takes damage, it makes a new WIS save against the spell, ending the spell on a success.</p><p><em>At Higher Tiers.</em> The duration increases at 6th tier (10 minutes), 7th tier (1 hour), and 8th tier (8 hours).</p>"
     },
     {
+      "id": "dream",
+      "name": "Dream",
+      "tier": "5th",
+      "source": "Arcane and Wyrd",
+      "school": "Illusion",
+      "castingTime": "1 minute (ritual)",
+      "range": "Special",
+      "components": "V, S",
+      "duration": "8 hours",
+      "description": "<p>Choose a creature known to you on the same plane of existence. You or a willing creature you touch enters a trance as the messenger, aware of surroundings but unable to act or move.</p><p>If the target is awake, the messenger knows and can end the spell or wait for the target to sleep.</p><p>If the target is asleep, the messenger appears in their dream, able to converse and shape the dream's environment. The messenger can leave the trance at any time. The target recalls the dream upon waking.</p><p>You can make the messenger appear terrifying, delivering a message of up to ten words. The target must make a WIS save. On a fail, they experience a nightmare for the duration of their sleep, gaining no benefit from rest and taking 3d6 psychic damage upon waking. The save is at disadvantage if you have a part of the target's body.</p><p>You can't cast this spell again until you complete a long rest."
+    },
+    {
+      "id": "dreamsight",
+      "name": "Dreamsight",
+      "tier": "3rd",
+      "source": "Arcane and Wyrd",
+      "school": "Illusion",
+      "castingTime": "10 minutes (ritual)",
+      "range": "Special",
+      "components": "V, S",
+      "duration": "Concentration, up to 10 minutes",
+      "description": "<p>You enter the dreams of a creature known to you on the same plane of existence. The spell fails if the target is not asleep or meditating.</p><p>You are an imperceptible observer and you can attempt to change the dream’s tone, make an object appear, or influence a creature’s actions. The target must make a WIS save. On a failure, your influence succeeds. On a success, the target awakens.</p><p>While the spell lasts, your body is in repose, blind and deaf to your surroundings but aware of any damage.</p>"
+    }
+    {
       "id": "druidcraft",
       "name": "Druidcraft",
       "tier": "Cantrip",
