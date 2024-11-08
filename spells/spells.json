@@ -647,6 +647,18 @@
       "description": "<p>For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.</p><p>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>"
     },
     {
+      "id": "detect_poison_and_disease",
+      "name": "Detect Poison and Disease",
+      "tier": "1st",
+      "source": "Divine and Primordial",
+      "school": "Divination",
+      "castingTime": "1 minute (ritual)",
+      "range": "Self",
+      "components": "V, S",
+      "duration": "Concentration, up to 10 minutes",
+      "description": "<p>For the duration, you can sense poisons, diseases, and affected creatures within 30 feet, and identify each type. This includes creatures that deal poison damage or can infect others with a disease. The spell penetrates most barriers but is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>"
+    },
+    {
       "id": "detect_thoughts",
       "name": "Detect Thoughts",
       "tier": "2nd",
@@ -1641,6 +1653,18 @@
       "components": "V, S",
       "duration": null,
       "description": "<p>You send a streaking bolt of electricity lancing out from your person. A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a DEX save. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one. The lightning ignites flammable objects in the area that aren't being worn or carried.</p><p><em>At Higher Tiers.</em> Add 1d6 damage for each additional tier.</p>"
+    },
+    {
+      "id": "locate",
+      "name": "Locate",
+      "tier": "2nd",
+      "source": "Arcane, Divine, Primordial, and Wyrd",
+      "school": "Divination",
+      "castingTime": "1 minute (ritual)",
+      "range": "Self (1 mile)",
+      "components": "V, S, M (25g figurine which the spell consumes)",
+      "duration": "Concentration, up to 10 minutes",
+      "description": "<p>Describe or name a kind of object or creature. If within range, you sense the direction to the nearest target of that type. If it moves, you know the direction of its movement.</p><p>The spell can't locate a creature or object if it has transformed or is shielded by divination-blocking magic.</p><p><em>At Higher Tiers</em>: With 4th-tier spell slots, you can locate a specific familiar creature or object and the spell lasts up to 1 hour.</p>"
     },
     {
       "id": "longstrider",
