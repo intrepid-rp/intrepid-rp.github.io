@@ -131,6 +131,18 @@
       "description": "<p>After completing the ritual, you touch a Huge or smaller Beast or Plant. The target gains an INT of +0 and can speak one language you know. If it's a Plant, it gains mobility and senses like a human's, with appropriate statistics chosen by your GM.</p><p>The awakened creature is charmed by you for 30 days or until harmed. After the charm ends, it decides whether to stay friendly based on your treatment during the charm.</p>"
     },
     {
+      "id": "barrage",
+      "name": "Barrage",
+      "tier": "1st",
+      "source": "Arcane, Primordial, and Wyrd",
+      "school": "Transmutation",
+      "castingTime": "1 action",
+      "range": "60 feet",
+      "components": "S",
+      "duration": null,
+      "description": "<p>Choose a group of tiny objects from a visible 5-foot cube within range that are not worn or carried. You levitate and launch them in a straight line up to 90 feet. If the objects would hit a creature, it must make a DEX save. On a failed save, the target takes 3d8 bludgeoning damage. On a success, the objects continue until they hit something or reach their range.</p><p><em>At Higher Tiers</em>. Add +1d8 damage for each additional tier.</p>"
+    },
+    {
       "id": "bane",
       "name": "Bane",
       "tier": "1st",
@@ -443,6 +455,18 @@
       "description": "<p>This spell assaults and twists creatures' minds, spawning delusions and provoking uncontrolled action. Each creature in a 10-foot-radius sphere centered on a point you choose within range must succeed on a WIS save when you cast this spell or be affected by it.</p><p>An affected target can't take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn.</p><p>At the end of each of its turns, an affected target can make a WIS save, ending the effect on itself on a success.</p><p><em>At Higher Tiers.</em> The radius increases by 5 feet for each additional tier.</p>"
     },
     {
+      "id": "conjure_animals",
+      "name": "Conjure Animals",
+      "tier": "3rd",
+      "source": "Primordial and Wyrd",
+      "school": "Conjuration",
+      "castingTime": "1 action",
+      "range": "60 feet",
+      "components": "V, S",
+      "duration": "Concentration, up to 1 hour",
+      "description": "<p>You conjure beasts that appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:</p><ul><li>One Beast of CR 2 or lower</li><li>Two Beasts of CR 1 or lower</li></ul><p>Conjured creatures take their turn immediately after yours and disappear if they drop to 0 HP or when the spell ends. They obey your verbal comands. If you don't give any commands, they defend themselves but otherwise take no actions.</p><p><em>At Higher Tiers</em>. The CR of the conjured creature increases by +1 at 5th, 7th, and 9th tiers. For example, you can summon one CR 5 beast using a 9th tier spell slot.</p>"
+    },
+    {
       "id": "conjure_elemental",
       "name": "Conjure Elemental",
       "tier": "5th",
@@ -536,7 +560,7 @@
       "range": "Touch",
       "components": "V, S",
       "duration": null,
-      "description": "<p>You touch a wounded creature and heal them. They regain a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on Undead or Constructs.</p><p><em>At Higher Tiers.</em> The healing increases by 1d8 for each additional tier.</p>"
+      "description": "<p>You touch a wounded creature and heal them. They regain a number of hit points equal to 2d8 + your spellcasting ability modifier. This spell has no effect on Undead or Constructs.</p><p><em>At Higher Tiers.</em> Add +2d8 healing for each additional tier.</p>"
     },
     {
       "id": "dancing_lights",
@@ -992,7 +1016,7 @@
       "range": "150 feet",
       "components": "V",
       "duration": null,
-      "description": "<p>You blast the mind of a creature that you can see within range, attempting to shatter its intellect and personality. The target takes 4d6 psychic damage and must make an INT save.</p><p>On a failed save, the creature's INT and CHA become −5. The creature can't cast spells, activate magic items, understand language, or communicate in any intelligible way. However, the creature can identify its friends, follow them, and even protect them.</p><p>At the end of every 30 days, the creature can repeat its save against this spell, ending the spell on a success.</p><p>The spell can also be ended by the greater restoration, heal, or wish spells.</p>"
+      "description": "<p>You blast the mind of a creature that you can see within range, attempting to shatter its intellect and personality. The target takes 4d6 psychic damage and must make an INT save.</p><p>On a failed save, the creature's INT and CHA become -5. The creature can't cast spells, activate magic items, understand language, or communicate in any intelligible way. However, the creature can identify its friends, follow them, and even protect them.</p><p>At the end of every 30 days, the creature can repeat its save against this spell, ending the spell on a success.</p><p>The spell can also be ended by the greater restoration, heal, or wish spells.</p>"
     },
     {
       "id": "finger_of_death",
@@ -1256,7 +1280,7 @@
       "range": "Touch",
       "components": "V, S",
       "duration": null,
-      "description": "<p>You create a handful of nutritious berries that heal small wounds and fill hungry bellies. Up to ten berries appear in your hand. A creature can use its action to eat one berry. Eating a berry restores 1 hit point and provides enough nourishment to sustain a creature for one day. The berries lose their potency if they have not been consumed within 24 hours of the casting of this spell.</p>"
+      "description": "<p>You create a handful of nutritious berries that heal small wounds and fill hungry bellies. Up to ten berries appear in your hand. A creature can use its action to eat one berry. Eating a berry restores 1 HP and provides enough nourishment to sustain a creature for one day. The berries lose their potency if they have not been consumed within 24 hours of the casting of this spell.</p>"
     },
     {
       "id": "grave_touch",
@@ -1424,7 +1448,7 @@
       "range": "60 feet",
       "components": "V, S",
       "duration": null,
-      "description": "<p>Choose a creature that you can see within range. A surge of positive energy washes through the creature, causing it to regain 70 HP. This spell also ends blindness, deafness, and any diseases affecting the target. This spell has no effect on Constructs or Undead.</p><p><em>At Higher Tiers.</em> The amount of healing increases by 10 HP for each additional tier.</p>"
+      "description": "<p>Choose a creature that you can see within range. A surge of positive energy washes through the creature, causing it to regain 70 HP. This spell also ends blindness, deafness, and any diseases affecting the target. This spell has no effect on Constructs or Undead.</p><p><em>At Higher Tiers.</em> Add 10 HP for each additional tier.</p>"
     },
     {
       "id": "healing_word",
@@ -1436,7 +1460,7 @@
       "range": "60 feet",
       "components": "V",
       "duration": null,
-      "description": "<p>You say a quick prayer that knits small wounds on a nearby target. A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on Undead or Constructs.</p><p><em>At Higher Tiers.</em> The healing increases by 1d4 for each additional tier.</p>"
+      "description": "<p>You say a quick prayer that knits small wounds on a nearby target. A creature of your choice that you can see within range regains hit points equal to 2d4 + your spellcasting ability modifier. This spell has no effect on Undead or Constructs.</p><p><em>At Higher Tiers.</em> Add +2d4 healing for each additional tier.</p>"
     },
     {
       "id": "heat_metal",
@@ -1595,6 +1619,18 @@
       "description": "<p>Choose one creature that you can see within range. The target begins a comic dance in place: shuffling, tapping its feet, and capering for the duration. Creatures that can't be charmed are immune to this spell.</p><p>A dancing creature must use all its movement to dance without leaving its space and has disadvantage on DEX saves and attack rolls. While the target is affected by this spell, other creatures have advantage on attack rolls against it. As an action, a dancing creature can make a WIS save to regain control of itself. On a successful save, the spell ends.</p>"
     },
     {
+      "id": "jump",
+      "name": "Jump",
+      "tier": "1st",
+      "source": "Arcane",
+      "school": "Transmutation",
+      "castingTime": "1 action",
+      "range": "Touch",
+      "components": "V, S",
+      "duration": "1 minute",
+      "description": "<p>You touch a creature. The creature's jump distance is tripled until the spell ends.</p>"
+    },
+    {
       "id": "knock",
       "name": "Knock",
       "tier": "2nd",
@@ -1748,7 +1784,7 @@
       "range": "60 feet",
       "components": "V, S",
       "duration": null,
-      "description": "<p>A wave of healing energy significantly heals the wounds of up to six creatures. Choose up to six creatures in a 30-foot-radius sphere centered on a point of your choice within range. Each target regains hit points equal to 3d8 + your spellcasting ability modifier. This spell has no effect on Undead or Constructs.</p><p><em>At Higher Tiers.</em> Add 1d8 healing for each additional tier.</p>"
+      "description": "<p>Choose up to six creatures in a 30-foot-radius sphere centered on a point of your choice within range. Each target regains hit points equal to 4d8 + your spellcasting ability modifier. This spell has no effect on Undead or Constructs.</p><p><em>At Higher Tiers.</em> Add +2d8 healing for each additional tier.</p>"
     },
     {
       "id": "mass_faerie_fire",
@@ -1772,7 +1808,7 @@
       "range": "60 feet",
       "components": "V, S",
       "duration": null,
-      "description": "<p>A flood of healing energy flows from you into injured creatures around you. You restore up to 700 HP, divided as you choose among any number of creatures that you can see within range. Creatures healed by this spell are also cured of all diseases and any effect making them blinded or deafened. This spell has no effect on Constructs or Undead.</p>"
+      "description": "<p>You restore up to 700 HP, divided as you choose among any number of creatures that you can see within range. Creatures healed by this spell are also cured of all diseases and any effect making them blinded or deafened. This spell has no effect on Constructs or Undead.</p>"
     },
     {
       "id": "mass_healing_word",
@@ -1784,7 +1820,7 @@
       "range": "60 feet",
       "components": "V",
       "duration": null,
-      "description": "<p>You utter a compassionate word of power that swiftly heals the nearby wounded. Up to six creatures of your choice that you can see within range regain hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on Undead or Constructs.</p><p><em>At Higher Tiers.</em> The healing increases by 1d4 for each additional tier.</p>"
+      "description": "<p>You utter a compassionate word of power that swiftly heals the nearby wounded. Up to six creatures of your choice that you can see within range regain hit points equal to 2d4 + your spellcasting ability modifier. This spell has no effect on Undead or Constructs.</p><p><em>At Higher Tiers.</em> Add +2d4 healing for each additional tier.</p>"
     },
     {
       "id": "mass_suggestion",
@@ -2096,7 +2132,7 @@
       "range": "30 feet",
       "components": "V",
       "duration": null,
-      "description": "<p>Up to six creatures you can see within range each regain HP equal to 2d8 + your spellcasting ability modifier. This spell has no effect on Constructs or Undead. You can cast this spell once per long rest.</p><p>At Higher Tiers: Add +1d8 healing for each additional tier.</p>"
+      "description": "<p>Up to six creatures you can see within range each regain HP equal to 2d8 + your spellcasting ability modifier. This spell has no effect on Constructs or Undead. You can cast this spell once per long rest.</p><p>At Higher Tiers: Add +2d8 healing for each additional tier.</p>"
     },
     {
       "id": "prestidigitation",
@@ -2744,7 +2780,7 @@
       "range": "60 feet",
       "components": "V, S",
       "duration": "Concentration, up to 10 minutes",
-      "description": "<p>You gain the ability to move or manipulate creatures or objects by thought. When you cast the spell, and as your action each round for the duration, you can exert your will on one creature or object that you can see within range, causing the appropriate effect below. You can affect the same target round after round, or choose a new one at any time. If you switch targets, the prior target is no longer affected by the spell.</p><p><strong>Creature.</strong> You can try to move a Huge or smaller creature. Make an ability check with your spellcasting ability contested by the creature's STR check. If you win the contest, you move the creature up to 30 feet in any direction, including upward but not beyond the range of this spell. Until the end of your next turn, the creature is restrained in your telekinetic grip. A creature lifted upward is suspended in mid-air. On subsequent rounds, you can use your action to attempt to maintain your telekinetic grip on the creature by repeating the contest.</p><p><strong>Object.</strong> You can try to move an object that weighs up to 1,000 pounds. If the object isn't being worn or carried, you automatically move it up to 30 feet in any direction, but not beyond the range of this spell. If the object is worn or carried by a creature, you must make an ability check with your spellcasting ability contested by that creature's STR check. If you succeed, you pull the object away from that creature and can move it up to 30 feet in any direction but not beyond the range of this spell.</p><p>You can exert fine control on objects with your telekinetic grip, such as manipulating a simple tool, opening a door or a container, stowing or retrieving an item from an open container, or pouring the contents from a vial.</p>"
+      "description": "<p>You move or manipulate creatures or objects by thought. When you cast the spell, and as your action each round for the duration, you can exert your will on one creature or object that you can see within range, causing the appropriate effect below. You can affect the same target round after round, or choose a new one at any time. If you switch targets, the prior target is no longer affected by the spell.</p><p><strong>Creature.</strong> You can try to move a Huge or smaller creature. Make an ability check with your spellcasting ability contested by the creature's STR check. If you win the contest, you move the creature up to 30 feet in any direction, including upward but not beyond the range of this spell. Until the end of your next turn, the creature is restrained in your telekinetic grip. A creature lifted upward is suspended in mid-air. On subsequent rounds, you can use your action to attempt to maintain your telekinetic grip on the creature by repeating the contest.</p><p><strong>Object.</strong> You can try to move an object that weighs up to 1,000 pounds. If the object isn't being worn or carried, you automatically move it up to 30 feet in any direction, but not beyond the range of this spell. If the object is worn or carried by a creature, you must make an ability check with your spellcasting ability contested by that creature's STR check. If you succeed, you pull the object away from that creature and can move it up to 30 feet in any direction but not beyond the range of this spell.</p><p>You can exert fine control on objects with your telekinetic grip, such as manipulating a simple tool, opening a door or a container, stowing or retrieving an item from an open container, or pouring the contents from a vial.</p>"
     },
     {
       "id": "telepathic_bond",
@@ -2769,6 +2805,18 @@
       "components": "V",
       "duration": null,
       "description": "<p>This spell instantly transports you and up to eight willing creatures of your choice that you can see within range, or a single object that you can see within range, to a destination you select. If you target an object, it must be able to fit entirely inside a 10-foot cube, and it can't be held or carried by an unwilling creature.</p><p>The destination you choose must be known to you, and it must be on the same plane of existence as you. Your familiarity with the destination determines whether you arrive there successfully. The GM rolls d100 and consults the Destination Accuracy list.</p><p><strong>Familiarity.</strong> “Permanent circle” means a permanent teleportation circle whose sigil sequence you know. “Associated object” means that you possess an object taken from the desired destination within the last six months, such as a book from an arcanist's library, bed linen from a royal suite, or a chunk of marble from a lich's secret tomb.</p><p>“Very familiar” is a place you have been very often, a place you have carefully studied, or a place you can see when you cast the spell.</p><p>“Seen casually” is a place you have seen more than once but with which you aren't very familiar.</p><p>“Viewed once” is a place you have seen once, possibly using magic.</p><p>“Description” is a place whose location and appearance you know through someone else's description, perhaps from a map.</p><p><strong>False destination</strong> is a place that doesn't exist. Perhaps you tried to scry an enemy's sanctum but instead viewed an illusion, or you are attempting to teleport to a familiar location that no longer exists.</p><p><strong>On Target.</strong> You and your group (or the target object) appear where you want to.</p><p><strong>Off Target.</strong> You and your group (or the target object) appear a random distance away from the destination in a random direction. Distance off target is 1d10 × 1d10 percent of the distance that was to be traveled. For example, if you tried to travel 120 miles, landed off target, and rolled a 5 and 3 on the two d10s, then you would be off target by 15 percent, or 18 miles. The GM determines the direction off target randomly by rolling a d8 and designating 1 as north, 2 as northeast, 3 as east, and so on around the points of the compass. If you were teleporting to a coastal city and wound up 18 miles out at sea, you could be in trouble.</p><p><strong>Similar Area.</strong> You and your group (or the target object) wind up in a different area that's visually or thematically similar to the target area. If you are heading for your home laboratory, for example, you might wind up in another arcanist's laboratory or in an alchemical supply shop that has many of the same tools and implements as your laboratory. Generally, you appear in the closest similar place, but since the spell has no range limit, you could conceivably wind up anywhere on the plane.</p><p><strong>Mishap.</strong> The spell's unpredictable magic results in a difficult journey. Each teleporting creature (or the target object) takes 3d10 force damage, and the GM rerolls on the table to see where you wind up (multiple mishaps can occur, dealing damage each time).</p><p><strong>Destination Accuracy:</strong><br>Permanent Circle: 1-100 On Target<br>Associated Object: 1-100 On Target<br>Very Familiar: 1-5 Mishap, 6-13 Similar Area, 14-24 Off Target, 25-100 On Target<br>Seen Casually: 1-33 Mishap, 34-43 Similar Area, 44-53 Off Target, 54-100 On Target<br>Viewed Once/Description: 1-43 Mishap, 44-53 Similar Area, 54-73 Off Target, 74-100 On Target<br>False Destination: 1-50 Mishap, 51-100 Similar Area</p>"
+    },
+    {
+      "id": "tether",
+      "name": "Tether",
+      "tier": "2nd",
+      "source": "Arcane",
+      "school": "Conjuration",
+      "castingTime": "1 action",
+      "range": "90 feet",
+      "components": "V, S",
+      "duration": "Concentration, up to 1 minute",
+      "description": "<p>You target a creature or object within range, restraining it with a 30-foot magical tether connected to a point you choose (such as the ground, a building, or another creature). The target must make a DEX saving throw to avoid the effect. On a failed save, the target is tethered. It can use its action to make another DEX saving throw, ending the restraint on a success.</p><p>On subsequent rounds, as a bonus action, you can shorten or lengthen the tether by 10 feet.</p><p><em>At Higher Tiers</em>: The initial length of the tether increases by 10 feet for each additional tier.</p>"
     },
     {
       "id": "thaumaturgy",
@@ -2899,7 +2947,7 @@
       "range": "Self",
       "components": "V, S",
       "duration": "Concentration, up to 1 minute",
-      "description": "<p>The touch of your shadow-wreathed hand can siphon life force from others to heal your wounds. Make a melee spell attack against a creature within your reach. On a hit, the target takes 3d6 necrotic damage, and you regain hit points equal to half the amount of necrotic damage dealt. Until the spell ends, you can make the attack again on each of your turns as an action.</p><p><strong>At Higher Tiers:</strong> Add 1d6 damage for each additional tier.</p>"
+      "description": "<p>The touch of your shadow-wreathed hand can siphon life force from others to heal your wounds. Make a melee spell attack against a creature within your reach. On a hit, the target takes 3d6 necrotic damage, and you regain hit points equal to half the amount of necrotic damage dealt. Until the spell ends, you can make the attack again on each of your turns as an action.</p><p><strong>At Higher Tiers:</strong> Add +1d6 damage for each additional tier.</p>"
     },
     {
       "id": "vicious_mockery",
