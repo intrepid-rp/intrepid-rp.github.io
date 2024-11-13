@@ -35,6 +35,18 @@
       "description": "<p>You bless allies with heightened vitality and newfound determination. Choose up to three creatures within range. Each target's hit point maximum and current hit points increase by 5 for the duration.</p><p><em>At Higher Tiers</em>. A target's hit points increase by another 5 points for each additional tier.</p>"
     },
     {
+      "id": "alarm",
+      "name": "Alarm",
+      "tier": "1st",
+      "source": "Arcane",
+      "school": "Abjuration",
+      "castingTime": "1 minute (ritual)",
+      "range": "30 feet",
+      "components": "V, S, M (10gp bell)",
+      "duration": "8 hours",
+      "description": "<p>You set an alarm for a door, window, or a 20-foot area. The alarm alerts you when a Tiny or larger creature enters or touches the area. You can choose creatures that won't trigger the alarm and whether the alarm is mental or audible.</p><ul><li><strong>Mental Alarm:</strong> A ping in your mind if within 1 mile, waking you if asleep.</li><li><strong>Audible Alarm:</strong> A hand bell sound for 10 seconds within 60 feet.</li></ul><p>Casting the spell again before the duration ends cancels the first alarm.</p>"
+    },
+    {
       "id": "alter_self",
       "name": "Alter Self",
       "tier": "2nd",
@@ -59,6 +71,18 @@
       "description": "<p>You convince a beast you mean no harm. Choose a beast that you can see within range. It must see and hear you. If the beast's Intelligence is 4 or higher, the spell fails. Otherwise, the beast must succeed on a Wisdom saving throw or be charmed by you for the spell's duration. If you or one of your companions harms the target, the spell ends.</p><p><em>At Higher Tiers</em>. You can affect one additional beast for each tier above 1st.</p>"
     },
     {
+      "id": "animal_messenger",
+      "name": "Animal Messenger",
+      "tier": "2nd",
+      "source": "Primordial",
+      "school": "Enchantment",
+      "castingTime": "1 action",
+      "range": "30 feet",
+      "components": "V, S",
+      "duration": "24 hours",
+      "description": "<p>Choose a Tiny Beast you can see within range. Specify a location you have visited and a recipient, such as a town guard or a &quot;red-haired dwarf with a hat.&quot; Speak a message of up to 25 words. The Beast travels to the location, covering 50 miles per 24 hours if it flies, or 25 miles if it doesn't.</p><p>Upon arrival, the Beast delivers your message in your voice. It then returns to where you cast the spell. If it can't deliver the message before the spell ends, the message is lost, and the Beast returns.</p><p>If you cast the spell again while the first is active, the new casting fails.</p><p><em>At Higher Tiers</em>. Add 48 hours to the duration for each additional tier.</p>"
+    },
+    {
       "id": "animal_shapes",
       "name": "Animal Shapes",
       "tier": "8th",
@@ -71,6 +95,18 @@
       "description": "<p>Your magic turns others into animals. Choose any number of willing creatures that you can see within range. You transform each target into the form of a Large or smaller Beast or creature with the Animal tag with a CR 4 or lower. On subsequent turns, you can use your action to transform affected creatures into new forms.</p><p>The transformation lasts for the duration for each target or until the target drops to 0 HP or dies. You can choose a different form for each target. A target's game statistics are replaced by the statistics of the chosen form, though the target retains its personality and Intelligence, Wisdom, and Charisma scores. The target assumes the hit points of its new form, and when it reverts to its normal form, it returns to the number of hit points it had before it transformed. If it reverts as a result of dropping to 0 HP, any excess damage carries over to its normal form. As long as the excess damage doesn't reduce the creature's normal form to 0 HP, it isn't knocked unconscious. The creature is limited in the actions it can perform by the nature of its new form, and it can't speak or cast spells.</p><p>The target's gear melds into the new form. The target can't activate, wield, or otherwise benefit from any of its equipment.</p>"
     },
     {
+      "id": "animate_dead",
+      "name": "Animate Dead",
+      "tier": "3rd",
+      "source": "Arcane and Divine",
+      "school": "Necromancy",
+      "castingTime": "1 minute (ritual)",
+      "range": "10 feet",
+      "components": "V, S, M (10 gp bloodstone, which the spell consumes)",
+      "duration": null,
+      "description": "<p>Choose a pile of bones or a corpse of a Medium or Small Humanoid within range. Your spell raises it as an Undead creature—either a skeleton (bones) or a zombie (corpse).</p><p>On your turn, you can use a bonus action to mentally command one or more creatures made with this spell within 60 feet. Decide their actions and movements or issue general commands, like guarding an area. If no command is given, they defend themselves against hostiles and follow the last command given until their task is complete.</p><p>The creature is under your control for 24 hours. To maintain control, cast the spell on it again before the 24 hours end.</p><p>You can have up to 5 creatures created by this spell active at one time. If you cast the spell again while at the limit, the oldest servant is destroyed.</p><p><em>At Higher Tiers</em>. As you gain access to higher-tier spell slots, the number of Undead you can animate (or reassert control over) increases by two for each additional tier, up to the spell's maximum of 5 Undead.</p>"
+    },
+    {
       "id": "antilife_shell",
       "name": "Antilife Shell",
       "tier": "5th",
@@ -81,6 +117,18 @@
       "components": "V, S",
       "duration": "Concentration, up to 1 hour",
       "description": "<p>A ward around you prevents living things from breaching its border. A shimmering barrier extends out from you in a 10-foot radius and moves with you. It remains centered on you, hedging out creatures other than Undead and Constructs. The barrier lasts for the duration.</p><p>The barrier prevents an affected creature from passing or reaching through. An affected creature can cast spells or make attacks with ranged or reach weapons through the barrier.</p><p>If you move so that an affected creature is forced to pass through the barrier, the spell ends.</p>"
+    },
+    {
+      "id": "antipathy_sympathy",
+      "name": "Antipathy/Sympathy",
+      "tier": "8th",
+      "source": "Arcane, Divine, Primordial, Psionic, and Wyrd",
+      "school": "Enchantment",
+      "castingTime": "1 hour (ritual)",
+      "range": "60 feet",
+      "components": "V, S",
+      "duration": "10 days",
+      "description": "<p>You create an aura that attracts or repels creatures. Choose a Huge or smaller object, creature, or a 200-foot area within range. Specify a type of intelligent creature (e.g., red dragons, goblins, or vampires). Decide if the aura attracts (sympathy) or repels (antipathy) the specified creatures.</p><p><strong>Antipathy.</strong> Creatures feel an urge to leave the area and avoid the target. If a creature sees the target or comes within 60 feet, it must succeed on a WIS save or become frightened. The creature moves to a safe spot out of sight and more than 60 feet away. The fear effect returns if the creature sees the target again or moves within 60 feet.</p><p><strong>Sympathy.</strong> Creatures feel an urge to approach the target. If a creature sees the target or comes within 60 feet, it must succeed on a WIS save or use its movement to reach the target. Once near, it can't willingly move away.</p><p><strong>Ending the Effect.</strong> If a creature ends its turn beyond 60 feet or out of sight, it makes a Wisdom saving throw. On a success, the effect ends, and it recognizes the feeling as magical. The creature can retry the save every 24 hours. If the target harms the creature, it gets another save to end the effect.</p><p>A creature that saves is immune for 1 minute, then can be affected again.</p><p>Casting this spell again ends the previous casting.</p>"
     },
     {
       "id": "arcane_eye",
@@ -107,6 +155,18 @@
       "description": "<p>You create a Large hand of shimmering, translucent force in an unoccupied space that you can see within range. The hand lasts for the spell's duration, and it moves at your command, mimicking the movements of your own hand.</p><p>The hand is an object that has AC 20 and hit points equal to your hit point maximum. If it drops to 0 HP, the spell ends. It has a Strength of +8 and a Dexterity of +0. Creatures can occupy the same space as the hand.</p><p>When you cast the spell and as a bonus action on your subsequent turns, you can move the hand up to 60 feet and then cause one of the following effects with it.</p><p><em>Clenched Fist.</em> The hand strikes one creature or object within 5 feet of it. Make a melee spell attack for the hand using your own spell attack modifier. On a hit, the target takes 4d8 force damage.</p><p><em>Forceful Hand.</em> The hand attempts to push a creature within 5 feet of it in a direction you choose. Make a check with the hand's Strength contested by the Strength (Athletics) check of the target. If the target is Medium or smaller, you have advantage on the check. If you succeed, the hand pushes the target up to 5 feet plus a number of feet equal to five times your spellcasting ability modifier. The hand moves with the target to remain within 5 feet of it.</p><p><em>Grasping Hand.</em> The hand attempts to grapple a Huge or smaller creature within 5 feet of it. You use the hand's Strength to resolve the grapple. If the target is Medium or smaller, you have advantage on the check. While the hand is grappling the target, you can use a bonus action to have the hand crush it. When you do so, the target takes bludgeoning damage equal to 2d6 + your spellcasting ability modifier.</p><p><em>Interposing Hand.</em> The hand interposes itself between you and a creature you choose until you give the hand a different command. The hand moves to stay between you and the target, providing you with half cover against the target. The target can't move through the hand's space if its Strength is less than or equal to the hand's Strength. If its Strength is higher than the hand's Strength, the target can move toward you through the hand's space, but that space is difficult terrain for the target.</p><p><em>At Higher Tiers.</em> For each additional tier, add 2d8 damage to the Clenched Fist or 2d6 damage to the Grasping Hand.</p>"
     },
     {
+      "id": "arcane_lock",
+      "name": "Arcane Lock",
+      "tier": "2nd",
+      "source": "Arcane",
+      "school": "Abjuration",
+      "castingTime": "1 minute (ritual)",
+      "range": "Touch",
+      "components": "V, S, M (25 gb gold dust, which the spell consumes)",
+      "duration": "Until dispelled",
+      "description": "<p>You touch a closed door, window, gate, chest, or other entryway, locking it for the duration. You and designated creatures can open it normally. You can set a password to suppress the spell for 1 minute if spoken within 5 feet. Otherwise, the lock is impassable unless broken, dispelled, or suppressed. Casting knock suppresses the lock for 10 minutes. The DC to break or pick the lock increases by 10 while the spell is active.</p>"
+    },
+    {
       "id": "arcane_sword",
       "name": "Arcane Sword",
       "tier": "7th",
@@ -117,6 +177,42 @@
       "components": "V, S, M (a miniature platinum sword worth 250 gp)",
       "duration": "Concentration, up to 1 minute",
       "description": "<p>When the sword appears, you make two melee spell attacks with the blade, each one against a target of your choice within 5 feet of the sword. On a hit, the target takes 3d10 + your spellcasting modifier force damage. Until the spell ends, you can use a bonus action on each of your turns to move the sword up to 30 feet to an unoccupied spot you can see and repeat these attacks against targets within 5 feet of the blade.</p>"
+    },
+    {
+      "id": "arcanists_magic_aura",
+      "name": "Arcanist's Magic Aura",
+      "tier": "2nd",
+      "source": "Arcane",
+      "school": "Illusion",
+      "castingTime": "1 minute (ritual)",
+      "range": "60 feet",
+      "components": "V, S, M (10 gp incense, which the spell consumes)",
+      "duration": "24 hours",
+      "description": "<p>Touch a creature or object, making divination spells reveal false information about it. The target can be a willing creature or an object not carried or worn by another creature.</p><p>Choose one or both effects of the following effects. Each lasts for the duration. Casting the same effect on a target daily for 30 days makes the illusion permanent until dispelled.</p><p><strong>False Aura</strong>. Change the target's magical aura. Make a nonmagical object appear magical, a magical object appear nonmagical, or change the aura's school of magic. The false magic can be apparent to anyone handling the item.</p><p><strong>Mask</strong>. Change how the target appears to spells detecting creature types. Choose a creature type; other spells and effects treat the target as that type.</p>"
+    },
+    {
+      "id": "astral_projection",
+      "name": "Astral Projection",
+      "tier": "9th",
+      "source": "Arcane and Wyrd",
+      "school": "Necromancy",
+      "castingTime": "1 hour (ritual)",
+      "range": "10 feet",
+      "components": "V, S, M (1000 gp gem for each effected creature, which the spell consumes)",
+      "duration": null,
+      "description": "<p>You and up to eight willing creatures project your astral bodies into the Astral Plane. Your material bodies are left behind, unconscious and in suspended animation (no need for food or air, and they don't age).</p><p>Your astral body looks like your mortal form but has a silvery cord tethering you to your material body. If this cord is cut (only possible with specific effects), you die instantly.</p><p>Your astral form can travel freely through the Astral Plane and enter other planes through portals. When you enter a new plane, your physical body and possessions are transported along the silvery cord, allowing you to re-enter your body.</p><p>The spell ends when you use an action to dismiss it. You and your companions return to your physical bodies and awaken.</p><p>The spell can also end early if a <a href='/spells/?id=dispel_magic'>Dispel Magic</a> spell is cast on your astral or physical body, or if you drop to 0 HP. If the spell ends and the cord is intact, it pulls your astral form back to your body, ending the suspended animation.</p><p>If you are returned to your body prematurely, your companions remain in their astral forms and must find their own way back, usually by dropping to 0 HP.</p>"
+    },
+    {
+      "id": "augury",
+      "name": "Augury",
+      "tier": "2nd",
+      "source": "Divine and Wyrd",
+      "school": "Divination",
+      "castingTime": "1 minute (ritual)",
+      "range": "Self",
+      "components": "V, S, M (25 gp divination tools)",
+      "duration": null,
+      "description": "<p>By casting gem-inlaid sticks, rolling dragon bones, laying out ornate cards, or employing some other divining tool, you receive an omen from an otherworldly entity about the results of a specific course of action that you plan to take within the next 30 minutes. The GM chooses from the following possible omens:</p><ul><li>Weal, for good results</li><li>Woe, for bad results</li><li>Weal and woe, for both good and bad results</li><li>Nothing, for results that aren't especially good or bad</li></ul><p>The spell doesn't take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion.</p><p>If you cast the spell two or more times before completing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get a random reading. The GM makes this roll in secret.</p>"
     },
     {
       "id": "awaken",
@@ -371,6 +467,30 @@
       "description": "<p>A sphere of negative energy ripples out in a 60-foot-radius sphere from a point within range. Each creature in that area must make a CON save. A target takes 8d6 necrotic damage on a failed save, or half as much damage on a successful one.</p><p><em>At Higher Tiers.</em> Add 2d6 damage for each additional tier.</p>"
     },
     {
+      "id": "clairvoyance",
+      "name": "Clairvoyance",
+      "tier": "3rd",
+      "source": "Arcane, Divine, and Wyrd",
+      "school": "Divination",
+      "castingTime": "10 minutes (ritual)",
+      "range": "1 mile",
+      "components": "V, S, M (100 gp divination focus)",
+      "duration": "Concentration, up to 10 minutes",
+      "description": "<p>You create an invisible sensor within range in a location familiar to you (a place you have visited or seen before) or in an obvious location that is unfamiliar to you (such as behind a door, around a corner, or in a grove of trees). The sensor remains in place for the duration, and it can't be attacked or otherwise interacted with. When you cast the spell, you choose seeing or hearing. You can use the chosen sense through the sensor as if you were in its space. As your action, you can switch between seeing and hearing.</p><p>A creature that can see the sensor (such as a creature benefiting from <a href='/spells/?id=see_invisibility'>See Invisibility</a> or truesight) sees a luminous, intangible orb about the size of your fist.</p>"
+    },
+    {
+      "id": "clone",
+      "name": "Clone",
+      "tier": "8th",
+      "source": "Arcane",
+      "school": "Necromancy",
+      "castingTime": "1 hour (ritual)",
+      "range": "Touch",
+      "components": "V, S, M (1000 gp diamond and flesh from the cloned creature which are consumed by the spell, and a 2000 gp vessel)",
+      "duration": "Concentration, up to 10 minutes",
+      "description": "<p>You create an inert duplicate of a living creature as a safeguard against death. The clone grows to full size and maturity in a sealed vessel after 120 days. You can choose to have the clone be a younger version of the creature. It remains inert as long as the vessel is undisturbed.</p><p>Once mature, if the original creature dies, its soul transfers to the clone (provided they are free and willing). The clone is physically identical to the original, with the same personality, memories, and abilities, but no equipment. The original body becomes inert and can’t be restored to life.</p><p>If you try to create a clone of a creature that already has one, the spell fails.</p>"
+    },
+    {
       "id": "cloudkill",
       "name": "Cloudkill",
       "tier": "5th",
@@ -405,6 +525,18 @@
       "components": "V",
       "duration": null,
       "description": "<p>You empower your spoken word with divine authority that few can resist. You speak a one-word command to a creature you can see within range. The target must succeed on a WIS save or follow the command on its next turn. The spell has no effect if the target is Undead, if it doesn't understand your language, or if your command is directly harmful to it. Some typical commands and their effects follow:</p><ul><li><strong>Approach.</strong> The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.</li><li><strong>Drop.</strong> The target drops whatever it is holding and then ends its turn.</li><li><strong>Flee.</strong> The target spends its turn moving away from you by the fastest available means.</li><li><strong>Grovel.</strong> The target falls prone and then ends its turn.</li><li><strong>Halt.</strong> The target doesn't move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.</li></ul><p><em>At Higher Tiers.</em> You can affect one more creature for each additional tier. The creatures must be within 30 feet of each other when you target them.</p>"
+    },
+    {
+      "id": "commune",
+      "name": "Commune",
+      "tier": "5th",
+      "source": "Primordial",
+      "school": "Divination",
+      "castingTime": "1 minute (ritual)",
+      "range": "Self",
+      "components": "V, S",
+      "duration": null,
+      "description": "<p>You must be outdoors to cast this spell. When you do so, the spell gives you knowledge of the land within 3 miles of you. In caves and other natural underground settings, the radius is limited to 300 feet. The spell doesn't function where nature has been replaced by construction, such as in dungeons and towns.</p><p>You instantly know up to three facts of your choice about any of the following subjects as they relate to the area:</p><ul><li>Terrain and bodies of water</li><li>Prevalent plants, minerals, animals, or peoples</li><li>Powerful Celestials, Fey, Fiends, Elementals, or Undead</li><li>Influence from other planes of existence</li><li>Buildings</li></ul><p>For example, you could determine the location of powerful Undead in the area, the location of major sources of safe drinking water, and the location of any nearby towns.</p><p>Once you perform this ritual, you can't do so again until 24 hours have passed.</p>"
     },
     {
       "id": "comprehend_languages",
@@ -479,6 +611,18 @@
       "description": "<p>You conjure an Elemental servant that appears in an unoccupied space you can see within range. Choose which Elemental appears: an air elemental, earth elemental, a fire elemental, or a water elemental. The GM has the creature's statistics. If your GM allows it, you can use this spell to summon a different Elemental of your choice of CR 5 or lower. This spell can't conjure creatures with Legendary Actions. The creature disappears when it drops to 0 hit points or when the spell ends.</p><p>The Elemental is friendly to you and your companions for the duration. In combat, it acts on your initiative and takes its turn immediately after yours. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to the Elemental, it defends itself from hostile creatures but otherwise takes no actions.</p><p><em>At Higher Tiers.</em> You can choose to conjure an Elemental of a CR equal to or below the tier of the expended slot.</p>"
     },
     {
+      "id": "contact_other_plane",
+      "name": "Contact Other Plane",
+      "tier": "5th",
+      "source": "Arcane and Wyrd",
+      "school": "Divination",
+      "castingTime": "10 minutes (ritual)",
+      "range": "Self",
+      "components": "V, M (25 gp incense or offering, which the spell consumes)",
+      "duration": "1 minute",
+      "description": "<p>You contact a demigod, a long-dead sage, or another extraplanar entity. Make a DC 15 INT save. On a failure, you take 6d6 psychic damage and become incapacitated until a long rest, unable to take actions, understand speech, read, or speak coherently. A <a href='/spells/?id=greater_restoration'>Greater Restoration</a> spell ends this effect.</p><p>On a success, ask the entity up to five questions before the spell ends. The GM answers with one word (yes, no, maybe, etc.) or a short phrase if a one-word answer would be misleading.</p><p>Casting the spell multiple times before a long rest increases the chance (by 25% for each additional casting) of receiving no answer. The GM rolls this in secret. If no answer is received, you can't cast the spell again for 24 hours.</p>"
+    },
+    {
       "id": "contagion",
       "name": "Contagion",
       "tier": "5th",
@@ -489,6 +633,18 @@
       "components": "V, S",
       "duration": "7 days",
       "description": "<p>Your touch inflicts disease. Make a melee spell attack against a creature within your reach. On a hit, you afflict the creature with a disease of your choice from the options below.</p><p>At the end of each of the target's turns, it must make a CON save. After failing three of these saves, the disease's effects last for the duration, and the creature stops making these saves. After succeeding on three of these saves, the creature recovers from the disease and the spell ends.</p><p>Since this spell induces a natural disease in its target, any effect that removes a disease or otherwise ameliorates a disease's effects applies to it.</p><ul><li><strong>Blinding Sickness.</strong> Pain grips the creature's mind, and its eyes turn milky white. The creature has disadvantage on WIS checks and WIS saves and is blinded.</li><li><strong>Filth Fever.</strong> A raging fever sweeps through the creature's body. The creature has disadvantage on STR checks, STR saves, and attack rolls that use STR.</li><li><strong>Flesh Rot.</strong> The creature's flesh decays. The creature has disadvantage on CHA checks and vulnerability to all damage.</li><li><strong>Mindfire.</strong> The creature's mind becomes feverish. The creature has disadvantage on INT checks and INT saves, and the creature behaves as if under the effects of the confusion spell during combat.</li><li><strong>Seizure.</strong> The creature is overcome with shaking. The creature has disadvantage on DEX checks, DEX saves, and attack rolls that use DEX.</li><li><strong>Slimy Doom.</strong> The creature begins to bleed uncontrollably. The creature has disadvantage on CON checks and CON saves. In addition, whenever the creature takes damage, it is stunned until the end of its next turn.</li></ul>"
+    },
+    {
+      "id": "contingency",
+      "name": "Contingency",
+      "tier": "6th",
+      "source": "Arcane",
+      "school": "Evocation",
+      "castingTime": "10 minutes (ritual)",
+      "range": "Self",
+      "components": "V, S, M (1500 gp statuette of yourself)",
+      "duration": "10 days",
+      "description": "<p>Choose a spell of 5th tier or lower that you can cast, has a casting time of 1 action, and targets you. This spell, called the contingent spell, is cast as part of casting contingency but doesn't take effect immediately. It activates when a specific circumstance you describe occurs (for example, activating water breathing when you are engulfed in water).</p><p>The contingent spell only affects you, even if it can normally target others. You can only have one contingency spell active at a time. <p>Contingency ends when the contingent spell is triggered, if you cast contingency again, or if its material component is not on your person.</p>"
     },
     {
       "id": "continual_flame",
@@ -515,6 +671,18 @@
       "description": "<p>You command a body of water to flood, part, flow, or swirl. Until the spell ends, you control any freestanding water inside an area you choose that is a cube up to 100 feet on a side. You can choose from any of the following effects when you cast this spell. As an action on your turn, you can repeat the same effect or choose a different one.</p><ul><li><strong>Flood.</strong> You cause the level of all standing water in the area to rise by as much as 20 feet. If the area includes a shore, the flooding water spills over onto dry land. If you choose an area in a large body of water, you instead create a 20-foot tall wave that travels from one side of the area to the other and then crashes down. Any Huge or smaller vehicles in the wave's path are carried with it to the other side. Any Huge or smaller vehicles struck by the wave have a 25 percent chance of capsizing. The water level remains elevated until the spell ends or you choose a different effect. If this effect produced a wave, the wave repeats on the start of your next turn while the flood effect lasts.</li><li><strong>Part Water.</strong> You separate water in the area, creating a trench in the water. The trench extends across the spell's area, and the separated water forms a wall to either side. The trench remains until the spell ends or you choose a different effect. The water then slowly fills in the trench over the course of the next round until the normal water level is restored.</li><li><strong>Redirect Flow.</strong> You cause flowing water in the area to move in a direction you choose, even if the water has to flow over obstacles, up walls, or in other unlikely directions. The water moves as you direct it, but once it moves beyond the spell's area, it resumes its flow based on terrain conditions. The water continues to move in the direction you chose until the spell ends or you choose a different effect.</li><li><strong>Whirlpool.</strong> This effect requires a body of water at least 50 feet square and 25 feet deep. You cause a whirlpool to form in the center of the area. The whirlpool forms a vortex that is 5 feet wide at the base, up to 50 feet wide at the top, and 25 feet tall. Any creature or object in the water and within 25 feet of the vortex is pulled 10 feet toward it. A creature can swim away from the vortex by making a STR (Athletics) check against your spell save DC.</li></ul><p>When a creature enters the vortex for the first time on a turn or starts its turn there, it must make a STR save. On a failed save, the creature takes 2d8 bludgeoning damage and is caught in the vortex until the spell ends. On a successful save, the creature takes half damage and isn't caught in the vortex. A creature caught in the vortex can use its action to try to swim away from the vortex as described above, but has disadvantage on the STR (Athletics) check to do so.</p><p>The first time each turn that an object enters the vortex, the object takes 2d8 bludgeoning damage; this damage occurs each round it remains in the vortex.</p>"
     },
     {
+      "id": "control_weather",
+      "name": "Control Weather",
+      "tier": "8th",
+      "source": "Divine and Primordial",
+      "school": "Transmutation",
+      "castingTime": "10 minutes (ritual)",
+      "range": "Self (5 mile radius)",
+      "components": "V, S",
+      "duration": "Concentration, up to 8 hours",
+      "description": "<p>You take control of the weather within 5 miles of you for the duration. You must be outdoors to cast this spell. Moving to a place where you don't have a clear path to the sky ends the spell early.</p><p>When you cast the spell, you change the current weather conditions, which are determined by the GM based on the climate and season. You can change precipitation, temperature, and wind. It takes 1d4 x 10 minutes for the new conditions to take effect.</p><p>Once they do, you can change the conditions again. When the spell ends, the weather gradually returns to normal.</p>"
+    },
+    {
       "id": "counterspell",
       "name": "Counterspell",
       "tier": "3rd",
@@ -525,6 +693,18 @@
       "components": "S",
       "duration": null,
       "description": "<p>You quickly call forth antithetical elements to negate another caster's magic. If the creature is casting a spell of 3rd tier or lower, its spell fails and has no effect. If it is casting a spell of 4th tier or beyond, make an ability check using your spellcasting ability. The DC equals 10 + the spell's tier. On a success, the creature's spell fails and has no effect.</p><p><em>At Higher Tiers.</em> The interrupted spell has no effect if cast at a tier less than or equal to yours.</p>"
+    },
+    {
+      "id": "create_familiar",
+      "name": "Create Familiar",
+      "tier": "1st",
+      "source": "Arcane",
+      "school": "Transmutation",
+      "castingTime": "1 hour (ritual)",
+      "range": "5 feet",
+      "components": "V, S, M (a life-sized statue, puppet, stuffed animal, or other suitable vessel worth at least 10 gp, which the spell consumes)",
+      "duration": null,
+      "description": "<p>You imbue a chosen vessel with your life force to create an arcane familiar in one of several animal forms (e.g., bat, cat, owl). The familiar appears within 5 feet of you, with the statistics of its chosen form and considered a Construct.</p><p><strong>Bound in Blood.</strong> When your familiar appears, your hit point maximum decreases by one. This reduction can't be offset while the familiar lives. If dismissed or destroyed, your hit point maximum returns to normal.</p><p><strong>Communication.</strong> Your familiar can telepathically share its senses with you while on the same plane or realm.</p><p><strong>Control.</strong> Your familiar acts independently but obeys your commands. In combat, it rolls its own initiative and can't attack but can take other actions. It can deliver touch spells within 100 feet, using your spell attack modifier if needed.</p><p><strong>Reincorporation.</strong> As an action, you can merge the familiar into your body or expel it, causing it to appear within 5 feet.</p><p><strong>Destruction.</strong> If your familiar drops to 0 HP, it is destroyed but regrows a new body in 1 hour if you live. If you die, the familiar is permanently destroyed. You can permanently dismiss it at any time.</p><p>Only one familiar can exist at a time. Casting the spell again while a familiar still lives causes the ritual to fail.</p>"
     },
     {
       "id": "create_food_and_water",
@@ -549,6 +729,18 @@
       "components": "V, S",
       "duration": null,
       "description": "<p>When you cast this spell, choose which of the following effects to create.</p><ul><li><strong>Create Water.</strong> You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot cube within range, extinguishing exposed flames in the area.</li><li><strong>Destroy Water.</strong> You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot cube within range.</li></ul><p><em>At Higher Tiers.</em> For each additional tier, you create or destroy 10 additional gallons of water, or the size of the cube increases by 5 feet.</p>"
+    },
+    {
+      "id": "create_undead",
+      "name": "Create Undead",
+      "tier": "6th",
+      "source": "Arcane and Divine",
+      "school": "Necromancy",
+      "castingTime": "1 minute (ritual)",
+      "range": "10 feet",
+      "components": "V, S, M (one 150 gp black onyx stone for each corpse, which the spell consumes)",
+      "duration": null,
+      "description": "<p>Choose up to three Medium or Small Humanoid corpses within range, each becoming a ghoul under your control (GM has stats). As a bonus action, you can command any of your ghouls within 120 feet. You can command one or all of them, choosing their actions or issuing general commands (like guarding). If no commands are given, the ghoul defends itself. Commands last until the task is complete.</p><p>The ghouls are under your control for 24 hours. To maintain control for another 24 hours, recast the spell before the current period ends. This reasserts control over up to three ghouls animated by this spell. Casting the spell again while previously animated ghouls are active makes the old ghouls hostile.</p><p><strong>At Higher Tiers</strong>. The spell becomes stronger as you unlock higher tiers.</p><ul><li>6th-tier: Animate or reassert control over 4 ghouls.</li><li>8th-tier: Animate or reassert control over 5 ghouls or 2 ghasts/wights.</li><li>9th-tier: Animate or reassert control over 6 ghouls, 3 ghasts/wights, or 2 mummies.</li></ul>"
     },
     {
       "id": "cure_wounds",
