@@ -743,6 +743,18 @@
       "description": "<p>Choose up to three Medium or Small Humanoid corpses within range, each becoming a ghoul under your control (GM has stats). As a bonus action, you can command any of your ghouls within 120 feet. You can command one or all of them, choosing their actions or issuing general commands (like guarding). If no commands are given, the ghoul defends itself. Commands last until the task is complete.</p><p>The ghouls are under your control for 24 hours. To maintain control for another 24 hours, recast the spell before the current period ends. This reasserts control over up to three ghouls animated by this spell. Casting the spell again while previously animated ghouls are active makes the old ghouls hostile.</p><p><strong>At Higher Tiers</strong>. The spell becomes stronger as you unlock higher tiers.</p><ul><li>6th-tier: Animate or reassert control over 4 ghouls.</li><li>8th-tier: Animate or reassert control over 5 ghouls or 2 ghasts/wights.</li><li>9th-tier: Animate or reassert control over 6 ghouls, 3 ghasts/wights, or 2 mummies.</li></ul>"
     },
     {
+      "id": "creation",
+      "name": "Creation",
+      "tier": "5th",
+      "source": "Arcane",
+      "school": "Illusion",
+      "castingTime": "1 minute (ritual)",
+      "range": "30 feet",
+      "components": "V, S, M (tiny piece of the type of material you plan to create)",
+      "duration": null,
+      "description": "<p>You create a nonliving object or vegetable matter within range. The object can be soft goods, rope, wood, or mineral objects like stone, crystal, or metal. The object must be no larger than a 5-foot cube and made of a form and material you have seen before.</p><p>The duration depends on the material:</p><ul><li>Vegetable matter: 1 day</li><li>Stone or crystal: 12 hours</li><li>Precious metals: 1 hour</li><li>Gems: 10 minutes</li><li>Adamantine or mithral: 1 minute</li></ul><p>Using this material as another spell's component causes that spell to fail. Casting this spell again while the first-created material still exists destroys the first material.</p><p><strong>At Higher Tiers</strong>. When higher-tier spells slots are available, the cube size increases by 5 feet for each tier above 5th.</p>"
+    },
+    {
       "id": "cure_wounds",
       "name": "Cure Wounds",
       "tier": "1st",
@@ -971,6 +983,18 @@
       "description": "<p>You utter a divine word, imbued with the power that shaped the world at the dawn of creation. Choose any number of creatures you can see within range. Each creature that can hear you must make a CHA save. On a failed save, a creature suffers an effect based on its current hit points:</p><ul><li>50 HP or fewer: deafened for 1 minute</li><li>40 HP or fewer: deafened and blinded for 10 minutes</li><li>30 HP or fewer: blinded, deafened, and stunned for 1 hour</li><li>20 HP or fewer: killed instantly</li></ul><p>Regardless of its current hit points, a Celestial, an Elemental, a Fey, or a Fiend that fails its save is forced back to its plane of origin (if it isn't there already) and can't return to your current plane for 24 hours by any means short of a wish spell.</p>"
     },
     {
+      "id": "divination",
+      "name": "Divination",
+      "tier": "4th",
+      "source": "Divine",
+      "school": "Divination",
+      "castingTime": "10 minutes (ritual)",
+      "range": "Self",
+      "components": "V, S, M (25 gp offering, which the spell consumes)",
+      "duration": "1 minute",
+      "description": "<p>You contact your deity or divine proxy through magic and an offering. Use the spell in one of the following ways:</p><ul><li><strong>Read the Future</strong>. Ask one question about a specific goal, event, or activity within 7 days. The GM gives a truthful reply, which might be a short phrase, rhyme, or omen. The spell doesn't consider any changes that might affect the outcome.</li><li><strong>Read the Present</strong>. Ask up to three yes-or-no questions. Ask these before the spell ends. The GM provides correct answers, but may answer &quote;unclear&quote; if the deity doesn't know. If a one-word answer might mislead, the GM might give a short phrase for clarity.</li></ul><p>Casting this spell multiple times before a long rest increases the chance of receiving no answer by 25% for each additional casting. The GM rolls this in secret. If you get no answer, you can't cast the spell again for 24 hours.</p>"
+    },
+    {
       "id": "dominate",
       "name": "Dominate",
       "tier": "5th",
@@ -1137,6 +1161,18 @@
       "components": "V, S",
       "duration": "Concentration, up to 1 minute",
       "description": "<p>For the spell's duration, your eyes become an inky void imbued with dread power. One creature of your choice within 60 feet of you that you can see must succeed on a WIS save or be affected by one of the following effects of your choice for the duration. On each of your turns until the spell ends, you can use your action to target another creature but can't target a creature again if it has succeeded on a save against this casting of eyebite.</p><ul><li><strong>Asleep.</strong> The target falls unconscious. It wakes up if it takes any damage or if another creature uses its action to shake the sleeper awake.</li><li><strong>Panicked.</strong> The target is frightened of you. On each of its turns, the frightened creature must take the Dash action and move away from you by the safest and shortest available route, unless there is nowhere to move. If the target moves to a place at least 60 feet away from you where it can no longer see you, this effect ends.</li><li><strong>Sickened.</strong> The target has disadvantage on attack rolls and ability checks. At the end of each of its turns, it can make another WIS save. If it succeeds, the effect ends.</li></ul>"
+    },
+    {
+      "id": "fabricate",
+      "name": "Fabricate",
+      "tier": "4th",
+      "source": "Arcane",
+      "school": "Transmutation",
+      "castingTime": "10 minutes (ritual)",
+      "range": "120 feet",
+      "components": "V, S",
+      "duration": null,
+      "description": "<p>You convert raw materials into products of the same material. For example, make a wooden bridge from trees, a rope from hemp, or clothes from flax or wool. Choose raw materials within range to fabricate a Large or smaller object (up to a 10-foot cube or eight connected 5-foot cubes). If using metal, stone, or mineral, the object can be no larger than Medium (up to a 5-foot cube). The quality of the object matches the quality of the raw materials.</p><p>You can't create or transmute creatures or magic items. You also can't create items requiring high craftsmanship (like jewelry, weapons, glass, or armor) unless you're proficient with the relevant artisan's tools.</p><p>You can only cast this spell once per long rest.</p>"
     },
     {
       "id": "faerie_fire",
