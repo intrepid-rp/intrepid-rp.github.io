@@ -1247,6 +1247,42 @@
       "description": "<p>You blast the mind of a creature that you can see within range, attempting to shatter its intellect and personality. The target takes 4d6 psychic damage and must make an INT save.</p><p>On a failed save, the creature's INT and CHA become -5. The creature can't cast spells, activate magic items, understand language, or communicate in any intelligible way. However, the creature can identify its friends, follow them, and even protect them.</p><p>At the end of every 30 days, the creature can repeat its save against this spell, ending the spell on a success.</p><p>The spell can also be ended by the greater restoration, heal, or wish spells.</p>"
     },
     {
+      "id": "find_familiar",
+      "name": "Find Familiar",
+      "tier": "1st",
+      "source": "Wyrd",
+      "school": "Conjuration",
+      "castingTime": "1 hour (ritual)",
+      "range": "10 feet",
+      "components": "V, S, M (10 gp incense and herbs, which the spell consumes)",
+      "duration": null,
+      "description": "<p>You gain the service of a familiar, a spirit that takes the form of a Beast of CR 1/8 or lower, such as a cat, lizard, octopus, or owl. The familiar appears within 10 feet of you, with the statistics of the chosen form but considered a Celestial, Fey, or Fiend (your choice) rather than a Beast.</p><p><strong>Communication</strong>. Your familiar can telepathically share its senses with you while on the same plane or realm.</p><p><strong>Control</strong>. Your familiar acts independently but obeys your commands. In combat, it rolls its own initiative and can't attack but can take other actions. It can deliver touch spells within 100 feet, using your spell attack modifier if needed.</p><p><strong>Dismissal</strong>. As an action, you can temporarily dismiss your familiar to a pocket dimension, where it awaits your summons. It can reappear within 30 feet of you.</p><p><strong>Destruction</strong>. If the familiar drops to 0 HP, it disappears and reappears after you cast this spell again. You can dismiss it forever with an action, summoning a new one the next time you cast this spell.</p><p>You can't have more than one familiar at a time. Casting this spell while you already have a familiar changes its form to a new one from the list.</p>"
+    },
+    {
+      "id": "find_steed",
+      "name": "Find Steed",
+      "tier": "2nd",
+      "source": "Divine and Primordial",
+      "school": "Conjuration",
+      "castingTime": "10 minutes (ritual)",
+      "range": "30 feet",
+      "components": "V, S",
+      "duration": null,
+      "description": "<p>You summon a spirit that becomes an intelligent, strong, and loyal steed. The steed can be a warhorse, pony, camel, elk, or mastiff (or another animal allowed by the GM). The steed has the statistics of its chosen form but is a Celestial, Fey, or Fiend (your choice) instead of its normal type. If its INT modifier is -3 or lower, it becomes -2. It understands one language you speak.</p><p>Your steed serves as a mount in combat and out, allowing you to fight together seamlessly. While mounted, you can make any spell that targets only you also target your steed.</p><p>If the steed drops to 0 HP, it disappears, leaving no physical form. You can dismiss it at any time. Casting the spell again summons the same steed, restored to its HP maximum.</p><p>While within 1 mile, you can communicate with your steed telepathically. You can only have one steed at a time. You can release the steed from its bond at any time, causing it to disappear.</p>"
+    },
+    {
+      "id": "find_the_path",
+      "name": "Find the Path",
+      "tier": "6th",
+      "source": "Primordial",
+      "school": "Divination",
+      "castingTime": "1 minute (ritual)",
+      "range": "Self",
+      "components": "V, S, M (100 gp divination tools, and an object from the location you wish to find)",
+      "duration": "Concentration, up to 1 day",
+      "description": "<p>This spell allows you to find the shortest, most direct physical route to a specific fixed location that you are familiar with on the same plane of existence. If you name a destination on another plane of existence, a destination that moves (such as a mobile fortress), or a destination that isn't specific (such as &quot;a green dragon's lair&quot;), the spell fails.</p><p>For the duration, as long as you are on the same plane of existence as the destination, you know how far it is and in what direction it lies. While you are traveling there, when you are presented with a choice of paths along the way, you automatically determine which path is the shortest and most direct route (but not necessarily the safest route) to the destination.</p>"
+    },
+    {
       "id": "finger_of_death",
       "name": "Finger of Death",
       "tier": "7th",
@@ -1366,6 +1402,18 @@
       "duration": "Concentration, up to 1 hour",
       "description": "<p>You conjure a thick mist that hangs in the air, obscuring sightlines. You create a 20-foot-radius sphere of fog centered on a point within range. The sphere spreads around corners, and its area is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.</p><p><em>At Higher Tiers.</em> The fog's radius increases by 20 feet for each additional tier.</p>"
     },
+    { 
+      "id": "forbiddance", 
+      "name": "Forbiddance", 
+      "tier": "6th", 
+      "source": "Divine", 
+      "school": "Abjuration", 
+      "castingTime": "10 minutes (ritual)", 
+      "range": "Touch", 
+      "components": "V, S, M (1,000 gp ruby)", 
+      "duration": "1 day", 
+      "description": "<p>You create a ward against magical travel that protects up to 40,000 square feet of floor space to a height of 30 feet above the floor. For the duration, creatures can't teleport into the area or use portals, such as those created by the gate spell, to enter the area. The spell proofs the area against planar travel and therefore prevents creatures from accessing the area by way of the Astral Plane, Ethereal Plane, Shadow Realm, Summerlands, or the plane shift spell.</p><p>In addition, the spell damages certain types of creatures that you choose when you cast it. Choose one or more of the following: Celestials, Elementals, Fey, Fiends, Undead, and creatures with the Outsider tag. When a chosen creature enters the spell's area for the first time on a turn or starts its turn there, the creature takes 5d10 radiant or necrotic damage (your choice when you cast this spell). When you cast this spell, you can designate a password. A creature that speaks the password as it enters the area takes no damage from the spell.</p><p>The spell's area can't overlap with the area of another forbiddance spell. If you cast forbiddance every day for 30 days in the same location, the spell lasts until it is dispelled, and the material components are consumed on the last casting.</p>"
+    },
     {
       "id": "forcecage",
       "name": "Forcecage",
@@ -1378,6 +1426,18 @@
       "duration": "Concentration, up to 1 hour",
       "description": "<p>An immobile, invisible, cube-shaped prison composed of magical force springs into existence around an area you choose within range. The prison can be a cage or a solid box (your choice).</p><p>A prison in the shape of a cage can be up to 20 feet on a side and is made from 1/2-inch-diameter bars spaced 1/2 inch apart.</p><p>A prison in the shape of a box can be up to 10 feet on a side, creating a solid barrier that prevents any matter from passing through it and blocking any spells cast into or out from the area.</p><p>When you cast the spell, any creature that is completely inside the cage's area is trapped. Creatures only partially within the area and those too large to fit inside the area are pushed away from the center of the area until they are completely outside it.</p><p>A creature inside the cage can't leave it by nonmagical means. If the creature tries to use a spell or any other magical means of teleportation or interplanar travel to leave the cage, it must first make a CHA save. On a success, the creature can use that magic to exit the cage. On a failure, the creature can't exit the cage and wastes the use of the spell or effect. The cage also extends into the Ethereal Plane, blocking ethereal travel.</p><p>This spell can't be dispelled by dispel magic.</p>"
     },
+    {
+      "id": "foresight",
+      "name": "Foresight",
+      "tier": "9th",
+      "source": "Arcane and Divine",
+      "school": "Divination",
+      "castingTime": "1 minute (ritual)",
+      "range": "Touch",
+      "components": "V, S, M (500 gp gilded hourglass, which the spell consumes)",
+      "duration": "8 hours",
+      "description": "<p>Touch a willing creature to give it limited future sight. For 8 hours, the target can't be surprised and has advantage on attack rolls, ability checks, and saves. Other creatures have disadvantage on attack rolls against the target.</p><p>The spell ends if cast again before the duration ends. The same creature can't benefit from this spell again until 7 days have passed.</p>"
+    },    
     {
       "id": "four_winds",
       "name": "Four Winds",
@@ -1451,6 +1511,18 @@
       "description": "<p>You conjure a burst of magically propelled gears. Each creature in a 60-foot cone takes 3d8 slashing damage, or half as much damage with a successful DEX save. Constructs have disadvantage on this save.</p><p><em>At Higher Tiers.</em> Add 1d8 damage for each additional tier.</p>"
     },
     {
+      "id": "geas",
+      "name": "Geas",
+      "tier": "5th",
+      "source": "Arcane, Divine, and Wyrd",
+      "school": "Enchantment",
+      "castingTime": "1 minute (ritual)",
+      "range": "60 feet",
+      "components": "V, M (50 gp silver manacles, which the spell consumes)",
+      "duration": "30 days",
+      "description": "<p>You place a magical command on a creature within range, forcing it to carry out a service or refrain from an action. If the creature understands you, it must succeed on a WIS save or be charmed by you. While charmed, it takes 5d10 psychic damage each day it acts against your instructions. A creature that can't understand you is unaffected.</p><p>You can issue any command, but the spell ends if the command results in certain death. You can dismiss the spell with an action, or it can be ended with a remove curse, greater restoration, or wish spell.</p><p><strong>At Higher Tiers:</strong> At 7th tier, the duration is 1 year. At 9th tier, the spell lasts until ended by another spell.</p>"
+    },    
+    {
       "id": "gentle_repose",
       "name": "Gentle Repose",
       "tier": "2nd",
@@ -1498,6 +1570,18 @@
       "duration": "Concentration, up to 1 minute",
       "description": "<p>An immobile, faintly shimmering barrier springs into existence in a 10-foot radius around you and remains for the duration.</p><p>Spell attacks that originate from a creature outside the barrier or any spell of 5th tier or lower cast from outside the barrier can't affect creatures or objects within it, even if the spell is cast using a higher tier spell slot. Such a spell attack or spell can target creatures and objects within the barrier, but the spell attack or spell has no effect on them.</p><p>Similarly, the area within the barrier is excluded from the areas affected by such spells.</p><p><em>At Higher Tiers.</em> For each additional tier, the barrier blocks spells of one tier higher.</p>"
     },
+    {
+      "id": "glyph_of_warding",
+      "name": "Glyph of Warding",
+      "tier": "3rd",
+      "source": "Arcane",
+      "school": "Abjuration",
+      "castingTime": "1 hour (ritual)",
+      "range": "Touch",
+      "components": "V, S, M (200 gp powdered diamond and incense, which the spell consumes)",
+      "duration": "Until dispelled or triggered",
+      "description": "<p>Inscribe a glyph that harms other creatures on a surface or within an object. If the object is moved more than 10 feet from where the spell was cast, the glyph breaks and the spell ends. The glyph is nearly invisible and requires an Investigation check against your spell save DC to find.</p><p>You decide the trigger when casting the spell. Typical triggers include touching, standing on, or approaching the glyph. Refine the trigger to activate under certain circumstances or according to physical characteristics or creature type. Set conditions for creatures that don't trigger the glyph.</p><p><strong>Explosive Runes</strong>. When triggered, the glyph erupts with magical energy, dealing 5d8 acid, cold, fire, lightning, or thunder damage (your choice) in a 20-foot-radius sphere. A DEX save halves the damage.</p><p><strong>Spell Glyph</strong>. Store a known spell of 3rd tier or lower in the glyph. When triggered, the stored spell is cast, targeting the triggering creature or area centered on it. The spell lasts for its full duration.</p><p><strong>At Higher Tiers</strong>. The damage of an Explosive Runes glyph increases by 1d8 for each slot above 3rd. A Spell Glyph can store any spell of up to the same tier as the highest slot you have access to.</p>"
+    },    
     {
       "id": "goodberry",
       "name": "Goodberry",
@@ -1595,6 +1679,18 @@
       "description": "<p>A Large spectral guardian appears and hovers for the duration in an unoccupied space of your choice that you can see within range. The guardian occupies that space and is indistinct except for a gleaming sword and shield emblazoned with the symbol of your faith.</p><p>Any creature hostile to you that moves to a space within 10 feet of the guardian for the first time on a turn must succeed on a DEX save. The creature takes 20 radiant damage on a failed save, or half as much damage on a successful one. The guardian vanishes when it has dealt a total of 60 damage.</p>"
     },
     {
+      "id": "guards_and_wards",
+      "name": "Guards and Wards",
+      "tier": "6th",
+      "source": "Arcane",
+      "school": "Abjuration",
+      "castingTime": "10 minutes (ritual)",
+      "range": "Touch",
+      "components": "V, S, M (10 gp silver rod)",
+      "duration": "24 hours",
+      "description": "<p>You create a ward that protects up to 2,500 square feet of floor space. The warded area can be up to 20 feet tall and shaped as you desire. You can ward several stories by dividing the area among them.</p><p>Specify individuals or a password that makes the speaker immune to the effects.</p><p><strong>Corridors</strong>. Fog fills all the warded corridors, making them heavily obscured. At intersections or branching passages, there is a 50% chance that a creature other than you will believe it is going in the opposite direction.</p><p><strong>Doors</strong>. All doors in the warded area are magically locked as if by arcane lock. You can cover up to ten doors with an illusion to make them appear as plain sections of wall.</p><p><strong>Stairs</strong>. Webs fill all stairs in the warded area, as the web spell. These strands regrow in 10 minutes if burned or torn away.</p><p><strong>Other Spell Effect</strong>. You can place one of the following effects:</p><ul><li>Place dancing lights in four corridors.</li><li>Place magic mouth in two locations.</li><li>Place stinking cloud in two locations. The vapors return in 10 minutes if dispersed by wind.</li><li>Place a constant gust of wind in one corridor or room.</li><li>Place a suggestion in one location. Any creature entering or passing through receives the suggestion mentally.</li></ul><p>The whole warded area radiates magic. A dispel magic cast on a specific effect, if successful, removes only that effect.</p><p>You can create a permanently guarded and warded area by casting this spell every day for one year.</p>"
+    },    
+    {
       "id": "guidance",
       "name": "Guidance",
       "tier": "Cantrip",
@@ -1631,6 +1727,18 @@
       "description": "<p>You bring forth a continuous blast of wind that blows back nigh everything in your path. A line of strong wind 60 feet long and 10 feet wide blasts from you in a direction you choose for the spell's duration. Each creature that starts its turn in the line must succeed on a STR save or be pushed 15 feet away from you in a direction following the line. Any creature in the line must spend 2 feet of movement for every 1 foot it moves when moving closer to you.</p><p>The gust disperses gas or vapor, and extinguishes candles, torches, and similar unprotected flames in the area. It causes protected flames, such as those of lanterns, to dance wildly and has a 50 percent chance to extinguish them.</p><p>As a bonus action on each of your turns before the spell ends, you can change the direction in which the line blasts from you.</p>"
     },
     {
+      "id": "hallow",
+      "name": "Hallow",
+      "tier": "5th",
+      "source": "Divine",
+      "school": "Abjuration",
+      "castingTime": "24 hours (ritual)",
+      "range": "Touch",
+      "components": "V, S, M (herbs, oils, and incense worth at least 1,000 gp, which the spell consumes)",
+      "duration": "Until dispelled",
+      "description": "<p>Touch a point to infuse an area with holy (or unholy) power. The area can have a radius up to 60 feet, but the spell fails if it includes an area already under a hallow spell. The area has the following effects:</p><p><strong>First</strong>. Celestials, Elementals, Fey, Fiends, Undead, and creatures with the Outsider tag can’t enter the area, nor can they charm, frighten, or possess creatures within it. Any creature charmed, frightened, or possessed by such a creature is freed upon entering the area. You can exclude certain types from this effect.</p><p><strong>Second</strong>. Bind an extra effect to the area. Choose an effect:</p><ul><li><strong>Courage</strong>. Creatures can’t be frightened.</li><li><strong>Darkness</strong>. Darkness fills the area, unaffected by lower-circle magical light.</li><li><strong>Daylight</strong>. Bright light fills the area, unaffected by lower-circle magical darkness.</li><li><strong>Energy Protection</strong>. Resistance to one damage type (except bludgeoning, piercing, or slashing).</li><li><strong>Energy Vulnerability</strong>. Vulnerability to one damage type (except bludgeoning, piercing, or slashing).</li><li><strong>Everlasting Rest</strong>. Dead bodies can’t be turned into Undead.</li><li><strong>Extradimensional Interference</strong>. Creatures can’t use teleportation or interplanar travel.</li><li><strong>Fear</strong>. Creatures are frightened.</li><li><strong>Silence</strong>. No sound can enter or leave the area.</li><li><strong>Tongues</strong>. Creatures can communicate with any other creature in the area.</li></ul>"
+    },    
+    {
       "id": "hallucination",
       "name": "Hallucination",
       "tier": "2nd",
@@ -1641,7 +1749,19 @@
       "components": "V, S",
       "duration": "Concentration, up to 1 minute",
       "description": "<p>You create a vivid hallucination in the mind of a target you can see, or whose mind you can sense. The target must make an INT saving throw. On a failed save, you create a phenomenon perceivable only to the target. The effect must fit within a ten-foot cube and can include sound, temperature, and other stimuli. It has no effect on undead or constructs.</p><p>While affected, the target treats the hallucination as real, rationalizing any illogical outcomes. It can deal 1d6 psychic damage each round if it appears as a creature or hazard capable of dealing damage. The target perceives the damage as appropriate to the illusion: taking fire damage from lava, for example.</p><p>The target can use its action to make an Investigation check against your spell save DC. On a success, the target realizes the hallucination is false, ending the spell.</p>"
-    },    
+    },
+    {
+      "id": "hallucinatory_terrain",
+      "name": "Hallucinatory Terrain",
+      "tier": "4th",
+      "source": "Arcane and Wyrd",
+      "school": "Illusion",
+      "castingTime": "10 minutes (ritual)",
+      "range": "300 feet",
+      "components": "V, S, M (a stone, a twig, and a bit of green plant)",
+      "duration": "24 hours",
+      "description": "<p>Make natural terrain in a 150-foot cube look, sound, and smell like other natural terrain. Open fields or a road can resemble a swamp, hill, crevasse, or other difficult terrain. A pond can seem like a meadow, a precipice like a gentle slope, or a rock-strewn gully like a smooth road. Manufactured structures, equipment, and creatures aren't changed.</p><p>The tactile characteristics are unchanged, so creatures entering the area might see through the illusion. A creature examining the illusion can attempt an Investigation check against your spell save DC to disbelieve it. A creature discerning the illusion sees a vague image superimposed on the terrain.</p>"
+    },        
     {
       "id": "harm",
       "name": "Harm",
@@ -1715,6 +1835,18 @@
       "description": "<p>You point your finger, and the creature that damaged you is momentarily surrounded by hellish flames. The creature must make a DEX save. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one.</p><p><em>At Higher Tiers.</em> Add 1d10 damage for each additional tier.</p>"
     },
     {
+      "id": "heroes_feast",
+      "name": "Heroes' Feast",
+      "tier": "6th",
+      "source": "Divine and Primordial",
+      "school": "Conjuration",
+      "castingTime": "10 minutes (ritual)",
+      "range": "30 feet",
+      "components": "V, S, M (gem-encrusted bowl worth at least 1,000 gp, which the spell consumes)",
+      "duration": "Instantaneous",
+      "description": "<p>You bring forth a great feast with magnificent food and drink. The feast takes 1 hour to consume and disappears at the end of that time. Up to twelve other creatures can partake of the feast.</p><p>A creature that partakes gains several benefits: cured of all diseases and poison, immune to poison and being frightened, and advantage on WIS saves. Hit point maximum increases by 2d10, and they gain the same number of hit points. These benefits last for 24 hours.</p><p>You must complete a long rest before casting this spell again.</p>"
+    },    
+    {
       "id": "heroism",
       "name": "Heroism",
       "tier": "1st",
@@ -1787,6 +1919,42 @@
       "description": "<p>A torrent of hailstones deals significant damage and briefly creates difficult terrain. The storm impacts a 20-foot-radius, 40-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a DEX save. A creature takes 2d8 bludgeoning damage and 4d6 cold damage on a failed save, or half damage on a successful one.</p><p>Hailstones turn the storm's area of effect into difficult terrain until the end of your next turn.</p><p><em>At Higher Tiers.</em> Add 1d8 damage for each additional tier.</p>"
     },
     {
+      "id": "identify",
+      "name": "Identify",
+      "tier": "1st",
+      "source": "Arcane",
+      "school": "Divination",
+      "castingTime": "1 minute (ritual)",
+      "range": "Touch",
+      "components": "V, S, M (100 gp pearl)",
+      "duration": null,
+      "description": "<p>Choose one object and touch it throughout the casting. If it is a magic item or magic-imbued object, you learn its properties, how to use them, whether it requires attunement, and how many charges it has. You learn whether any spells are affecting the item and what they are. If created by a spell, you learn which spell.</p><p>If you touch a creature, you learn what spells are currently affecting it.</p>"
+    },
+    {
+      "id": "illusory_script",
+      "name": "Illusory Script",
+      "tier": "1st",
+      "source": "Arcane and Wyrd",
+      "school": "Illusion",
+      "castingTime": "1 minute (ritual)",
+      "range": "Touch",
+      "components": "V, S, M (10 gp ink, which the spell consumes)",
+      "duration": "10 days",
+      "description": "<p>Write on a material and imbue it with an illusion that lasts for 10 days. To you and designated creatures, the writing appears normal and conveys the intended meaning. To others, it appears as an unknown or magical script. Alternatively, you can make the writing appear as a different message in a different hand and language you know.</p><p>If the spell is dispelled, both the original script and the illusion disappear. A creature with truesight can read the hidden message.</p>"
+    },
+    {
+      "id": "imprisonment",
+      "name": "Imprisonment",
+      "tier": "9th",
+      "source": "Arcane and Wyrd",
+      "school": "Abjuration",
+      "castingTime": "1 minute (ritual)",
+      "range": "30 feet",
+      "components": "V, S, M (a special component worth at least 500 gp per hit die of the target)",
+      "duration": "Until dispelled",
+      "description": "<p>Create a magical restraint to hold a creature within range. The target must succeed on a WIS save or be bound by the spell. If it succeeds, it is immune to this spell if you cast it again. While affected, the creature doesn’t need to breathe, eat, or drink, and it doesn’t age. Divination spells can’t locate or perceive the target.</p><p>Choose one of the following forms of imprisonment:</p><ul><li><strong>Burial</strong>. The target is entombed far beneath the earth in a sphere of magical force. The special component is a small mithral orb.</li><li><strong>Chaining</strong>. Heavy chains hold the target in place. The special component is a fine chain of precious metal.</li><li><strong>Hedged Prison</strong>. The target is transported to a warded demiplane. The special component is a miniature representation of the prison made from jade.</li><li><strong>Minimus Containment</strong>. The target shrinks to 1 inch and is imprisoned inside a gemstone or similar object. The special component is a large, transparent gemstone.</li><li><strong>Slumber</strong>. The target falls asleep and can’t be awoken. The special component consists of rare soporific herbs.</li></ul><p><strong>Ending the Spell</strong>. Specify a condition to end the spell and release the target. The GM must agree it is reasonable. A dispel magic cast as a 9th-tier spell can end the spell, targeting either the prison or the special component used. Using the same component to cast the spell again frees the first target.</p>"
+    },    
+    {
       "id": "incendiary_cloud",
       "name": "Incendiary Cloud",
       "tier": "8th",
@@ -1822,6 +1990,18 @@
       "duration": "Concentration, up to 10 minutes",
       "description": "<p>You summon a swarm of locusts, creating difficult terrain and damaging anyone caught within their mass. The swarm fills a 20-foot-radius sphere centered on a point you choose within range and it spreads around corners. The sphere remains for the duration, its area is lightly obscured, and its area is difficult terrain.</p><p>When the area appears, each creature in it must make a CON save. A creature takes 4d10 piercing damage on a failed save, or half damage on a successful one. A creature must also make this save when it enters the spell's area for the first time on a turn or ends its turn there.</p><p><em>At Higher Tiers.</em> Add 1d10 damage for each additional tier.</p>"
     },
+    {
+      "id": "instant_summons",
+      "name": "Instant Summons",
+      "tier": "6th",
+      "source": "Arcane",
+      "school": "Conjuration",
+      "castingTime": "1 minute (ritual)",
+      "range": "Touch",
+      "components": "V, S, M (1,000 gp sapphire)",
+      "duration": "Until dispelled",
+      "description": "<p>Touch an item weighing 10 pounds or less and no longer than 6 feet. The spell leaves an invisible mark on its surface and inscribes the item's name on the sapphire. Each time you cast this spell, use a different sapphire.</p><p>Speak the item's name and crush the sapphire to summon the item to your hand, regardless of distance. If another creature is holding the item, you learn who the creature is and roughly where it is located.</p><p>Dispel magic or a similar effect ends the spell if applied to the sapphire.</p>"
+    },    
     {
       "id": "invisibility",
       "name": "Invisibility",
@@ -1966,6 +2146,30 @@
       "duration": "1 minute",
       "description": "<p>You conjure a ghostly hand which you control as an extension of your reach. A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.</p><p>You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.</p><p>The hand can't attack, activate magic items, or carry more than 10 pounds.</p>"
     },
+    {
+      "id": "magic_circle",
+      "name": "Magic Circle",
+      "tier": "3rd",
+      "source": "Arcane, Divine, and Wyrd",
+      "school": "Abjuration",
+      "castingTime": "1 minute (ritual)",
+      "range": "10 feet",
+      "components": "V, S, M (holy water and 100 gp of powdered silver, which the spell consumes)",
+      "duration": "1 hour",
+      "description": "<p>Create a 10-foot radius, 20-foot tall cylinder of magical energy centered on a point you can see. Glowing runes appear where the cylinder intersects with the surface.</p><p>Choose one or more types of creatures: Celestials, Elementals, Fey, Fiends, or Undead. The circle affects these creatures as follows:</p><ul><li>The creature can’t willingly enter the cylinder by nonmagical means. If it tries to use teleportation or interplanar travel, it must succeed on a CHA save.</li><li>The creature has disadvantage on attack rolls against targets within the cylinder.</li><li>Targets within the cylinder can’t be charmed, frightened, or possessed by the creature.</li></ul><p>You can reverse the magic to prevent the creature from leaving the cylinder and protect targets outside it.</p><p><strong>At Higher Tiers</strong>. Once you have access to 4th-tier spell slots, the duration increases by 1 hour for each slot above 3rd.</p>"
+    },
+    {
+      "id": "magic_jar",
+      "name": "Magic Jar",
+      "tier": "6th",
+      "source": "Wyrd",
+      "school": "Necromancy",
+      "castingTime": "1 minute (ritual)",
+      "range": "Self",
+      "components": "V, S, M (a gem, crystal, or ornamental container worth at least 500 gp)",
+      "duration": "Until dispelled",
+      "description": "<p>Your body falls into a catatonic state as your soul leaves it and enters the container used for the spell. While your soul is in the container, you are aware of your surroundings as if you were in the container's space. You can’t move or use reactions. You can project your soul up to 100 feet out of the container to return to your body or attempt to possess a Humanoid's body.</p><p>You can attempt to possess any Humanoid within 100 feet that you can see. The target must make a CHA save. On a failure, your soul moves into the target's body, trapping the target's soul in the container. On a success, the target resists and you can’t attempt to possess it again for 24 hours.</p><p>Once you possess a body, you control it. Your game statistics are replaced by the creature's statistics, but you retain your personality and INT, WIS, and CHA scores. You keep your class features. The possessed creature’s soul can perceive from the container but can't move or take actions.</p><p>While possessing a body, you can return to the container if it is within 100 feet. If the host body dies while you're in it, you must make a CHA save against your spellcasting DC. On a success, you return to the container. Otherwise, you die.</p><p>If the container is destroyed or the spell ends, your soul returns to your body. If your body is more than 100 feet away or dead, you die. If another creature’s soul is in the container when it is destroyed, the soul returns to its body if alive and within 100 feet. Otherwise, it dies.</p><p>When the spell ends, the container is destroyed.</p>"
+    },    
     {
       "id": "magic_missile",
       "name": "Magic Missile",
