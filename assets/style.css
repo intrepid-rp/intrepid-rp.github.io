@@ -430,6 +430,7 @@ tbody tr td.indent{
 }
 @media (max-width: 768px) {
   #filters {
+    flex-flow: row wrap;
     font-size: .9rem;
   }
   .nav-tile{
