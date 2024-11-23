@@ -42,16 +42,16 @@ class VersionComponent extends HTMLElement {
       .then(response => response.json())
       .then(json => {
         const latestVersion = json.versions[0]; // Get first item from versions array
-        this.shadowRoot.querySelector("#version").innerHTML = latestVersion.version;
+        this.querySelector("#version").innerHTML = latestVersion.version;
       })
       .catch(error => {
         console.error('Error fetching version:', error);
-        this.shadowRoot.querySelector("#version").innerHTML = "?.?.?";
+        this.querySelector("#version").innerHTML = "?.?.?";
       });
   }
 
   render() {
-    this.shadowRoot.innerHTML = `
+    this.innerHTML = `
       Version <a id="version" href="/version">Loading...</a>
     `;
   }
