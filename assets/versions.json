@@ -1,12 +1,16 @@
 {
   "versions": [
     {
+      "version": "1.24.11.Cho",
+      "changes": "<ul><li>Added Aqualan and Faerie lineages.</li><li>Added Scavenger background.</li></ul>"
+    },
+    {
       "version": "1.24.11.Brunhilda",
       "changes": "<ul><li>Resolved issues with missing spells and rituals.</li><li>Added Hallucinate and Dreamsight spells.</li></ul>"
     },
     {
       "version": "1.24.10.Alexandra",
-      "changes": "<ul><li>Initial version of game rules, character creation information, spells.</li></ul>"
+      "changes": "<ul><li>Initial version of game rules, character creation information, spells, equipment.</li></ul>"
     }    
   ]
 }

@@ -29,3 +29,32 @@ class Header extends HTMLElement {
 }
 
 customElements.define('header-component', Header);
+
+class VersionComponent extends HTMLElement {
+  constructor() {
+    super();
+    this.attachShadow({ mode: 'open' });
+  }
+
+  connectedCallback() {
+    this.render();
+    fetch('/assets/versions.json')
+      .then(response => response.json())
+      .then(json => {
+        const latestVersion = json.versions[0]; // Get first item from versions array
+        this.shadowRoot.querySelector("#version").innerHTML = latestVersion.version;
+      })
+      .catch(error => {
+        console.error('Error fetching version:', error);
+        this.shadowRoot.querySelector("#version").innerHTML = "?.?.?";
+      });
+  }
+
+  render() {
+    this.shadowRoot.innerHTML = `
+      Version <a id="version" href="/version">Loading...</a>
+    `;
+  }
+}
+
+customElements.define('version-component', VersionComponent);

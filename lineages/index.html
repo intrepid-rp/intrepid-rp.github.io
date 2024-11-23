@@ -21,6 +21,7 @@
 <main style="display: none;">
   <h2><a href="/lineages">Lineages</a></h2>
   <div id="nav-tiles">
+    <a href="/lineages/?id=aqualan" class="nav-tile"><h3>Aqualan</h3><img src="/assets/images/lineages/aqualan.jpg" /></a>
     <a href="/lineages/?id=beastkin" class="nav-tile"><h3>Beastkin</h3><img src="/assets/images/lineages/beastkin.jpg" /></a>
     <a href="/lineages/?id=celestial" class="nav-tile"><h3>Celestial</h3><img src="/assets/images/lineages/celestial.jpg" /></a>
     <a href="/lineages/?id=demon" class="nav-tile"><h3>Demon</h3><img src="/assets/images/lineages/demon.jpg" /></a>
@@ -45,8 +46,8 @@
 
 <!-- Footer -->
 <footer>
-    Version: <span id="version">Loading...</span> | 
-    <a href="/license.html">Published under the ORC license</a>
+  <version-component></version-component> | 
+  Published under the <a href="/license.html">ORC license</a>
 </footer>
 
 <script>
@@ -59,18 +60,6 @@
       menu.classList.add('open');
     }
   }
-
-  // Fetch the version number from the version.json file
-  fetch('/assets/versions.json')
-    .then(response => response.json())
-    .then(json => {
-      const latestVersion = json.versions[0]; // Get first item from versions array
-      document.getElementById("version").innerHTML = latestVersion.version;
-    })
-    .catch(error => {
-      console.error('Error fetching version:', error);
-      document.getElementById("version").innerHTML = "?.?.?";
-    });
 </script>
 
 </body>

@@ -29,6 +29,7 @@
     <a href="/backgrounds/?id=hermit" class="nav-tile"><h3>Hermit</h3><img src="/assets/images/backgrounds/hermit.jpg" /></a>
     <a href="/backgrounds/?id=outcast" class="nav-tile"><h3>Outcast</h3><img src="/assets/images/backgrounds/outcast.jpg" /></a>
     <a href="/backgrounds/?id=painter" class="nav-tile"><h3>Painter</h3><img src="/assets/images/backgrounds/painter.jpg" /></a>
+    <a href="/backgrounds/?id=scavenger" class="nav-tile"><h3>Scavenger</h3><img src="/assets/images/backgrounds/scavenger.jpg" /></a>
     <a href="/backgrounds/?id=scholar" class="nav-tile"><h3>Scholar</h3><img src="/assets/images/backgrounds/scholar.jpg" /></a>
     <a href="/backgrounds/?id=stablehand" class="nav-tile"><h3>Stablehand</h3><img src="/assets/images/backgrounds/stablehand.jpg" /></a>
   </div>
@@ -36,8 +37,8 @@
 
 <!-- Footer -->
 <footer>
-    Version: <span id="version">Loading...</span> | 
-    <a href="/license.html">Published under the ORC license</a>
+  <version-component></version-component> | 
+  Published under the <a href="/license.html">ORC license</a>
 </footer>
 
 <script>
@@ -50,18 +51,6 @@
       menu.classList.add('open');
     }
   }
-
-  // Fetch the version number from the version.json file
-  fetch('/assets/versions.json')
-    .then(response => response.json())
-    .then(json => {
-      const latestVersion = json.versions[0]; // Get first item from versions array
-      document.getElementById("version").innerHTML = latestVersion.version;
-    })
-    .catch(error => {
-      console.error('Error fetching version:', error);
-      document.getElementById("version").innerHTML = "?.?.?";
-    });
 </script>
 
 </body>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intrepid Role-Playing</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="/assets/components.js" type="text/javascript" defer></script>
+</head>
+<body>
+
+<!-- Header / Menu -->
+<header-component></header-component>
+
+<!-- Main content -->
+<main>
+  <h2>Versions</h2>
+  <div id="version-content">Loading...</div>
+</main>
+
+<!-- Footer -->
+<footer>
+  <version-component></version-component> | 
+  Published under the <a href="/license.html">ORC license</a>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    fetch('/assets/versions.json')
+      .then(response => response.json())
+      .then(json => { 
+        const versions = json.versions; 
+        let versionHtml = ''; 
+        versions.forEach(version => { 
+          versionHtml += `<div class="version-entry"> 
+            <h3>${version.version}</h3> 
+            <div>${version.changes}</div> 
+          </div>`; 
+        }); 
+        document.getElementById("version-content").innerHTML = versionHtml; 
+    })
+    .catch(error => { 
+      console.error('Error fetching version:', error); 
+      document.getElementById("version-content").innerHTML = "<p>Error loading version data.</p>"; 
+    });
+  });
+    
+  // Function to toggle the visibility of the menu in mobile view
+  function toggleMenu() {
+    var menu = document.getElementById('menu');
+    if (menu.classList.contains('open')) {
+      menu.classList.remove('open');
+    } else {
+      menu.classList.add('open');
+    }
+  }
+</script>
+
+</body>
+</html>
