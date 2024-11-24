@@ -33,7 +33,7 @@ customElements.define('header-component', Header);
 class VersionComponent extends HTMLElement {
   constructor() {
     super();
-    this.attachShadow({ mode: 'open' });
+    this.render();
   }
 
   connectedCallback() {
