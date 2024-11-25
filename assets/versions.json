@@ -1,6 +1,9 @@
 {
   "versions": [
     {
+      "version": "1.24.11.Dandelion",
+      "changes": "<ul><li>Added three backgrounds: Apothecary, Musician, and Sailor.</li></ul>"
+    },{
       "version": "1.24.11.Cho",
       "changes": "<ul><li>Added Aqualan and Faerie lineages.</li><li>Added Scavenger background.</li></ul>"
     },
