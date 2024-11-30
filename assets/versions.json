@@ -1,6 +1,9 @@
 {
   "versions": [
     {
+      "version": "1.24.11.Erevan",
+      "changes": "<ul><li>Added the Gladiator Background.</li><li></li>Added the Village, Netherdeep, and Nomadic Netherling heritages.</ul>"
+    },{
       "version": "1.24.11.Dandelion",
       "changes": "<ul><li>Added three backgrounds: Apothecary, Musician, and Sailor.</li></ul>"
     },{
