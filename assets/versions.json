@@ -1,6 +1,9 @@
 {
   "versions": [
     {
+      "version": "1.25.03.Franki",
+      "changes": "<ul><li>Added Wetlands heritage.</li><li>Added Veilkeepers Witch subclass.</li></ul>"
+    },{
       "version": "1.24.11.Erevan",
       "changes": "<ul><li>Added the Gladiator Background.</li><li>Added the Village, Netherdeep, and Nomadic Netherling heritages.</li></ul>"
     },{
