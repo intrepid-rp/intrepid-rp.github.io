@@ -1,6 +1,9 @@
 {
   "versions": [
     {
+      "version": "1.25.08.Ghoultar",
+      "changes": "<ul><li>Added Umbral Shroud Witch.</li><li>Updated Coven spell lists.</li><li>Added Stampede Spell.</li></ul>"
+    },{
       "version": "1.25.03.Franki",
       "changes": "<ul><li>Added Wetlands heritage.</li><li>Added Veilkeepers Witch subclass.</li></ul>"
     },{

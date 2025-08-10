@@ -11,66 +11,65 @@ document.addEventListener("DOMContentLoaded", function () {
       // Get the array of spells from the JSON file
       const spells = data.spells;
 
-      // Get the query string from the URL
+      // Get all query parameters from the URL
       const params = new URLSearchParams(window.location.search);
-
-      // Find the first key-value pair in the query string (if any)
-      const queryKey = params.keys().next().value;  // Get the first query string key
-      const queryValue = params.get(queryKey);  // Get the corresponding value
+      const queryEntries = Array.from(params.entries());
 
       // Find the spells container element in the DOM
       const spellsContainer = document.getElementById('spells');
 
       // Determine which spells to display (filtered or full list)
       let spellsToDisplay;
-      if (queryKey && queryValue) {
-          // Convert query to lowercase for case-insensitive searching
-          const lowerQueryValue = queryValue.toLowerCase();
-
-          // Filter spells based on the query
-        if (queryKey === 'id') {
-          // Exact match for 'id' field
-          spellsToDisplay = spells.filter(spell => spell[queryKey] && spell[queryKey].toLowerCase() === lowerQueryValue);
-        } else {
-          // Substring match for other fields
-          spellsToDisplay = spells.filter(spell => spell[queryKey] && spell[queryKey].toLowerCase().includes(lowerQueryValue));
-        }
+      if (queryEntries.length > 0) {
+        // Filter spells based on all query parameters
+        spellsToDisplay = spells.filter(spell => {
+          return queryEntries.every(([key, value]) => {
+            if (!spell[key]) return false;
+            const spellValue = spell[key].toLowerCase();
+            const filterValue = value.toLowerCase();
+            if (key === 'id') {
+              // Exact match for 'id' field
+              return spellValue === filterValue;
+            } else {
+              // Substring match for other fields
+              return spellValue.includes(filterValue);
+            }
+          });
+        });
       } else {
-          // No query, display all spells
-          spellsToDisplay = spells;
+        // No query, display all spells
+        spellsToDisplay = spells;
       }
 
       // Check if we have any spells to display
       if (spellsToDisplay.length > 0) {
-          // Display each spell
-          spellsToDisplay.forEach(spell => {
-            
-            //Format Cantrips differently from tiered spells
-            const spellType = (spell.tier === 'Cantrip') 
-              ? spell.source + " Cantrip (" + spell.school + ")"
-              : spell.tier + "-Tier " + spell.source + " (" + spell.school + ")";
-            
-            //Don't show Duration for spells where it's irrelevant
-            const spellDuration = (spell.duration) ? "<li><strong>Duration:</strong> " + spell.duration + "</li>" : "";
-              
-            const spellHtml = `
-              <div class="spell">
-                <h3><a href="/spells/?id=${spell.id}">${spell.name}</a></h3>
-                <ul>
-                  <li>${spellType}</li>
-                  <li><strong>Casting Time:</strong> ${spell.castingTime}</li>
-                  <li><strong>Range:</strong> ${spell.range}</li>
-                  <li><strong>Components:</strong> ${spell.components}</li>
-                  ${spellDuration}
-                </ul>
-                <div class="description">${spell.description}</div>
-              </div>
-            `;
-            spellsContainer.insertAdjacentHTML('beforeend', spellHtml);
-          });
+        // Display each spell
+        spellsToDisplay.forEach(spell => {
+          //Format Cantrips differently from tiered spells
+          const spellType = (spell.tier === 'Cantrip') 
+            ? spell.source + " Cantrip (" + spell.school + ")"
+            : spell.tier + "-Tier " + spell.source + " (" + spell.school + ")";
+          //Don't show Duration for spells where it's irrelevant
+          const spellDuration = (spell.duration) ? "<li><strong>Duration:</strong> " + spell.duration + "</li>" : "";
+          const spellHtml = `
+            <div class="spell">
+              <h3><a href="/spells/?id=${spell.id}">${spell.name}</a></h3>
+              <ul>
+                <li>${spellType}</li>
+                <li><strong>Casting Time:</strong> ${spell.castingTime}</li>
+                <li><strong>Range:</strong> ${spell.range}</li>
+                <li><strong>Components:</strong> ${spell.components}</li>
+                ${spellDuration}
+              </ul>
+              <div class="description">${spell.description}</div>
+            </div>
+          `;
+          spellsContainer.insertAdjacentHTML('beforeend', spellHtml);
+        });
       } else {
-          // If no spells matched, display an error message
-          spellsContainer.innerHTML = `<p>Sorry, couldn't find any spells matching ${queryKey}: ${queryValue}.</p>`;
+        // If no spells matched, display an error message
+        const filterSummary = queryEntries.map(([k, v]) => `${k}: ${v}`).join(', ');
+        spellsContainer.innerHTML = `<p>Sorry, couldn't find any spells matching ${filterSummary}.</p>`;
       }
     })
     .catch(error => {

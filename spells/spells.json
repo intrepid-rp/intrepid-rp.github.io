@@ -560,7 +560,7 @@
       "range": "30 feet",
       "components": "V, S",
       "duration": "Concentration, up to 1 minute",
-      "description": "<p>Creatures of your choice that you can see within range and that can hear you must make a WIS save. A target automatically succeeds on this save if it can't be charmed. On a failed save, a target is affected by this spell. Until the spell ends, you can use a bonus action on each of your turns to designate a direction that is horizontal to you. Each affected target must use as much of its movement as possible to move in that direction on its next turn. It can take its action before it moves. After moving in this way, it can make another WIS save to try to end the effect. A target isn't compelled to move into an obviously deadly hazard, such as a fire or pit, but it will provoke opportunity attacks to move in the designated direction.</p>"
+      "description": "<p>Creatures of your choice that you can see within range and that can hear you must make a WIS save. A target automatically succeeds on this save if it can't be charmed. On a failed save, a target is affected by this spell. Until the spell ends, you can use a bonus action on each of your turns to designate a direction. Each affected target must use as much of its movement as possible to move in that direction on its next turn. It can take its action before it moves. After moving in this way, it can make another WIS save to try to end the effect. A target isn't compelled to move into an obviously deadly hazard, such as a fire or pit, but it will provoke opportunity attacks to move in the designated direction.</p>"
     },
     {
       "id": "cone_of_cold",
@@ -692,7 +692,7 @@
       "range": "60 feet",
       "components": "S",
       "duration": null,
-      "description": "<p>You quickly call forth antithetical elements to negate another caster's magic. If the creature is casting a spell of 3rd tier or lower, its spell fails and has no effect. If it is casting a spell of 4th tier or beyond, make an ability check using your spellcasting ability. The DC equals 10 + the spell's tier. On a success, the creature's spell fails and has no effect.</p><p><em>At Higher Tiers.</em> The interrupted spell has no effect if cast at a tier less than or equal to yours.</p>"
+      "description": "<p>You quickly negate another caster's magic. If the creature is casting a spell of 3rd tier or lower, its spell fails and has no effect. If it is casting a spell of 4th tier or beyond, make an ability check using your spellcasting ability. The DC equals 10 + the spell's tier. On a success, the creature's spell fails and has no effect.</p><p><em>At Higher Tiers.</em> The interrupted spell has no effect if cast at a tier less than or equal to yours.</p>"
     },
     {
       "id": "create_familiar",
@@ -992,7 +992,7 @@
       "range": "Self",
       "components": "V, S, M (25 gp offering, which the spell consumes)",
       "duration": "1 minute",
-      "description": "<p>You contact your deity or divine proxy through magic and an offering. Use the spell in one of the following ways:</p><ul><li><strong>Read the Future</strong>. Ask one question about a specific goal, event, or activity within 7 days. The GM gives a truthful reply, which might be a short phrase, rhyme, or omen. The spell doesn't consider any changes that might affect the outcome.</li><li><strong>Read the Present</strong>. Ask up to three yes-or-no questions. Ask these before the spell ends. The GM provides correct answers, but may answer &quote;unclear&quote; if the deity doesn't know. If a one-word answer might mislead, the GM might give a short phrase for clarity.</li></ul><p>Casting this spell multiple times before a long rest increases the chance of receiving no answer by 25% for each additional casting. The GM rolls this in secret. If you get no answer, you can't cast the spell again for 24 hours.</p>"
+      "description": "<p>You contact your deity or divine proxy through magic and an offering. Use the spell in one of the following ways:</p><ul><li><strong>Read the Future</strong>. Ask one question about a specific goal, event, or activity within 7 days. The GM gives a truthful reply, which might be a short phrase, rhyme, or omen. The spell doesn't consider any changes that might affect the outcome.</li><li><strong>Read the Present</strong>. Ask up to three yes-or-no questions. Ask these before the spell ends. The GM provides correct answers, but may answer &quot;unclear&quot; if the deity doesn't know. If a one-word answer might mislead, the GM might give a short phrase for clarity.</li></ul><p>Casting this spell multiple times before a long rest increases the chance of receiving no answer by 25% for each additional casting. The GM rolls this in secret. If you get no answer, you can't cast the spell again for 24 hours.</p>"
     },
     {
       "id": "dominate",
@@ -3308,7 +3308,19 @@
       "range": "60 feet",
       "components": "V, S",
       "duration": null,
-      "description": "<p>You create a floating, spectral weapon within range that lasts for the duration or until you cast this spell again. When you cast the spell, you can make a melee spell attack against a creature within 5 feet of the weapon. On a hit, the target takes force damage equal to 1d8 + your spellcasting ability modifier.</p><p>As a bonus action on your turn, you can move the weapon up to 20 feet and repeat the attack against a creature within 5 feet of it.</p><p>The weapon can take whatever form you choose. Clerics of deities who are associated with a particular weapon (like Thor and his hammer) make this spell's effect resemble that weapon.</p><p>At Higher Tiers. Add 1d8 damage for each additional tier.</p>"
+      "description": "<p>You create a floating, spectral weapon within range that lasts for the duration or until you cast this spell again. When you cast the spell, you can make a melee spell attack against a creature within 5 feet of the weapon. On a hit, the target takes force damage equal to 1d8 + your spellcasting ability modifier.</p><p>As a bonus action on your turn, you can move the weapon up to 20 feet and repeat the attack against a creature within 5 feet of it.</p><p>At Higher Tiers. Add 1d8 damage for each additional tier.</p>"
+    },
+    {
+      "id": "stampede",
+      "name": "Stampede",
+      "tier": "3rd",
+      "source": "Primordial",
+      "school": "Conjuration",
+      "castingTime": "1 action",
+      "range": "60 feet",
+      "components": "V, S",
+      "duration": null,
+      "description": "<p>You conjure an ethereal herd of bestial spirits that stampedes in a 10-foot wide, 60-foot long line from a point you choose within range.</p><p>Each creature in the line must make a DEX save. On a failed save, a creature takes 4d10 bludgeoning damage and is knocked prone. On a successful save, the creature takes half as much damage and remains standing.</p><p>At Higher Tiers. Add 1d10 damage for each additional tier.</p>"
     },
     {
       "id": "stinking_cloud",
