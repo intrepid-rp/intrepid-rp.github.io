@@ -1,6 +1,9 @@
 {
   "versions": [
     {
+      "version": "1.26.02.Huxley",
+      "changes": "<ul><li>Added spells: Analyze Blood, Aqua Bolt, Arcane Daggers, Conjure Chair, Conjure Weapon, Dissonant Whispers, Divine Smite, Dragon Breath, Ensaring Strike, Feral Strike, Freeze Metal, Hex, Ice Knife, Immortality, Leaf Blade, Mind Spike, Necroturgy, Power Word Heal, Radiant Burst, Ray of Sickness, Reprieve, Retreive Book, Searing Smite, Shadowball, Shape Earth, Shield Ally, Starry Wisp, Torrent of Flame, Torrent of Water, Tree Meld, Tsunami, Vitriolic Sphere, Water Whip, Wraithplate</li><li>Removed Counterspell and made it a once-per-rest talent instead.</li></ul>"
+    },{
       "version": "1.25.08.Ghoultar",
       "changes": "<ul><li>Added Umbral Shroud Witch.</li><li>Updated Coven spell lists.</li><li>Added Stampede Spell.</li></ul>"
     },{
