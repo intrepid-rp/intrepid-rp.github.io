@@ -2,7 +2,7 @@
   "versions": [
     {
       "version": "1.26.07.Ildax",
-      "changes": "<ul><li>Added Coastal and Mountain Heritages. Added a table of languages to the character creation section.</li></ul>"
+      "changes": "<ul><li>Added Coastal and Mountain Heritages. Added a table of languages to the character creation section. Added Fisher and Prisoner backgrounds.</li></ul>"
     },{
       "version": "1.26.02.Huxley",
       "changes": "<ul><li>Added spells: Analyze Blood, Aqua Bolt, Arcane Daggers, Conjure Chair, Conjure Weapon, Dissonant Whispers, Divine Smite, Dragon Breath, Ensaring Strike, Feral Strike, Freeze Metal, Hex, Ice Knife, Immortality, Leaf Blade, Mind Spike, Necroturgy, Power Word Heal, Radiant Burst, Ray of Sickness, Reprieve, Retreive Book, Searing Smite, Shadowball, Shape Earth, Shield Ally, Starry Wisp, Torrent of Flame, Torrent of Water, Tree Meld, Tsunami, Vitriolic Sphere, Water Whip, Wraithplate</li><li>Removed Counterspell and made it a once-per-rest talent instead.</li></ul>"
