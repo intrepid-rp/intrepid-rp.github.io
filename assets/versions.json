@@ -1,6 +1,9 @@
 {
   "versions": [
     {
+      "version": "1.26.07.Jolly",
+      "changes": "<ul><li>Added Talents: Arcanist, Psycanist, Spell Dualist, Athletic, Opportunist, Covert, and Quick.</li></ul>"
+    },{
       "version": "1.26.07.Ildax",
       "changes": "<ul><li>Added Coastal and Mountain Heritages. Added a table of languages to the character creation section. Added Fisher and Prisoner backgrounds.</li></ul>"
     },{
