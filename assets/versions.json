@@ -1,6 +1,9 @@
 {
   "versions": [
     {
+      "version": "1.26.08.Harmony",
+      "changes": "<ul><li>Added the Hearth Domain Cleric subclass. Added the Monastic heritage.</li></ul>"
+    },{
       "version": "1.26.07.Jolly",
       "changes": "<ul><li>Added Talents: Arcanist, Psycanist, Spell Dualist, Athletic, Opportunist, Covert, and Quick.</li></ul>"
     },{
