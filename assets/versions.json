@@ -1,6 +1,10 @@
 {
   "versions": [
     {
+      "version": "1.26.09.Ildax",
+      "changes": "<ul><li>Fixed mistakes in talents and spells. Added talents: Armor Training, Furious Charge, Heavy Weapon Mastery, Shield Mastery, Weapon Discipline.</li></ul>"
+    },
+    {
       "version": "1.26.08.Harmony",
       "changes": "<ul><li>Added the Hearth Domain Cleric subclass. Added the Monastic heritage.</li></ul>"
     },{

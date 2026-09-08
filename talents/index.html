@@ -29,7 +29,7 @@
   <h2>Magical Talents</h2>
   <p></p>
 
-  <h3>Arcanist</h3>
+  <h3>Arcane Scholar</h3>
   <em>Prerequisite: Spellcasting class feature</em>
   <p>Your focus on magical studies yielded incredible results, granting these benefits:</p>
   <ul class="indent">
@@ -52,7 +52,7 @@
   <p>Once per short rest, when you see or hear a creature within 60 feet cast a spell or use a spell-like effect, you may use your reaction to attempt to disrupt it. Your target must make a CON save equal to 10 + your spell attack bonus. If the save is unsuccessful, their spell fails without expending a spell slot.</p>
   
   <h3>Elemental Savant</h3>
-  <em>Prerequisite: Ability to Cast at Least One Damage-Dealing Spell</em>
+  <em>Prerequisite: Ability to cast at least one damage-dealing spell</em>
   <p>Choose one of the following elemental damage types: acid, cold, fire, lightning, or thunder. When you cast a spell that deals damage, you can convert the damage type of that spell to your chosen elemental damage type. You must decide to convert the damage type when you declare you are casting the spell.</p>
   <p>Additionally, when you roll damage for a spell that naturally uses your chosen elemental damage type—not a spell you convert to your chosen type—you can reroll any damage dice results of 1. You must keep the new result.</p>
   <p>You can select this talent multiple times, selecting a different damage type each time.</p>
@@ -69,7 +69,7 @@
   <p>You can select this talent multiple times.</p>
 
   <h3>Psycanist</h3>
-  <em>Prerequisite: INT 13 or higher</em>
+  <em>Prerequisite: INT +2 or higher</em>
   <p>Through magic, you learned to influence and manipulate the world around you with your mind. You gain one of the following benefits:</p>
   <ul class="indent">
     <li>You can telepathically speak with any creature within 30 feet of you. A creature doesn't need to share a language with you to communicate this way, but it must understand at least one language. Creatures you speak to can reply to you telepathically, but can't initiate a telepathic conversation.</li>
@@ -79,14 +79,14 @@
   <p>You can select this talent multiple times, choosing a different benefit each time.</p>
 
   <h3>Ritualist</h3>
-  <em>Prerequisite: Ability to Cast Spells</em>
+  <em>Prerequisite: Ability to cast spells</em>
   <p>Your study of magic has unlocked the mysteries of ritual spells. When you gain this talent, you also gain a ritual book, which contains the rituals you know. To cast a ritual spell, you must have your ritual book in hand.</p>
   <p>Choose a category of magic: arcane or divine. You must choose your rituals from that category's ritual list. Regardless of which category you choose, you use your normal spellcasting ability for these spells.</p>
   <p>When you gain your ritual book, add one ritual of each spell tier you have already unlocked via your spellcasting class. For example, a cleric who selects this talent at 4th level has spell slots for the 1st and 2nd tiers, so they would add one 1st-tier ritual and one 2nd-tier ritual to their book.</p>
   <p>Each time you gain access to a new tier of spells by gaining a level in your spellcasting class, add one new ritual spell to your book. This new ritual must be from the same category of magic you originally chose, and it must be of a tier for which you have spell slots.</p>
 
   <h3>School Specialization</h3>
-  <em>Prerequisite: Ability to Cast Spells</em>
+  <em>Prerequisite: Ability to cast spells</em>
   <p>Choose one of the eight schools of magic: abjuration, conjuration, divination, enchantment, evocation, illusion, necromancy, or transmutation. You gain the following benefits:</p>
   <ul class="indent">
     <li>Whenever you cast a spell from your chosen school that requires you to make an attack roll, you add +1 to that roll.</li>
@@ -96,7 +96,7 @@
   <p>You can select this talent multiple times, selecting a different school of magic each time.</p>
 
   <h3>Spell Dualist</h3>
-  <em>Prerequisite: Ability to Cast One or More Cantrips</em>
+  <em>Prerequisite: Ability to cast one or more cantrips</em>
   <p>When a creature you can see damages you with a spell, you can use your reaction to cast a cantrip targeting that creature. In addition, you double the range of spells that require an attack roll. If the spell's range is touch, its range increases to 15 feet.</p>
 
   <hr id="martial-talents"/>
@@ -113,12 +113,21 @@
     <li>You can jump 5 feet further than normal.</li>
   </ul>
   
-  <h3>Armored Combatant</h3>
-  <em>Prerequisite: STR 13 or higher</em>
-  <p>While you are wearing medium or heavy armor with which you are proficient, gain a +1 AC bonus. Furthermore, each instance of bludgeoning, piercing, and slashing damage you take is reduced by an amount equal to your PB.</p>
+  <h3>Armor Expert</h3>
+  <em>Prerequisite: STR modifier of +2 or higher</em>
+  <p>While you are wearing medium or heavy armor with which you are proficient, you gain a +1 bonus to AC and advantage on saves against being pulled, shoved, or knocked prone.</p>
+
+  <h3>Armor Training</h3>
+  <em>Prerequisite: Proficiency with Light or Medium Armor</em>
+  <p>You've trained to improve your use of armor. You gain these benefits:</p>
+  <ul class="indent">
+    <li>If you are proficient with light armor, you gain proficiency with medium armor. If you are proficient with medium armor, you gain proficiency with heavy armor and shields.</li>
+    <li>If you are wearing armor that would normally impose disadvantage on DEX (Stealth) checks, you don't have disadvantage on the check from wearing the armor, though you may still have disadvantage from other sources.</li>
+    <li>You can add up to +3 (instead of +2) to your AC based on your DEX while wearing medium armor.</li>
+  </ul>
 
   <h3>Artillerist</h3>
-  <em>Prerequisite: STR modifier of 2 or Higher</em>
+  <em>Prerequisite: STR modifier of +2 or higher</em>
   <p>Extensive training has allowed you to master the use of complex ranged weapons. You gain the following benefits:</p>
   <ul class="indent">
     <li>You ignore the loading property of simple and martial weapons with which you are proficient.</li>
@@ -128,15 +137,33 @@
   <h3>Combat Conditioning</h3>
   <p>You have endured extensive training to withstand the rigors of combat, making you harder to cut down.</p>
   <ul class="indent">
-    <li>Your hit point maximum increases by 2 for each level you had previous to gaining this talent (if applicable). Each time you gain a new level, your hit point maximum increases by 2 (including for the level that allowed you to take this talent, if applicable).</li>
-    <li>When you roll hit dice to recover hit points, you can ignore die rolls lower than your PB and instead treat those dice as if you rolled a number equal to your PB.</li>
+    <li>Your HP maximum increases by 2 for each character level you have. Each time you gain a level after taking this talent, your HP maximum increases by 2.</li>
+    <li>When you roll hit dice to recover hit points, treat any roll lower than your PB as though it were equal to your PB.</li>
+  </ul>
+
+  <h3>Furious Charge</h3>
+  <p>When you move at least 20 feet in a straight line toward a creature and hit it with a melee weapon or an unarmed strike, choose two of the following benefits:</p>
+  <ul class="indent">
+    <li>Deal extra damage equal to your Proficiency Bonus.</li>
+    <li>Push a target (size Large or smaller) 10 feet away.</li>
+    <li>The target must pass a Strength save (DC = 8 + PB + STR) or fall prone.</li>
+    <li>Swap places with a target (size Huge or smaller).</li>
   </ul>
 
   <h3>Hand to Hand</h3>
   <p>You gain the following benefits:</p>
   <ul class="indent">
-    <li>Your unarmed strikes deal bludgeoning damage equal to 1d4 + your STR—instead of the standard 1 + your STR.</li>
+    <li>Your unarmed strikes deal bludgeoning damage equal to 1d4 + STR, instead of the standard 1 + STR.</li>
     <li>You have advantage on ability checks made to initiate or escape a grapple.</li>
+  </ul>
+
+  <h3>Heavy Weapon Mastery</h3>
+  <p>Prerequisite: Character level 4+</p>
+  <p>While wielding a Heavy melee weapon in two hands, you gain the following benefits:</p>
+  <ul class="indent">
+    <li>Make one additional melee weapon attack as part of your Attack action when you score a critical hit.</li>
+    <li>Use a bonus action to make your next Heavy melee weapon attack ignore resistance to its damage type.</li>
+    <li>Use a bonus action to take a -5 penalty on your next Heavy melee weapon attack to deal extra 10 damage.</li>
   </ul>
 
   <h3>Opportunist</h3>
@@ -165,12 +192,29 @@
     <li>Your ranged weapon attacks ignore half and three-quarters cover.</li>
   </ul>
 
+  <h3>Shield Mastery</h3>
+  <p>Prerequisite: Character level 4+</p>
+  <p>While wielding a shield, you gain the following benefits:</p>
+  <ul class="indent">
+    <li>Use a bonus action to attempt to shove a creature within 5 feet of you (with advantage on the check if you moved at least 10 feet directly toward it first).</li>
+    <li>Add your shield's armor bonus to your AC when you take the Dodge action.</li>
+    <li>When you make a DEX save to avoid taking damage, you can use your reaction to halve any damage taken.</li>
+  </ul>
+
   <h3>Two Weapon Mastery</h3>
   <p>You gain the following benefits:</p>
   <ul class="indent">
     <li>You have +1 to AC while wielding a different melee weapon in each hand.</li>
     <li>You can use the bonus action attack granted by two weapon fighting even if the weapons you are wielding aren't light. Similarly, you are no longer restricted to the use of light weapons if you have the "Quick Strike" Martial Action.</li>
     <li>You can now draw or stow two one-handed weapons in the same time it would normally take you to draw or stow a single weapon.</li>
+  </ul>
+
+  <h3>Weapon Discipline</h3>
+  <p>Prerequisite: Proficiency with at least one martial weapon</p>
+  <p>Choose one simple or martial weapon you are proficient with (you can take this feat multiple times for different weapons). You gain the following benefits while wielding it:</p>
+  <ul class="indent">
+    <li>Gain a +1 bonus to attack and damage rolls with the chosen weapon.</li>
+    <li>Roll one extra weapon damage die when you score a critical hit with it.</li>
   </ul>
   
   <hr id="technical-talents"/>
@@ -187,13 +231,13 @@
   </ul>
 
   <h3>Covert</h3>
-  <em>Prerequisite: Proficiency with the Stealth Skill, DEX 13 or Higher</em>
+  <em>Prerequisite: Proficiency with the Stealth skill, DEX +2 or higher</em>
   <p>You trained in the art of espionage. You gain these benefits:</p>
   <ul class="indent">
     <li>You can attempt to hide while in three-quarters cover or while lightly obscured.</li>
-    <li>Creatures that rely on darkvision can't see you while you remain motionless in dim light or darkness. This effect ends if you move, take an action or bonus action, or use a reaction while in the creature's line of sight.</li>
+    <li>Become invisible to darkvision while completely motionless in dim light or darkness (ends if you move, act, or react within a creature's line of sight).</li>
     <li>You don't have disadvantage on attack rolls and Perception checks against targets in dim light.</li>
-    <li>If you make a ranged attack against a creature or if a creature spots you while you are hidden, you can use your reaction to make a Stealth check at disadvantage opposed by the creature's Perception. On a success, you remain hidden and the creature is unaware of your position. Once used on a creature, the target can't be affected by this feature again for 24 hours.</li>
+    <li>If you make a ranged attack against a creature or if a creature spots you while you are hidden, you can use your reaction to make a Stealth check at disadvantage opposed by the creature's Perception. On a success, you remain hidden. Once used on a creature, the target can't be affected by this feature again for 24 hours.</li>
   </ul>
   
   <h3>Dungeoneer</h3>
@@ -208,7 +252,7 @@
   <p>You have studied first aid and can provide emergency medical assistance. You gain the following benefits:</p>
   <ul class="indent">
     <li>When you stabilize a dying creature using first aid, that creature regains 1 HP.</li>
-    <li>As an action, you can tend to the wounds of a creature you can see and touch. When you do, the creature recovers a number of hit points equal to twice their CON modifier. A creature healed in this way can't receive the benefits of this feature again until it completes a short or long rest.</li>
+    <li>As an action, you can tend to the wounds of a creature you can see and touch. When you do, the creature recovers a number of HP equal to twice their CON. A creature can only benefit from this feature once per rest.</li>
   </ul>
 
   <h3>Polyglot</h3>

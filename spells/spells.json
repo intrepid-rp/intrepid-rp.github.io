@@ -1352,7 +1352,7 @@
       "range": "5 feet",
       "components": "S",
       "duration": null,
-      "description": "<p>You temporarily grow sharp teeth and claws and make a melee spell attack against one creature within 5 feet of you. On a hit, the target takes 1d10 magical slashing damage.</p><p><em>At Higher Tiers.</em> Add 1d10 damage per tier.</p>"
+      "description": "<p>You temporarily grow sharp teeth and claws and make a melee spell attack against one creature within 5 feet of you. On a hit, the target takes 1d10 magical slashing damage.</p><p>This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>"
     },
     {
       "id": "find_familiar",
